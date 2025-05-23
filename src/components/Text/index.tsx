@@ -12,8 +12,8 @@ interface TextProps
 
 const variantStyles = {
   heading1: "text-4xl",
-  heading2: "text-2xl",
-  heading3: "text-1xl",
+  heading2: "text-3xl",
+  heading3: "text-2xl",
   paragraph: "text-1xl",
 };
 

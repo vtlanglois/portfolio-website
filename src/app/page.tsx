@@ -76,7 +76,10 @@ export default function Home() {
                 Project 2
               </Text>
               <Text as="p" variant="paragraph">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse optio ut praesentium cum, laudantium reprehenderit, quisquam voluptatum tenetur debitis et a. Optio odit sunt ut, repellat in error temporibus nemo?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                optio ut praesentium cum, laudantium reprehenderit, quisquam
+                voluptatum tenetur debitis et a. Optio odit sunt ut, repellat in
+                error temporibus nemo?
               </Text>
             </Card>
             <Card>
@@ -84,7 +87,8 @@ export default function Home() {
                 Project 3
               </Text>
               <Text as="p" variant="paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam, voluptatum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, voluptatum. Quisquam, voluptatum.
               </Text>
             </Card>
           </Grid>
