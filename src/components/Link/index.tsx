@@ -47,7 +47,7 @@ export default function Link({
   const classes = clsx(
     variantStyles[variant].base,
     variantStyles[variant][appearance],
-    className
+    className,
   );
 
   if (!href?.startsWith("http")) {

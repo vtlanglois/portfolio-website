@@ -29,12 +29,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <div className="mt-16 lg:mt-32">
-          {children}
-        </div>
-        <footer className="">
-          Footer
-        </footer>
+        <div className="mt-16 lg:mt-32">{children}</div>
+        <footer className="">Footer</footer>
       </body>
     </html>
   );

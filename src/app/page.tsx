@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <Wrapper>
       <main>
-        <div className="flex flex-col justify-start items-start max-w-xl gap-3">
+        <div className="flex max-w-xl flex-col items-start justify-start gap-3">
           <div className="flex flex-row gap-1">
             <HandWavingIcon size="64" weight="duotone" />
             <HandPeaceIcon size="64" weight="duotone" />
@@ -22,9 +22,10 @@ export default function Home() {
           <Text as="h1" variant="heading1">
             Hiya! I'm
             <br />
-            <span className="text-blue-500 text-5xl italic">
-              Vincent Langlois,
-            </span>{" "}
+            <span className="text-5xl text-blue-500 italic">
+              Vincent Langlois
+            </span>
+            ,
             <br />
             software engineer.
           </Text>
