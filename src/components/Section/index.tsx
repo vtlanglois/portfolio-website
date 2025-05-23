@@ -6,7 +6,7 @@ interface SectionProps
 
 export default function Section({ children, className }: SectionProps) {
   const classes = clsx(
-    "flex flex-col items-center justify-center gap-4 py-6",
+    "flex flex-col items-start justify-stretch gap-4 py-12",
     className,
   );
   return <section className={classes}>{children}</section>;
