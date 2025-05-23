@@ -8,12 +8,13 @@ import {
 } from "@phosphor-icons/react/ssr";
 import Wrapper from "@/components/Wrapper";
 import Link from "@/components/Link";
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
     <Wrapper>
       <main>
-        <div className="flex max-w-xl flex-col items-start justify-start gap-3">
+        <Card className="flex max-w-xl flex-col items-start justify-start gap-3">
           <div className="flex flex-row gap-1">
             <HandWavingIcon size="64" weight="duotone" />
             <HandPeaceIcon size="64" weight="duotone" />
@@ -52,7 +53,7 @@ export default function Home() {
               <LinkedinLogoIcon size="48" />
             </Link>
           </div>
-        </div>
+        </Card>
       </main>
     </Wrapper>
   );
