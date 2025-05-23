@@ -3,8 +3,11 @@ import {
   HandPeaceIcon,
   HandWavingIcon,
   HandPointingIcon,
+  GithubLogoIcon,
+  LinkedinLogoIcon,
 } from "@phosphor-icons/react/ssr";
 import Wrapper from "@/components/Wrapper";
+import Link from "@/components/Link";
 
 export default function Home() {
   return (
@@ -26,9 +29,28 @@ export default function Home() {
             software engineer.
           </Text>
           <Text as="p" variant="paragraph">
-            I build digtital products, and I love to learn new things. I am
-            currently working at Eli Lilly and Company as a senior software engineer.
+            I build digital products, and I love to learn new things. I am
+            currently working at Eli Lilly and Company as a senior software
+            engineer.
           </Text>
+          <div className="flex flex-row gap-3">
+            <Link
+              variant="icon"
+              appearance="primary"
+              href="https://github.com/vtlanglois"
+              aria-label="Github"
+            >
+              <GithubLogoIcon size="48" />
+            </Link>
+            <Link
+              variant="icon"
+              appearance="primary"
+              href="https://www.linkedin.com/in/vtlanglois/"
+              aria-label="LinkedIn"
+            >
+              <LinkedinLogoIcon size="48" />
+            </Link>
+          </div>
         </div>
       </main>
     </Wrapper>
