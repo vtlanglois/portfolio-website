@@ -21,11 +21,11 @@ export default function Text({
   children
 }: TextProps) {
   const Element = as;
-  const className = clsx(
+  const classes = clsx(
     variantStyles[variant]
   )
   return (
-    <Element className={className}>
+    <Element className={classes}>
       {children}
     </Element>
   )
