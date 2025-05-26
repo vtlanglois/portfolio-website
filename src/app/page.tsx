@@ -5,6 +5,8 @@ import {
   HandPointingIcon,
   GithubLogoIcon,
   LinkedinLogoIcon,
+  InfoIcon,
+  NotebookIcon,
 } from "@phosphor-icons/react/ssr";
 import Wrapper from "@/components/Wrapper";
 import Link from "@/components/Link";
@@ -38,23 +40,45 @@ export default function Home() {
               currently working at Eli Lilly and Company as a senior software
               engineer.
             </Text>
-            <div className="flex flex-row gap-3">
-              <Link
-                variant="icon"
-                appearance="primary"
-                href="https://github.com/vtlanglois"
-                aria-label="Github"
-              >
-                <GithubLogoIcon size="48" />
-              </Link>
-              <Link
-                variant="icon"
-                appearance="primary"
-                href="https://www.linkedin.com/in/vtlanglois/"
-                aria-label="LinkedIn"
-              >
-                <LinkedinLogoIcon size="48" />
-              </Link>
+            <div className="flex w-full flex-row items-center justify-between gap-3">
+              <div className="flex flex-row gap-2">
+                <Link
+                  variant="button"
+                  appearance="primary"
+                  href="#"
+                  aria-label="About Me"
+                >
+                  <InfoIcon size="24" weight="duotone" />
+                  About Me
+                </Link>
+                <Link
+                  variant="button"
+                  appearance="primary"
+                  href="#"
+                  aria-label="My Resume"
+                >
+                  <NotebookIcon size="24" weight="duotone" />
+                  Resume
+                </Link>
+              </div>
+              <div>
+                <Link
+                  variant="icon"
+                  appearance="primary"
+                  href="https://github.com/vtlanglois"
+                  aria-label="Github"
+                >
+                  <GithubLogoIcon size="48" />
+                </Link>
+                <Link
+                  variant="icon"
+                  appearance="primary"
+                  href="https://www.linkedin.com/in/vtlanglois/"
+                  aria-label="LinkedIn"
+                >
+                  <LinkedinLogoIcon size="48" />
+                </Link>
+              </div>
             </div>
           </Card>
         </Section>
