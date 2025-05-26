@@ -13,6 +13,7 @@ import Link from "@/components/Link";
 import Card from "@/components/Card";
 import Section from "@/components/Section";
 import Grid from "@/components/Grid";
+import Stack from "@/components/Stack";
 
 export default function Home() {
   return (
@@ -81,6 +82,43 @@ export default function Home() {
               </div>
             </div>
           </Card>
+        </Section>
+        <Section>
+          <Text as="h2" variant="heading2">
+            Experience
+          </Text>
+          <Stack>
+            <Card>
+              <Text as="h3" variant="heading3">
+                Senior Software Engineer at Eli Lilly and Company
+              </Text>
+              <Text as="p" variant="paragraph">
+                Currently working on building and maintaining software solutions
+                for the pharmaceutical industry, focusing on improving patient
+                outcomes through technology.
+              </Text>
+            </Card>
+            <Card>
+              <Text as="h3" variant="heading3">
+                Senior Software Engineer at Eli Lilly and Company
+              </Text>
+              <Text as="p" variant="paragraph">
+                Currently working on building and maintaining software solutions
+                for the pharmaceutical industry, focusing on improving patient
+                outcomes through technology.
+              </Text>
+            </Card>
+            <Card>
+              <Text as="h3" variant="heading3">
+                Senior Software Engineer at Eli Lilly and Company
+              </Text>
+              <Text as="p" variant="paragraph">
+                Currently working on building and maintaining software solutions
+                for the pharmaceutical industry, focusing on improving patient
+                outcomes through technology.
+              </Text>
+            </Card>
+          </Stack>
         </Section>
         <Section>
           <Text as="h2" variant="heading2">
