@@ -7,7 +7,7 @@ interface TextProps
   extends WithVariant<TextVariant>,
     React.ComponentProps<"div"> {
   /** The HTML element to render as the semantic meaning of Text */
-  as: string;
+  as: React.ElementType;
 }
 
 const variantStyles = {
@@ -17,8 +17,8 @@ const variantStyles = {
   paragraph: "text-1xl",
 };
 
-export default function Text({ as, variant, children }: TextProps) {
+export default function Text({ as, variant, children, className }: TextProps) {
   const Element = as;
-  const classes = clsx(variantStyles[variant]);
+  const classes = clsx(variantStyles[variant], className);
   return <Element className={classes}>{children}</Element>;
 }
