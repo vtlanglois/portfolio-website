@@ -12,7 +12,6 @@ interface LinkProps
     WithAppearance<LinkAppearance>,
     React.ComponentProps<"a"> {}
 
-
 const variantStyles: Record<
   LinkVariant,
   Record<LinkAppearance, string> & { base: string }

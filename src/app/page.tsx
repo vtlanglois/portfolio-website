@@ -46,7 +46,7 @@ export default function Home() {
                 <Link
                   variant="button"
                   appearance="primary"
-                  href="#"
+                  href="/about"
                   aria-label="About Me"
                 >
                   <InfoIcon size="24" weight="duotone" />
