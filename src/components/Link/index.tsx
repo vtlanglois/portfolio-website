@@ -12,6 +12,7 @@ interface LinkProps
     WithAppearance<LinkAppearance>,
     React.ComponentProps<"a"> {}
 
+
 const variantStyles: Record<
   LinkVariant,
   Record<LinkAppearance, string> & { base: string }
@@ -19,13 +20,13 @@ const variantStyles: Record<
   button: {
     base: "inline-flex p-3 items-center justify-center gap-2 rounded-xl font-medium",
     primary:
-      "bg-blue-500 transition-color text-white shadow-none transition-shadow transition-transform duration-200 hover:translate-x-0.5 hover:-translate-y-1 hover:scale-105 hover:bg-blue-50 hover:bg-blue-600 hover:shadow-sm",
+      "bg-blue-500 transition-color text-white shadow-none motion-safe:transition-shadow motion-safe:transition-transform motion-safe:duration-200 motion-safe:hover:translate-x-0.5 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-105 hover:bg-blue-50 hover:bg-blue-600 hover:shadow-sm",
     secondary: "bg-gray-200 hover:bg-gray-300 text-gray-800",
   },
   icon: {
     base: "inline-flex items-center justify-center rounded-xl p-2",
     primary:
-      "transition-color bg-transparent text-blue-500 shadow-none transition-shadow transition-transform duration-200 hover:translate-x-0.5 hover:-translate-y-1 hover:scale-105 hover:bg-blue-50 hover:text-blue-600 hover:shadow-sm",
+      "transition-color bg-transparent text-blue-500 shadow-none motion-safe:transition-shadow motion-safe:transition-transform motion-safe:duration-200 motion-safe:hover:translate-x-0.5 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-105 hover:bg-blue-50 hover:text-blue-600 hover:shadow-sm",
     secondary: "text-gray-800 hover:text-gray-900",
   },
   text: {
