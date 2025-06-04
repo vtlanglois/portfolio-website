@@ -11,10 +11,10 @@ interface TextProps
 }
 
 const variantStyles = {
-  heading1: "text-4xl",
-  heading2: "text-3xl",
+  heading1: "font-serif text-4xl",
+  heading2: "font-serif text-3xl",
   heading3: "text-2xl",
-  paragraph: "text-1xl",
+  paragraph: "text-xl",
 };
 
 export default function Text({ as, variant, children, className }: TextProps) {
