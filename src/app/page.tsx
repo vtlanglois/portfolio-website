@@ -29,7 +29,7 @@ export default function Home() {
             <Text as="h1" variant="heading1">
               Hiya! I'm
               <br />
-              <span className="text-5xl font-bold italic">
+              <span className="text-5xl font-black italic underline">
                 Vincent Langlois
               </span>
               ,
