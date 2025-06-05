@@ -29,7 +29,7 @@ export default function Home() {
             <Text as="h1" variant="heading1">
               Hiya! I'm
               <br />
-              <span className="text-5xl text-blue-500 italic">
+              <span className="text-5xl font-bold italic">
                 Vincent Langlois
               </span>
               ,
@@ -69,7 +69,7 @@ export default function Home() {
                   href="https://github.com/vtlanglois"
                   aria-label="Github"
                 >
-                  <GithubLogoIcon size="48" />
+                  <GithubLogoIcon size="48" weight="duotone" />
                 </Link>
                 <Link
                   variant="icon"
@@ -77,16 +77,13 @@ export default function Home() {
                   href="https://www.linkedin.com/in/vtlanglois/"
                   aria-label="LinkedIn"
                 >
-                  <LinkedinLogoIcon size="48" />
+                  <LinkedinLogoIcon size="48" weight="duotone" />
                 </Link>
               </div>
             </div>
           </Card>
         </Section>
-        <Section>
-          <Text as="h2" variant="heading2">
-            Experience
-          </Text>
+        <Section heading="Experience">
           <Stack>
             <Card>
               <Text as="h3" variant="heading3">
@@ -120,10 +117,7 @@ export default function Home() {
             </Card>
           </Stack>
         </Section>
-        <Section>
-          <Text as="h2" variant="heading2">
-            Projects
-          </Text>
+        <Section heading="Projects">
           <Grid>
             <Card>
               <Text as="h3" variant="heading3">
