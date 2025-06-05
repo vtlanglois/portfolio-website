@@ -25,7 +25,7 @@ const variantStyles: Record<
   icon: {
     base: "inline-flex items-center justify-center rounded-xl p-2",
     primary:
-      "transition-color bg-transparent text-foreground-secondary dark:text-secondary shadow-none motion-safe:transition-shadow motion-safe:transition-transform motion-safe:duration-200 motion-safe:hover:translate-x-0.5 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-105 hover:bg-blue-50 hover:text-blue-600 hover:shadow-sm",
+      "transition-color bg-transparent text-secondary dark:text-secondary shadow-none motion-safe:transition-shadow motion-safe:transition-transform motion-safe:duration-200 motion-safe:hover:translate-x-0.5 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-105 hover:bg-blue-50 hover:text-blue-600 hover:shadow-sm",
     secondary: "text-gray-800 hover:text-gray-900",
   },
   text: {
