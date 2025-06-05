@@ -19,6 +19,6 @@ const variantStyles = {
 
 export default function Text({ as, variant, children, className }: TextProps) {
   const Element = as;
-  const classes = clsx(variantStyles[variant], className, "text-white");
+  const classes = clsx(variantStyles[variant], className, "text-foreground");
   return <Element className={classes}>{children}</Element>;
 }
