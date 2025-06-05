@@ -22,9 +22,9 @@ export default function Home() {
         <Section>
           <Card className="flex max-w-xl flex-col items-start justify-start gap-3">
             <div className="flex flex-row gap-1">
-              <HandWavingIcon size="64" weight="duotone" />
-              <HandPeaceIcon size="64" weight="duotone" />
-              <HandPointingIcon size="64" weight="duotone" mirrored />
+              <HandWavingIcon size="64" weight="duotone" className="hand-icon"/>
+              <HandPeaceIcon size="64" weight="duotone" className="hand-icon" />
+              <HandPointingIcon size="64" weight="duotone" mirrored className="hand-icon" />
             </div>
             <Text as="h1" variant="heading1">
               Hiya! I'm
