@@ -13,12 +13,12 @@ interface TextProps
 const variantStyles = {
   heading1: "font-serif text-4xl",
   heading2: "font-serif text-3xl",
-  heading3: "text-2xl",
+  heading3: "font-serif text-2xl",
   paragraph: "text-xl",
 };
 
 export default function Text({ as, variant, children, className }: TextProps) {
   const Element = as;
-  const classes = clsx(variantStyles[variant], className);
+  const classes = clsx(variantStyles[variant], className, "text-white");
   return <Element className={classes}>{children}</Element>;
 }
