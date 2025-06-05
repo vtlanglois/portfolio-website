@@ -20,7 +20,7 @@ export default function Home() {
     <Wrapper>
       <main>
         <Section>
-          <Card className="flex max-w-xl flex-col items-start justify-start gap-3">
+          <Card className="flex max-w-4xl flex-col items-start justify-start gap-3">
             <div className="flex flex-row gap-1">
               <HandWavingIcon
                 size="64"
