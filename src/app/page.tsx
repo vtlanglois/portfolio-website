@@ -14,6 +14,7 @@ import Card from "@/components/Card";
 import Section from "@/components/Section";
 import Grid from "@/components/Grid";
 import Stack from "@/components/Stack";
+import TagList from "@/components/TagList";
 
 export default function Home() {
   return (
@@ -51,7 +52,7 @@ export default function Home() {
               engineer.
             </Text>
             <div className="flex w-full flex-row items-center justify-between gap-3">
-              <div className="flex flex-row gap-2">
+              <div className="flex flex-row gap-3">
                 <Link
                   variant="button"
                   appearance="primary"
@@ -78,7 +79,7 @@ export default function Home() {
                   href="https://github.com/vtlanglois"
                   aria-label="Github"
                 >
-                  <GithubLogoIcon size="48" weight="duotone" />
+                  <GithubLogoIcon size="32" weight="duotone" />
                 </Link>
                 <Link
                   variant="icon"
@@ -86,7 +87,7 @@ export default function Home() {
                   href="https://www.linkedin.com/in/vtlanglois/"
                   aria-label="LinkedIn"
                 >
-                  <LinkedinLogoIcon size="48" weight="duotone" />
+                  <LinkedinLogoIcon size="32" weight="duotone" />
                 </Link>
               </div>
             </div>
@@ -113,6 +114,7 @@ export default function Home() {
                 for the pharmaceutical industry, focusing on improving patient
                 outcomes through technology.
               </Text>
+              <TagList tags={["JavaScript", "React", "Node.js"]} />
             </Card>
             <Card>
               <Text as="h3" variant="heading3">
