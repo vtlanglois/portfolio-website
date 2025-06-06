@@ -17,9 +17,9 @@ const variantStyles: Record<
   Record<LinkAppearance, string> & { base: string }
 > = {
   button: {
-    base: "inline-flex p-3 items-center justify-center gap-2 rounded-xl font-medium",
+    base: "inline-flex p-3 items-center justify-center gap-2 rounded-xl font-medium text-md",
     primary:
-      "bg-secondary transition-color text-foreground-secondary font-semibold shadow-none motion-safe:transition-shadow motion-safe:transition-transform motion-safe:duration-200 motion-safe:hover:translate-x-0.5 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-105 hover:bg-[#E3244A] hover:shadow-sm",
+      "bg-secondary transition-color text-foreground-secondary font-semibold shadow-none motion-safe:transition-shadow motion-safe:transition-transform motion-safe:duration-200 motion-safe:hover:translate-x-0.5 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-105 hover:bg-secondary-50 active:bg-secondary-300 hover:shadow-sm",
     secondary: "bg-gray-200 hover:bg-gray-300 text-gray-800",
   },
   icon: {

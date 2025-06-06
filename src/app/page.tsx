@@ -158,6 +158,15 @@ export default function Home() {
             </Text>
           </Stack>
         </Grid>
+        <Link
+          variant="button"
+          appearance="primary"
+          href="/projects"
+          className="self-end"
+        >
+          <KanbanIcon size="24" weight="duotone" />
+          View All Projects
+        </Link>
       </Section>
     </>
   );
