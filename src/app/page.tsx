@@ -94,8 +94,8 @@ export default function Home() {
           </Card>
         </Section>
         <Section heading="Experience">
-          <Stack>
-            <Card>
+          <Stack className="gap-6">
+            <Stack>
               <Text as="h3" variant="heading3">
                 Senior Software Engineer at Eli Lilly and Company
               </Text>
@@ -104,8 +104,8 @@ export default function Home() {
                 for the pharmaceutical industry, focusing on improving patient
                 outcomes through technology.
               </Text>
-            </Card>
-            <Card>
+            </Stack>
+            <Stack>
               <Text as="h3" variant="heading3">
                 Senior Software Engineer at Eli Lilly and Company
               </Text>
@@ -115,8 +115,8 @@ export default function Home() {
                 outcomes through technology.
               </Text>
               <TagList tags={["JavaScript", "React", "Node.js"]} />
-            </Card>
-            <Card>
+            </Stack>
+            <Stack>
               <Text as="h3" variant="heading3">
                 Senior Software Engineer at Eli Lilly and Company
               </Text>
@@ -125,20 +125,20 @@ export default function Home() {
                 for the pharmaceutical industry, focusing on improving patient
                 outcomes through technology.
               </Text>
-            </Card>
+            </Stack>
           </Stack>
         </Section>
         <Section heading="Projects">
           <Grid>
-            <Card>
+            <Stack>
               <Text as="h3" variant="heading3">
                 Project 1
               </Text>
               <Text as="p" variant="paragraph">
                 Description of project 1.
               </Text>
-            </Card>
-            <Card>
+            </Stack>
+            <Stack>
               <Text as="h3" variant="heading3">
                 Project 2
               </Text>
@@ -148,8 +148,11 @@ export default function Home() {
                 voluptatum tenetur debitis et a. Optio odit sunt ut, repellat in
                 error temporibus nemo?
               </Text>
-            </Card>
-            <Card>
+              <TagList
+                tags={["JavaScript", "React", "Node.js", "HTML & CSS", "A11y"]}
+              />
+            </Stack>
+            <Stack>
               <Text as="h3" variant="heading3">
                 Project 3
               </Text>
@@ -157,7 +160,7 @@ export default function Home() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam, voluptatum. Quisquam, voluptatum.
               </Text>
-            </Card>
+            </Stack>
           </Grid>
         </Section>
       </main>
