@@ -13,8 +13,8 @@ interface TextProps
 const variantStyles = {
   heading1: "font-serif font-bold text-4xl",
   heading2: "font-serif font-bold text-3xl",
-  heading3: "font-serif text-xl font-semibold italic",
-  paragraph: "text-xl",
+  heading3: "font-serif text-xl font-light",
+  paragraph: "font-sans text-xl tracking-tight",
 };
 
 export default function Text({ as, variant, children, className }: TextProps) {
