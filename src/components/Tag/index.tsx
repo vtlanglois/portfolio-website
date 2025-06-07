@@ -11,6 +11,9 @@ import {
   GitMergeIcon,
   GithubLogoIcon,
   FileCodeIcon,
+  BrowserIcon,
+  CircuitryIcon,
+  UsersIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import clsx from "clsx";
 
@@ -25,6 +28,9 @@ export type IconName =
   | "git"
   | "github"
   | "file-code"
+  | "browser"
+  | "circuit"
+  | "users"
   | TagVariant;
 
 interface TagProps
@@ -56,6 +62,9 @@ const icons = {
   git: <GitMergeIcon weight="fill" className="inline-block" />,
   github: <GithubLogoIcon weight="fill" className="inline-block" />,
   "file-code": <FileCodeIcon weight="fill" className="inline-block" />,
+  browser: <BrowserIcon weight="fill" className="inline-block" />,
+  circuit: <CircuitryIcon weight="fill" className="inline-block" />,
+  users: <UsersIcon weight="fill" className="inline-block" />,
 };
 
 export default function Tag({

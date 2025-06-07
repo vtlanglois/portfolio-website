@@ -76,7 +76,12 @@ const versionControlTags: Record<string, TagItem> = {
 };
 
 const hardwareTags: Record<string, TagItem> = {
-  Arduino: { text: "Arduino", variant: "tech", group: "hardware" },
+  Arduino: {
+    text: "Arduino",
+    variant: "tech",
+    group: "hardware",
+    icon: "circuit",
+  },
 };
 
 const miscTags: Record<string, TagItem> = {
@@ -97,13 +102,19 @@ const toolTags: Record<string, TagItem> = {
     group: "tool",
   },
   Jest: { text: "Jest", variant: "tech", icon: "file-code", group: "tool" },
-  JIRA: { text: "JIRA", variant: "tech", group: "tool" },
-  Confluence: { text: "Confluence", variant: "tech", group: "tool" },
-  Slack: { text: "Slack", variant: "tech", group: "tool" },
+  JIRA: { text: "JIRA", variant: "tech", group: "tool", icon: "browser" },
+  Confluence: {
+    text: "Confluence",
+    variant: "tech",
+    group: "tool",
+    icon: "browser",
+  },
+  Slack: { text: "Slack", variant: "tech", group: "tool", icon: "browser" },
   "Microsoft Teams": {
     text: "Microsoft Teams",
     variant: "tech",
     group: "tool",
+    icon: "browser",
   },
 };
 
@@ -121,8 +132,14 @@ const interpersonalTags: Record<string, TagItem> = {
     text: "Project Management",
     variant: "human",
     group: "interpersonal",
+    icon: "users",
   },
-  Teamwork: { text: "Teamwork", variant: "human", group: "interpersonal" },
+  Teamwork: {
+    text: "Teamwork",
+    variant: "human",
+    group: "interpersonal",
+    icon: "users",
+  },
   "Problem Solving": {
     text: "Problem Solving",
     variant: "human",
@@ -147,17 +164,20 @@ const interpersonalTags: Record<string, TagItem> = {
     text: "Communication",
     variant: "human",
     group: "interpersonal",
+    icon: "users",
   },
   Empathy: { text: "Empathy", variant: "human", group: "interpersonal" },
   "Cross-Functional Collaboration": {
     text: "Cross-Functional Collaboration",
     variant: "human",
     group: "interpersonal",
+    icon: "users",
   },
   "Cross-Company Collaboration": {
     text: "Cross-Company Collaboration",
     variant: "human",
     group: "interpersonal",
+    icon: "users",
   },
   Passionate: { text: "Passionate", variant: "human", group: "interpersonal" },
 };
