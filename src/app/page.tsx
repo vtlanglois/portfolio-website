@@ -10,6 +10,7 @@ import {
   KanbanIcon,
   BriefcaseIcon,
   BooksIcon,
+  ListStarIcon,
 } from "@phosphor-icons/react/ssr";
 import Link from "@/components/Link";
 import Card from "@/components/Card";
@@ -137,6 +138,64 @@ export default function Home() {
               outcomes through technology.
             </Text>
           </Stack>
+        </Stack>
+      </Section>
+      <Section>
+        <SectionHeader>
+          <ListStarIcon size="32" weight="fill" />
+          Skills
+        </SectionHeader>
+        <Stack>
+          <Text as="h3" variant="heading3">
+            Web Development
+          </Text>
+          <TagList
+            tags={[
+              TAGS.JavaScript,
+              TAGS.TypeScript,
+              TAGS.React,
+              TAGS["Next.js"],
+              TAGS.Tailwind,
+              TAGS.Bootstrap,
+              TAGS["Node.js"],
+              TAGS.Accessibility,
+            ]}
+          />
+          <Text as="h3" variant="heading3">
+            Interpersonal
+          </Text>
+          <TagList
+            tags={[
+              TAGS["Project Management"],
+              TAGS.Teamwork,
+              TAGS["Problem Solving"],
+            ]}
+          />
+          <Text as="h3" variant="heading3">
+            Technical
+          </Text>
+          <TagList
+            tags={[
+              TAGS.Python,
+              TAGS.C,
+              TAGS.Java,
+              TAGS.Arduino,
+              TAGS.Markdown,
+              TAGS.GenAI,
+            ]}
+          />
+          <Text as="h3" variant="heading3">
+            Tools
+          </Text>
+          <TagList
+            tags={[
+              TAGS.Git,
+              TAGS.GitHub,
+              TAGS.Figma,
+              TAGS["GitHub Copilot"],
+              TAGS["Visual Studio Code"],
+            ]}
+          />
         </Stack>
       </Section>
       <Section>

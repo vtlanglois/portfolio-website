@@ -5,12 +5,27 @@ import {
   WrenchIcon,
   ScrollIcon,
   RobotIcon,
+  AtomIcon,
+  PaletteIcon,
+  FigmaLogoIcon,
+  GitMergeIcon,
+  GithubLogoIcon,
+  FileCodeIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import clsx from "clsx";
 
 export type TagVariant = "tech" | "human" | "topic";
 
-export type IconName = "a11y" | "robot" | TagVariant;
+export type IconName =
+  | "a11y"
+  | "robot"
+  | "atom"
+  | "palette"
+  | "figma"
+  | "git"
+  | "github"
+  | "file-code" 
+  | TagVariant;
 
 interface TagProps
   extends WithVariant<TagVariant>,
@@ -35,6 +50,12 @@ const variantIcons = {
 const icons = {
   a11y: <PersonArmsSpreadIcon weight="fill" className="inline-block" />,
   robot: <RobotIcon weight="fill" className="inline-block" />,
+  atom: <AtomIcon weight="fill" className="inline-block" />,
+  palette: <PaletteIcon weight="fill" className="inline-block" />,
+  figma: <FigmaLogoIcon weight="fill" className="inline-block" />,
+  git: <GitMergeIcon weight="fill" className="inline-block" />,
+  github: <GithubLogoIcon weight="fill" className="inline-block" />,
+  "file-code": <FileCodeIcon weight="fill" className="inline-block" />,
 };
 
 export default function Tag({
@@ -51,7 +72,6 @@ export default function Tag({
 
   const selectedIcon = () => {
     if (icon) {
-      console.log("ICON!!!");
       return icons[icon];
     }
     return variantIcons[variant];
