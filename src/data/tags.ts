@@ -1,4 +1,4 @@
-import type { TagItem } from "@/components/TagList";
+import type { TagItem } from "@/types/tagTypes";
 
 const frameworkTags: Record<string, TagItem> = {
   React: { text: "React", variant: "tech", icon: "atom", group: "frameworks" },
