@@ -11,6 +11,10 @@ import {
   BriefcaseIcon,
   BooksIcon,
   ListStarIcon,
+  CodeBlockIcon,
+  ToolboxIcon,
+  UsersThreeIcon,
+  BrowserIcon
 } from "@phosphor-icons/react/ssr";
 import Link from "@/components/Link";
 import Card from "@/components/Card";
@@ -147,6 +151,7 @@ export default function Home() {
         </SectionHeader>
         <Stack>
           <Text as="h3" variant="heading3">
+            <BrowserIcon weight="fill" />
             Web Development
           </Text>
           <TagList
@@ -162,6 +167,7 @@ export default function Home() {
             ]}
           />
           <Text as="h3" variant="heading3">
+            <UsersThreeIcon weight="fill" />
             Interpersonal
           </Text>
           <TagList
@@ -172,6 +178,7 @@ export default function Home() {
             ]}
           />
           <Text as="h3" variant="heading3">
+            <CodeBlockIcon weight="fill" />
             Technical
           </Text>
           <TagList
@@ -185,6 +192,7 @@ export default function Home() {
             ]}
           />
           <Text as="h3" variant="heading3">
+            <ToolboxIcon weight="fill" />
             Tools
           </Text>
           <TagList
