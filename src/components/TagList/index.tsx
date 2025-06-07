@@ -25,7 +25,7 @@ export default function TagList({
   ariaLabel,
   className,
 }: TagListProps) {
-  const classes = clsx("flex flex-wrap gap-x-2 gap-y-4", className);
+  const classes = clsx("flex flex-wrap gap-x-2 gap-y-3", className);
 
   const sortedTags = sortTags(tags);
   console.log("Sorted Tags:", sortedTags);
