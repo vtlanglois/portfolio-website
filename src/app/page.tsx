@@ -122,7 +122,8 @@ export default function Home() {
                 { text: "React", variant: "tech" },
                 { text: "Project Management", variant: "human" },
                 { text: "Node.js", variant: "tech" },
-                {text: "Accessibility", variant: "human", icon: "a11y" },
+                { text: "Accessibility", variant: "topic", icon: "a11y" },
+                { text: "GenAI", variant: "topic", icon: "robot" },
               ]}
             />
           </Stack>

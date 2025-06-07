@@ -30,6 +30,7 @@
   --cyan: #aeecef;
   --purple: #9b287b;
   --green: #417b5a;
+  --magenta: #9e4770;
 
   --background: linear-gradient(
     180deg,
@@ -74,6 +75,7 @@
   --color-cyan: var(--cyan);
   --color-purple: var(--purple);
   --color-green: var(--green);
+  --color-magenta: var(--magenta);
 
   --font-sans: var(--font-inter);
   --font-serif: var(--font-merriweather);

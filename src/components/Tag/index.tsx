@@ -1,10 +1,16 @@
 import { WithVariant } from "@/types";
-import { PersonArmsSpreadIcon, PersonIcon, WrenchIcon } from "@phosphor-icons/react/dist/ssr";
+import {
+  PersonArmsSpreadIcon,
+  PersonIcon,
+  WrenchIcon,
+  ScrollIcon,
+  RobotIcon,
+} from "@phosphor-icons/react/dist/ssr";
 import clsx from "clsx";
 
-export type TagVariant = "tech" | "human";
+export type TagVariant = "tech" | "human" | "topic";
 
-export type IconName = "a11y";
+export type IconName = "a11y" | "robot" | TagVariant;
 
 interface TagProps
   extends WithVariant<TagVariant>,
@@ -12,22 +18,24 @@ interface TagProps
     React.ComponentProps<"span"> {
   /** Optional icon to display in the tag */
   icon?: IconName;
-    }
+}
 
 const variantStyles = {
   tech: "bg-secondary-100 text-foreground-secondary dark:bg-red dark:text-foreground",
   human: "bg-green text-foreground dark:bg-purple",
+  topic: "bg-magenta text-foreground",
 };
 
 const variantIcons = {
   tech: <WrenchIcon weight="fill" className="inline-block" />,
   human: <PersonIcon weight="fill" className="inline-block" />,
+  topic: <ScrollIcon weight="fill" className="inline-block" />,
 };
 
-const icons: Record<IconName, React.ReactElement> = {
+const icons = {
   a11y: <PersonArmsSpreadIcon weight="fill" className="inline-block" />,
-}
-
+  robot: <RobotIcon weight="fill" className="inline-block" />,
+};
 
 export default function Tag({
   variant = "tech",
@@ -40,9 +48,18 @@ export default function Tag({
     variantStyles[variant],
     className,
   );
+
+  const selectedIcon = () => {
+    if (icon) {
+      console.log("ICON!!!");
+      return icons[icon];
+    }
+    return variantIcons[variant];
+  };
+
   return (
     <span className={classes}>
-      {(icon && icons[icon]) || variantIcons[variant]}
+      {selectedIcon()}
       {children}
     </span>
   );

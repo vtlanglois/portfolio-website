@@ -36,7 +36,9 @@ export default function TagList({
     <ul className={classes} aria-label={ariaLabel}>
       {sortedTags.map((tag, index) => (
         <li key={index}>
-          <Tag variant={tag.variant || defaultVariant} icon={tag.icon}>{tag.text}</Tag>
+          <Tag variant={tag.variant || defaultVariant} icon={tag.icon}>
+            {tag.text}
+          </Tag>
         </li>
       ))}
     </ul>
