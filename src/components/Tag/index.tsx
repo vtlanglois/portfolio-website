@@ -14,6 +14,7 @@ import {
   BrowserIcon,
   CircuitryIcon,
   UsersIcon,
+  DatabaseIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import clsx from "clsx";
 
@@ -31,6 +32,7 @@ export type IconName =
   | "browser"
   | "circuit"
   | "users"
+  | "db"
   | TagVariant;
 
 interface TagProps
@@ -65,6 +67,7 @@ const icons = {
   browser: <BrowserIcon weight="fill" className="inline-block" />,
   circuit: <CircuitryIcon weight="fill" className="inline-block" />,
   users: <UsersIcon weight="fill" className="inline-block" />,
+  db: <DatabaseIcon weight="fill" className="inline-block" />,
 };
 
 export default function Tag({
@@ -74,14 +77,14 @@ export default function Tag({
   className = "",
 }: TagProps) {
   const classes = clsx(
-    "rounded-full px-3 py-2 font-sans text-sm font-bold flex gap-1 items-center",
+    "flex items-center gap-1 rounded-full px-2 py-1 font-sans text-sm leading-none font-bold tracking-tight lg:px-3 lg:py-1.5",
     variantStyles[variant],
     className,
   );
 
   const selectedIcon = () => {
-    if (icon) {
-      return icons[icon];
+    if (icon && icon in icons) {
+      return icons[icon as keyof typeof icons];
     }
     return variantIcons[variant];
   };

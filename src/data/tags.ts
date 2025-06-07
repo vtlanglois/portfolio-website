@@ -59,10 +59,21 @@ const cssTags: Record<string, TagItem> = {
   },
   CSS: { text: "CSS", variant: "tech", icon: "file-code", group: "css" },
   SCSS: { text: "SCSS", variant: "tech", icon: "file-code", group: "css" },
+  SQL: {
+    text: "SQL",
+    variant: "tech",
+    icon: "db",
+    group: "misc",
+  },
 };
 
 const backendTags: Record<string, TagItem> = {
   "Node.js": { text: "Node.js", variant: "tech", group: "backend" },
+  "API Integration": {
+    text: "API Integration",
+    variant: "topic",
+    group: "backend",
+  },
 };
 
 const versionControlTags: Record<string, TagItem> = {
@@ -85,7 +96,12 @@ const hardwareTags: Record<string, TagItem> = {
 };
 
 const miscTags: Record<string, TagItem> = {
-  Markdown: { text: "Markdown", variant: "tech", group: "misc" },
+  Markdown: {
+    text: "Markdown",
+    variant: "tech",
+    group: "misc",
+    icon: "file-code",
+  },
 };
 
 const toolTags: Record<string, TagItem> = {
@@ -115,6 +131,23 @@ const toolTags: Record<string, TagItem> = {
     variant: "tech",
     group: "tool",
     icon: "browser",
+  },
+  Postman: {
+    text: "Postman",
+    variant: "tech",
+    group: "tool",
+    icon: "browser",
+  },
+  VoiceOver: {
+    text: "VoiceOver",
+    variant: "tech",
+    group: "tool",
+    icon: "a11y",
+  },
+  Trello: {
+    text: "Trello",
+    variant: "tech",
+    group: "tool",
   },
 };
 
@@ -155,6 +188,11 @@ const interpersonalTags: Record<string, TagItem> = {
     variant: "topic",
     group: "interpersonal",
   },
+  Prototyping: {
+    text: "Prototyping",
+    variant: "topic",
+    group: "interpersonal",
+  },
   Documentation: {
     text: "Documentation",
     variant: "topic",
@@ -180,6 +218,22 @@ const interpersonalTags: Record<string, TagItem> = {
     icon: "users",
   },
   Passionate: { text: "Passionate", variant: "human", group: "interpersonal" },
+  Adaptability: {
+    text: "Adaptability",
+    variant: "human",
+    group: "interpersonal",
+  },
+  Mentorship: {
+    text: "Mentorship",
+    variant: "human",
+    group: "interpersonal",
+    icon: "users",
+  },
+  "Continuous Learning": {
+    text: "Continuous Learning",
+    variant: "human",
+    group: "interpersonal",
+  },
 };
 
 const topicTags: Record<string, TagItem> = {
@@ -190,6 +244,7 @@ const topicTags: Record<string, TagItem> = {
     icon: "a11y",
     group: "topic",
   },
+  WCAG: { text: "WCAG", variant: "topic", icon: "a11y", group: "topic" },
   GenAI: { text: "GenAI", variant: "topic", icon: "robot", group: "topic" },
 };
 

@@ -170,6 +170,8 @@ export default function Home() {
               TAGS.Storybook,
               TAGS.Jest,
               TAGS.SEO,
+              TAGS.WCAG,
+              TAGS["API Integration"],
             ]}
           />
           <Text as="h3" variant="heading3">
@@ -186,7 +188,10 @@ export default function Home() {
               TAGS.Empathy,
               TAGS["Cross-Functional Collaboration"],
               TAGS["Cross-Company Collaboration"],
+              TAGS.Adaptability,
               TAGS.Passionate,
+              TAGS.Mentorship,
+              TAGS["Continuous Learning"],
             ]}
           />
           <Text as="h3" variant="heading3">
@@ -203,6 +208,8 @@ export default function Home() {
               TAGS.GenAI,
               TAGS["Bug Hunting"],
               TAGS["Code Review"],
+              TAGS.Prototyping,
+              TAGS.SQL,
             ]}
           />
           <Text as="h3" variant="heading3">
@@ -220,6 +227,9 @@ export default function Home() {
               TAGS.Confluence,
               TAGS.Slack,
               TAGS["Microsoft Teams"],
+              TAGS.Postman,
+              TAGS.VoiceOver,
+              TAGS.Trello,
             ]}
           />
         </Stack>
