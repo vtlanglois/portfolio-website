@@ -23,7 +23,7 @@ interface TagProps
 const variantStyles = {
   tech: "bg-secondary-100 text-foreground-secondary dark:bg-red dark:text-foreground",
   human: "bg-green text-foreground dark:bg-purple",
-  topic: "bg-magenta text-foreground",
+  topic: "bg-magenta text-foreground dark:bg-teal",
 };
 
 const variantIcons = {
