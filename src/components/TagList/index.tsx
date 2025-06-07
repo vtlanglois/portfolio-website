@@ -1,30 +1,7 @@
 import Tag from "@/components/Tag";
-import type { TagVariant, IconName } from "@/components/Tag";
+import type { TagVariant, TagItem } from "@/types/tagTypes";
 import { sortTags } from "@/utils/tagUtils";
 import clsx from "clsx";
-
-export type TagGroup =
-  | "languages"
-  | "frameworks"
-  | "css"
-  | "backend"
-  | "version control"
-  | "hardware"
-  | "misc"
-  | "tool"
-  | "ai"
-  | "interpersonal"
-  | "topic";
-export interface TagItem {
-  /** The tag text */
-  text: string;
-  /** Optional variant for the tag */
-  variant?: TagVariant;
-  /** Optional icon name for the tag */
-  icon?: IconName;
-  /** Group name for the tag */
-  group: TagGroup;
-}
 
 interface TagListProps extends React.HTMLAttributes<HTMLUListElement> {
   /** Tags to render in list format */

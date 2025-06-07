@@ -17,23 +17,7 @@ import {
   DatabaseIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import clsx from "clsx";
-
-export type TagVariant = "tech" | "human" | "topic";
-
-export type IconName =
-  | "a11y"
-  | "robot"
-  | "atom"
-  | "palette"
-  | "figma"
-  | "git"
-  | "github"
-  | "file-code"
-  | "browser"
-  | "circuit"
-  | "users"
-  | "db"
-  | TagVariant;
+import { TagVariant, IconName } from "@/types/tagTypes";
 
 interface TagProps
   extends WithVariant<TagVariant>,
