@@ -13,7 +13,7 @@ interface TextProps
 const variantStyles = {
   heading1: "font-serif font-bold text-4xl",
   heading2: "font-serif font-bold text-3xl",
-  heading3: "font-serif text-xl font-light",
+  heading3: "font-serif text-xl light:font-light",
   paragraph: "font-sans text-xl tracking-tight",
 };
 
