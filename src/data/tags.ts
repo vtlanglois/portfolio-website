@@ -78,11 +78,106 @@ export const TAGS: Record<string, TagItem> = {
     variant: "human",
     group: "interpersonal",
   },
+  "Bug Hunting": {
+    text: "Bug Hunting",
+    variant: "topic",
+    group: "interpersonal",
+  },
+  "Code Review": {
+    text: "Code Review",
+    variant: "topic",
+    group: "interpersonal",
+  },
+  Documentation: {
+    text: "Documentation",
+    variant: "topic",
+    group: "interpersonal",
+  },
+  Communication: {
+    text: "Communication",
+    variant: "human",
+    group: "interpersonal",
+  },
+  Empathy: {
+    text: "Empathy",
+    variant: "human",
+    group: "interpersonal",
+  },
+  "Cross-Functional Collaboration": {
+    text: "Cross-Functional Collaboration",
+    variant: "human",
+    group: "interpersonal",
+  },
+  Storybook: {
+    text: "Storybook",
+    variant: "tech",
+    icon: "file-code",
+    group: "tool",
+  },
+  HTML: {
+    text: "HTML",
+    variant: "tech",
+    icon: "file-code",
+    group: "languages",
+  },
+  CSS: {
+    text: "CSS",
+    variant: "tech",
+    icon: "file-code",
+    group: "css",
+  },
+  SCSS: {
+    text: "SCSS",
+    variant: "tech",
+    icon: "file-code",
+    group: "css",
+  },
+  Jest: {
+    text: "Jest",
+    variant: "tech",
+    icon: "file-code",
+    group: "tool",
+  },
+  SEO: {
+    text: "SEO",
+    variant: "topic",
+    group: "topic",
+  },
   Accessibility: {
     text: "Accessibility",
     variant: "topic",
     icon: "a11y",
     group: "topic",
+  },
+  "Cross-Company Collaboration": {
+    text: "Cross-Company Collaboration",
+    variant: "human",
+    group: "interpersonal",
+  },
+  Passionate: {
+    text: "Passionate",
+    variant: "human",
+    group: "interpersonal",
+  },
+  JIRA: {
+    text: "JIRA",
+    variant: "tech",
+    group: "tool",
+  },
+  Confluence: {
+    text: "Confluence",
+    variant: "tech",
+    group: "tool",
+  },
+  Slack: {
+    text: "Slack",
+    variant: "tech",
+    group: "tool",
+  },
+  "Microsoft Teams": {
+    text: "Microsoft Teams",
+    variant: "tech",
+    group: "tool",
   },
   GenAI: { text: "GenAI", variant: "topic", icon: "robot", group: "topic" },
 };

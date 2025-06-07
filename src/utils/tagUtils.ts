@@ -44,7 +44,11 @@ export const sortTags = (tags: TagItem[]): TagItem[] => {
 
   // Flatten the groups in alphabetical order
   Object.keys(groups)
-    .sort((a, b) => (groupPriority[a as TagGroup] || 99) - (groupPriority[b as TagGroup] || 99))
+    .sort(
+      (a, b) =>
+        (groupPriority[a as TagGroup] || 99) -
+        (groupPriority[b as TagGroup] || 99),
+    )
     .forEach((key) => {
       grouped.push(...groups[key]);
     });

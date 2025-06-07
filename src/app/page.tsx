@@ -14,7 +14,7 @@ import {
   CodeBlockIcon,
   ToolboxIcon,
   UsersThreeIcon,
-  BrowserIcon
+  BrowserIcon,
 } from "@phosphor-icons/react/ssr";
 import Link from "@/components/Link";
 import Card from "@/components/Card";
@@ -164,6 +164,12 @@ export default function Home() {
               TAGS.Bootstrap,
               TAGS["Node.js"],
               TAGS.Accessibility,
+              TAGS.HTML,
+              TAGS.CSS,
+              TAGS.SCSS,
+              TAGS.Storybook,
+              TAGS.Jest,
+              TAGS.SEO,
             ]}
           />
           <Text as="h3" variant="heading3">
@@ -175,6 +181,12 @@ export default function Home() {
               TAGS["Project Management"],
               TAGS.Teamwork,
               TAGS["Problem Solving"],
+              TAGS.Communication,
+              TAGS.Documentation,
+              TAGS.Empathy,
+              TAGS["Cross-Functional Collaboration"],
+              TAGS["Cross-Company Collaboration"],
+              TAGS.Passionate,
             ]}
           />
           <Text as="h3" variant="heading3">
@@ -189,6 +201,8 @@ export default function Home() {
               TAGS.Arduino,
               TAGS.Markdown,
               TAGS.GenAI,
+              TAGS["Bug Hunting"],
+              TAGS["Code Review"],
             ]}
           />
           <Text as="h3" variant="heading3">
@@ -202,6 +216,10 @@ export default function Home() {
               TAGS.Figma,
               TAGS["GitHub Copilot"],
               TAGS["Visual Studio Code"],
+              TAGS.JIRA,
+              TAGS.Confluence,
+              TAGS.Slack,
+              TAGS["Microsoft Teams"],
             ]}
           />
         </Stack>
