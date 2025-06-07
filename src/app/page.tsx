@@ -57,7 +57,7 @@ export default function Home() {
                 href="/about"
                 aria-label="About Me"
               >
-                <InfoIcon size="24" weight="duotone" />
+                <InfoIcon size="24" weight="fill" />
                 About Me
               </Link>
               <Link
@@ -66,7 +66,7 @@ export default function Home() {
                 href="#"
                 aria-label="My Resume"
               >
-                <NotebookIcon size="24" weight="duotone" />
+                <NotebookIcon size="24" weight="fill" />
                 Resume
               </Link>
             </div>
@@ -77,7 +77,7 @@ export default function Home() {
                 href="https://github.com/vtlanglois"
                 aria-label="Github"
               >
-                <GithubLogoIcon size="32" weight="duotone" />
+                <GithubLogoIcon size="32" weight="fill" />
               </Link>
               <Link
                 variant="icon"
@@ -85,7 +85,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/vtlanglois/"
                 aria-label="LinkedIn"
               >
-                <LinkedinLogoIcon size="32" weight="duotone" />
+                <LinkedinLogoIcon size="32" weight="fill" />
               </Link>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function Home() {
       </Section>
       <Section>
         <SectionHeader>
-          <BriefcaseIcon size="32" weight="duotone" />
+          <BriefcaseIcon size="32" weight="fill" />
           Experience
         </SectionHeader>
         <Stack className="gap-6">
@@ -132,7 +132,7 @@ export default function Home() {
       </Section>
       <Section>
         <SectionHeader>
-          <BooksIcon size="32" weight="duotone" />
+          <BooksIcon size="32" weight="fill" />
           Projects
         </SectionHeader>
         <Grid>
