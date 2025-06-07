@@ -3,6 +3,18 @@ import type { TagVariant, IconName } from "@/components/Tag";
 import { sortTags } from "@/utils/tagUtils";
 import clsx from "clsx";
 
+export type TagGroup =
+  | "languages"
+  | "frameworks"
+  | "css"
+  | "backend"
+  | "version control"
+  | "hardware"
+  | "misc"
+  | "tool"
+  | "ai"
+  | "interpersonal"
+  | "topic";
 export interface TagItem {
   /** The tag text */
   text: string;
@@ -10,6 +22,8 @@ export interface TagItem {
   variant?: TagVariant;
   /** Optional icon name for the tag */
   icon?: IconName;
+  /** Group name for the tag */
+  group: TagGroup;
 }
 
 interface TagListProps extends React.HTMLAttributes<HTMLUListElement> {

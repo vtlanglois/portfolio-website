@@ -24,7 +24,7 @@ export type IconName =
   | "figma"
   | "git"
   | "github"
-  | "file-code" 
+  | "file-code"
   | TagVariant;
 
 interface TagProps
