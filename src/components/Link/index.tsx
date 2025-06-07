@@ -29,7 +29,7 @@ const variantStyles: Record<
     secondary: "text-gray-800 hover:text-gray-900",
   },
   text: {
-    base: "inline font-sans font-bold underline decoration-solid whitespace-normal",
+    base: "inline font-sans font-bold underline decoration-solid mx-0.2",
     primary: "text-foreground hover:text-cream dark:hover:text-cyan",
     secondary: "text-gray-800 hover:text-gray-900",
   },
