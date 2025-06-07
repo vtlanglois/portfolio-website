@@ -11,13 +11,13 @@ import {
   BriefcaseIcon,
   BooksIcon,
 } from "@phosphor-icons/react/ssr";
-import Wrapper from "@/components/Wrapper";
 import Link from "@/components/Link";
 import Card from "@/components/Card";
 import Section, { SectionHeader } from "@/components/Section";
 import Grid from "@/components/Grid";
 import Stack from "@/components/Stack";
 import TagList from "@/components/TagList";
+import { TAGS } from "@/data/tags";
 
 export default function Home() {
   return (
@@ -118,12 +118,12 @@ export default function Home() {
             </Text>
             <TagList
               tags={[
-                { text: "JavaScript", variant: "tech" },
-                { text: "React", variant: "tech" },
-                { text: "Project Management", variant: "human" },
-                { text: "Node.js", variant: "tech" },
-                { text: "Accessibility", variant: "topic", icon: "a11y" },
-                { text: "GenAI", variant: "topic", icon: "robot" },
+                TAGS.JavaScript,
+                TAGS.React,
+                TAGS["Project Management"],
+                TAGS["Node.js"],
+                TAGS.Accessibility,
+                TAGS.GenAI,
               ]}
             />
           </Stack>
@@ -165,10 +165,12 @@ export default function Home() {
             </Text>
             <TagList
               tags={[
-                { text: "JavaScript", variant: "tech" },
-                { text: "React", variant: "tech" },
-                { text: "Project Management", variant: "human" },
-                { text: "Node.js", variant: "tech" },
+                TAGS.JavaScript,
+                TAGS.React,
+                TAGS["Project Management"],
+                TAGS["Node.js"],
+                TAGS.Accessibility,
+                TAGS.GenAI,
               ]}
             />
           </Stack>
