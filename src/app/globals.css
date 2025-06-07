@@ -27,13 +27,16 @@
   --orange-900: #402d0f;
 
   --red: #cc2936;
+  --cyan: #aeecef;
+  --purple: #9b287b;
+  --green: #417b5a;
 
   --background: linear-gradient(
     180deg,
     var(--blue-200) 0%,
     var(--blue-300) 45%,
     var(--blue-600) 100%
-  ); /* #0079ba; */
+  );
   --foreground: var(--white);
   --foreground-secondary: var(--black);
   --secondary: var(--orange-100);
@@ -66,6 +69,11 @@
   --color-secondary-700: var(--orange-700);
   --color-secondary-800: var(--orange-800);
   --color-secondary-900: var(--orange-900);
+
+  --color-red: var(--red);
+  --color-cyan: var(--cyan);
+  --color-purple: var(--purple);
+  --color-green: var(--green);
 
   --font-sans: var(--font-inter);
   --font-serif: var(--font-merriweather);

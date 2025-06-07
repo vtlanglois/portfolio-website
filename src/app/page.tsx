@@ -116,7 +116,14 @@ export default function Home() {
               for the pharmaceutical industry, focusing on improving patient
               outcomes through technology.
             </Text>
-            <TagList tags={["JavaScript", "React", "Node.js"]} />
+            <TagList
+              tags={[
+                { text: "JavaScript", variant: "tech" },
+                { text: "React", variant: "tech" },
+                { text: "Project Management", variant: "human" },
+                { text: "Node.js", variant: "tech" },
+              ]}
+            />
           </Stack>
           <Stack>
             <Text as="h3" variant="heading3">
@@ -155,7 +162,12 @@ export default function Home() {
               error temporibus nemo?
             </Text>
             <TagList
-              tags={["JavaScript", "React", "Node.js", "HTML & CSS", "A11y"]}
+              tags={[
+                { text: "JavaScript", variant: "tech" },
+                { text: "React", variant: "tech" },
+                { text: "Project Management", variant: "human" },
+                { text: "Node.js", variant: "tech" },
+              ]}
             />
           </Stack>
           <Stack>
