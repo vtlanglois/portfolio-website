@@ -32,8 +32,9 @@ export const sortTags = (tags: TagItem[]): TagItem[] => {
     misc: 7,
     tool: 8,
     ai: 9,
-    interpersonal: 10,
-    topic: 11,
+    soft: 9,
+    interpersonal: 11,
+    topic: 12,
   };
 
   for (const tag of sorted) {

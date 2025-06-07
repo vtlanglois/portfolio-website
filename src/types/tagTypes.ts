@@ -26,6 +26,7 @@ export type TagGroup =
   | "misc"
   | "tool"
   | "ai"
+  | "soft"
   | "interpersonal"
   | "topic";
 

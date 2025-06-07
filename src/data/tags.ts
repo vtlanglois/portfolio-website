@@ -167,17 +167,6 @@ const interpersonalTags: Record<string, TagItem> = {
     group: "interpersonal",
     icon: "users",
   },
-  Teamwork: {
-    text: "Teamwork",
-    variant: "human",
-    group: "interpersonal",
-    icon: "users",
-  },
-  "Problem Solving": {
-    text: "Problem Solving",
-    variant: "human",
-    group: "interpersonal",
-  },
   "Bug Hunting": {
     text: "Bug Hunting",
     variant: "topic",
@@ -198,12 +187,6 @@ const interpersonalTags: Record<string, TagItem> = {
     variant: "topic",
     group: "interpersonal",
   },
-  Communication: {
-    text: "Communication",
-    variant: "human",
-    group: "interpersonal",
-    icon: "users",
-  },
   Empathy: { text: "Empathy", variant: "human", group: "interpersonal" },
   "Cross-Functional Collaboration": {
     text: "Cross-Functional Collaboration",
@@ -217,22 +200,42 @@ const interpersonalTags: Record<string, TagItem> = {
     group: "interpersonal",
     icon: "users",
   },
-  Passionate: { text: "Passionate", variant: "human", group: "interpersonal" },
+};
+
+const softSkills: Record<string, TagItem> = {
+  Teamwork: {
+    text: "Teamwork",
+    variant: "human",
+    group: "soft",
+    icon: "users",
+  },
+  "Problem Solving": {
+    text: "Problem Solving",
+    variant: "human",
+    group: "soft",
+  },
   Adaptability: {
     text: "Adaptability",
     variant: "human",
-    group: "interpersonal",
+    group: "soft",
   },
   Mentorship: {
     text: "Mentorship",
     variant: "human",
-    group: "interpersonal",
+    group: "soft",
     icon: "users",
   },
+  Communication: {
+    text: "Communication",
+    variant: "human",
+    group: "soft",
+    icon: "users",
+  },
+  Passionate: { text: "Passionate", variant: "human", group: "soft" },
   "Continuous Learning": {
     text: "Continuous Learning",
     variant: "human",
-    group: "interpersonal",
+    group: "soft",
   },
 };
 
@@ -258,6 +261,7 @@ export const TAGS: Record<string, TagItem> = {
   ...miscTags,
   ...toolTags,
   ...aiTags,
+  ...softSkills,
   ...interpersonalTags,
   ...topicTags,
 };
