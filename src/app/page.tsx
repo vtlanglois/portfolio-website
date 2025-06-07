@@ -207,9 +207,13 @@ export default function Home() {
               TAGS.Markdown,
               TAGS.GenAI,
               TAGS["Bug Hunting"],
+              TAGS["Bug Fixing"],
               TAGS["Code Review"],
               TAGS.Prototyping,
               TAGS.SQL,
+              TAGS["Game Development"],
+              TAGS["Game Design"],
+              TAGS["Game Testing"],
             ]}
           />
           <Text as="h3" variant="heading3">

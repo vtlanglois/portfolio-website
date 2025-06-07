@@ -13,6 +13,8 @@ export type IconName =
   | "circuit"
   | "users"
   | "db"
+  | "controller"
+  | "bug"
   | TagVariant;
 
 /** Used to pair similar tags together */

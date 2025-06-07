@@ -15,6 +15,8 @@ import {
   CircuitryIcon,
   UsersIcon,
   DatabaseIcon,
+  GameControllerIcon,
+  BugIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import clsx from "clsx";
 import { TagVariant, IconName } from "@/types/tagTypes";
@@ -52,6 +54,8 @@ const icons = {
   circuit: <CircuitryIcon weight="fill" className="inline-block" />,
   users: <UsersIcon weight="fill" className="inline-block" />,
   db: <DatabaseIcon weight="fill" className="inline-block" />,
+  controller: <GameControllerIcon weight="fill" className="inline-block" />,
+  bug: <BugIcon weight="fill" className="inline-block" />,
 };
 
 export default function Tag({

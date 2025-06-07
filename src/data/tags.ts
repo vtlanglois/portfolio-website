@@ -171,6 +171,13 @@ const interpersonalTags: Record<string, TagItem> = {
     text: "Bug Hunting",
     variant: "topic",
     group: "interpersonal",
+    icon: "bug",
+  },
+  "Bug Fixing": {
+    text: "Bug Fixing",
+    variant: "topic",
+    group: "interpersonal",
+    icon: "bug",
   },
   "Code Review": {
     text: "Code Review",
@@ -249,6 +256,24 @@ const topicTags: Record<string, TagItem> = {
   },
   WCAG: { text: "WCAG", variant: "topic", icon: "a11y", group: "topic" },
   GenAI: { text: "GenAI", variant: "topic", icon: "robot", group: "topic" },
+  "Game Design": {
+    text: "Game Design",
+    variant: "topic",
+    group: "topic",
+    icon: "palette",
+  },
+  "Game Development": {
+    text: "Game Development",
+    variant: "topic",
+    group: "topic",
+    icon: "controller",
+  },
+  "Game Testing": {
+    text: "Game Testing",
+    variant: "topic",
+    group: "topic",
+    icon: "bug",
+  },
 };
 
 export const TAGS: Record<string, TagItem> = {
