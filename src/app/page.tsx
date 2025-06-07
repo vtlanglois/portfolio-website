@@ -54,6 +54,20 @@ export default function Home() {
             currently working at Eli Lilly and Company as a senior software
             engineer.
           </Text>
+          <Text as="p" variant="paragraph">
+            Well this{" "}
+            <Link
+              variant="text"
+              appearance="primary"
+              href="https://www.example.com/"
+            >
+              a link
+            </Link>
+            {" "} is good
+          </Text>
+          <p>
+            Well this is a <a href="#">Link</a>
+          </p>
           <div className="flex w-full flex-row items-center justify-between gap-3">
             <div className="flex flex-row gap-3">
               <Link

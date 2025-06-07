@@ -29,8 +29,8 @@ const variantStyles: Record<
     secondary: "text-gray-800 hover:text-gray-900",
   },
   text: {
-    base: "text-decoration-underline font-sans",
-    primary: "text-blue-500 hover:text-blue-600 focus:ring-blue-500",
+    base: "inline font-sans font-bold underline decoration-solid whitespace-normal",
+    primary: "text-foreground hover:text-cream dark:hover:text-cyan",
     secondary: "text-gray-800 hover:text-gray-900",
   },
 };
