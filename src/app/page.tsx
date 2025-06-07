@@ -123,12 +123,12 @@ export default function Home() {
             </Text>
             <TagList
               tags={[
-                TAGS.JavaScript,
-                TAGS.React,
-                TAGS["Project Management"],
-                TAGS["Node.js"],
-                TAGS.Accessibility,
-                TAGS.GenAI,
+                TAGS.javascript,
+                TAGS.react,
+                TAGS.projectManagement,
+                TAGS.nodejs,
+                TAGS.accessibility,
+                TAGS.genai,
               ]}
             />
           </Stack>
@@ -156,22 +156,22 @@ export default function Home() {
           </Text>
           <TagList
             tags={[
-              TAGS.JavaScript,
-              TAGS.TypeScript,
-              TAGS.React,
-              TAGS["Next.js"],
-              TAGS.Tailwind,
-              TAGS.Bootstrap,
-              TAGS["Node.js"],
-              TAGS.Accessibility,
-              TAGS.HTML,
-              TAGS.CSS,
-              TAGS.SCSS,
-              TAGS.Storybook,
-              TAGS.Jest,
-              TAGS.SEO,
-              TAGS.WCAG,
-              TAGS["API Integration"],
+              TAGS.javascript,
+              TAGS.typescript,
+              TAGS.react,
+              TAGS.nextjs,
+              TAGS.tailwind,
+              TAGS.bootstrap,
+              TAGS.nodejs,
+              TAGS.accessibility,
+              TAGS.html,
+              TAGS.css,
+              TAGS.scss,
+              TAGS.storybook,
+              TAGS.jest,
+              TAGS.seo,
+              TAGS.wcag,
+              TAGS.apiIntegration,
             ]}
           />
           <Text as="h3" variant="heading3">
@@ -180,18 +180,18 @@ export default function Home() {
           </Text>
           <TagList
             tags={[
-              TAGS["Project Management"],
-              TAGS.Teamwork,
-              TAGS["Problem Solving"],
-              TAGS.Communication,
-              TAGS.Documentation,
-              TAGS.Empathy,
-              TAGS["Cross-Functional Collaboration"],
-              TAGS["Cross-Company Collaboration"],
-              TAGS.Adaptability,
-              TAGS.Passionate,
-              TAGS.Mentorship,
-              TAGS["Continuous Learning"],
+              TAGS.projectManagement,
+              TAGS.teamwork,
+              TAGS.problemSolving,
+              TAGS.communication,
+              TAGS.documentation,
+              TAGS.empathy,
+              TAGS.crossFunctionalCollaboration,
+              TAGS.crossCompanyCollaboration,
+              TAGS.adaptability,
+              TAGS.passionate,
+              TAGS.mentorship,
+              TAGS.continuousLearning,
             ]}
           />
           <Text as="h3" variant="heading3">
@@ -200,20 +200,20 @@ export default function Home() {
           </Text>
           <TagList
             tags={[
-              TAGS.Python,
-              TAGS.C,
-              TAGS.Java,
-              TAGS.Arduino,
-              TAGS.Markdown,
-              TAGS.GenAI,
-              TAGS["Bug Hunting"],
-              TAGS["Bug Fixing"],
-              TAGS["Code Review"],
-              TAGS.Prototyping,
-              TAGS.SQL,
-              TAGS["Game Development"],
-              TAGS["Game Design"],
-              TAGS["Game Testing"],
+              TAGS.python,
+              TAGS.c,
+              TAGS.java,
+              TAGS.arduino,
+              TAGS.markdown,
+              TAGS.genai,
+              TAGS.bugHunting,
+              TAGS.bugFixing,
+              TAGS.codeReview,
+              TAGS.prototyping,
+              TAGS.sql,
+              TAGS.gameDevelopment,
+              TAGS.gameDesign,
+              TAGS.gameTesting,
             ]}
           />
           <Text as="h3" variant="heading3">
@@ -222,18 +222,18 @@ export default function Home() {
           </Text>
           <TagList
             tags={[
-              TAGS.Git,
-              TAGS.GitHub,
-              TAGS.Figma,
-              TAGS["GitHub Copilot"],
-              TAGS["Visual Studio Code"],
-              TAGS.JIRA,
-              TAGS.Confluence,
-              TAGS.Slack,
-              TAGS["Microsoft Teams"],
-              TAGS.Postman,
-              TAGS.VoiceOver,
-              TAGS.Trello,
+              TAGS.git,
+              TAGS.github,
+              TAGS.figma,
+              TAGS.copilot,
+              TAGS.vscode,
+              TAGS.jira,
+              TAGS.confluence,
+              TAGS.slack,
+              TAGS.teams,
+              TAGS.postman,
+              TAGS.voiceover,
+              TAGS.trello,
             ]}
           />
         </Stack>
@@ -264,12 +264,12 @@ export default function Home() {
             </Text>
             <TagList
               tags={[
-                TAGS.JavaScript,
-                TAGS.React,
-                TAGS["Project Management"],
-                TAGS["Node.js"],
-                TAGS.Accessibility,
-                TAGS.GenAI,
+                TAGS.javascript,
+                TAGS.react,
+                TAGS.projectManagement,
+                TAGS.nodejs,
+                TAGS.accessibility,
+                TAGS.genai,
               ]}
             />
           </Stack>

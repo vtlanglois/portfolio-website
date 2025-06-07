@@ -1,8 +1,8 @@
 import type { TagItem } from "@/types/tagTypes";
 
 const frameworkTags: Record<string, TagItem> = {
-  React: { text: "React", variant: "tech", icon: "atom", group: "frameworks" },
-  "Next.js": {
+  react: { text: "React", variant: "tech", icon: "atom", group: "frameworks" },
+  nextjs: {
     text: "Next.js",
     variant: "tech",
     icon: "atom",
@@ -11,32 +11,32 @@ const frameworkTags: Record<string, TagItem> = {
 };
 
 const languageTags: Record<string, TagItem> = {
-  JavaScript: {
+  javascript: {
     text: "JavaScript",
     variant: "tech",
     icon: "file-code",
     group: "languages",
   },
-  TypeScript: {
+  typescript: {
     text: "TypeScript",
     variant: "tech",
     icon: "file-code",
     group: "languages",
   },
-  Python: {
+  python: {
     text: "Python",
     variant: "tech",
     icon: "file-code",
     group: "languages",
   },
-  Java: {
+  java: {
     text: "Java",
     variant: "tech",
     icon: "file-code",
     group: "languages",
   },
-  C: { text: "C", variant: "tech", icon: "file-code", group: "languages" },
-  HTML: {
+  c: { text: "C", variant: "tech", icon: "file-code", group: "languages" },
+  html: {
     text: "HTML",
     variant: "tech",
     icon: "file-code",
@@ -45,21 +45,21 @@ const languageTags: Record<string, TagItem> = {
 };
 
 const cssTags: Record<string, TagItem> = {
-  Tailwind: {
+  tailwind: {
     text: "Tailwind",
     variant: "tech",
     icon: "palette",
     group: "css",
   },
-  Bootstrap: {
+  bootstrap: {
     text: "Bootstrap",
     variant: "tech",
     icon: "palette",
     group: "css",
   },
-  CSS: { text: "CSS", variant: "tech", icon: "file-code", group: "css" },
-  SCSS: { text: "SCSS", variant: "tech", icon: "file-code", group: "css" },
-  SQL: {
+  css: { text: "CSS", variant: "tech", icon: "file-code", group: "css" },
+  scss: { text: "SCSS", variant: "tech", icon: "file-code", group: "css" },
+  sql: {
     text: "SQL",
     variant: "tech",
     icon: "db",
@@ -68,8 +68,8 @@ const cssTags: Record<string, TagItem> = {
 };
 
 const backendTags: Record<string, TagItem> = {
-  "Node.js": { text: "Node.js", variant: "tech", group: "backend" },
-  "API Integration": {
+  nodejs: { text: "Node.js", variant: "tech", group: "backend" },
+  apiIntegration: {
     text: "API Integration",
     variant: "topic",
     group: "backend",
@@ -77,8 +77,8 @@ const backendTags: Record<string, TagItem> = {
 };
 
 const versionControlTags: Record<string, TagItem> = {
-  Git: { text: "Git", variant: "tech", icon: "git", group: "version control" },
-  GitHub: {
+  git: { text: "Git", variant: "tech", icon: "git", group: "version control" },
+  github: {
     text: "GitHub",
     variant: "tech",
     icon: "github",
@@ -87,7 +87,7 @@ const versionControlTags: Record<string, TagItem> = {
 };
 
 const hardwareTags: Record<string, TagItem> = {
-  Arduino: {
+  arduino: {
     text: "Arduino",
     variant: "tech",
     group: "hardware",
@@ -96,7 +96,7 @@ const hardwareTags: Record<string, TagItem> = {
 };
 
 const miscTags: Record<string, TagItem> = {
-  Markdown: {
+  markdown: {
     text: "Markdown",
     variant: "tech",
     group: "misc",
@@ -105,46 +105,46 @@ const miscTags: Record<string, TagItem> = {
 };
 
 const toolTags: Record<string, TagItem> = {
-  Figma: { text: "Figma", variant: "tech", icon: "figma", group: "tool" },
-  "Visual Studio Code": {
+  figma: { text: "Figma", variant: "tech", icon: "figma", group: "tool" },
+  vscode: {
     text: "Visual Studio Code",
     variant: "tech",
     group: "tool",
   },
-  Storybook: {
+  storybook: {
     text: "Storybook",
     variant: "tech",
     icon: "file-code",
     group: "tool",
   },
-  Jest: { text: "Jest", variant: "tech", icon: "file-code", group: "tool" },
-  JIRA: { text: "JIRA", variant: "tech", group: "tool", icon: "browser" },
-  Confluence: {
+  jest: { text: "Jest", variant: "tech", icon: "file-code", group: "tool" },
+  jira: { text: "JIRA", variant: "tech", group: "tool", icon: "browser" },
+  confluence: {
     text: "Confluence",
     variant: "tech",
     group: "tool",
     icon: "browser",
   },
-  Slack: { text: "Slack", variant: "tech", group: "tool", icon: "browser" },
-  "Microsoft Teams": {
+  slack: { text: "Slack", variant: "tech", group: "tool", icon: "browser" },
+  teams: {
     text: "Microsoft Teams",
     variant: "tech",
     group: "tool",
     icon: "browser",
   },
-  Postman: {
+  postman: {
     text: "Postman",
     variant: "tech",
     group: "tool",
     icon: "browser",
   },
-  VoiceOver: {
+  voiceover: {
     text: "VoiceOver",
     variant: "tech",
     group: "tool",
     icon: "a11y",
   },
-  Trello: {
+  trello: {
     text: "Trello",
     variant: "tech",
     group: "tool",
@@ -152,7 +152,7 @@ const toolTags: Record<string, TagItem> = {
 };
 
 const aiTags: Record<string, TagItem> = {
-  "GitHub Copilot": {
+  copilot: {
     text: "GitHub Copilot",
     variant: "tech",
     icon: "robot",
@@ -161,47 +161,47 @@ const aiTags: Record<string, TagItem> = {
 };
 
 const interpersonalTags: Record<string, TagItem> = {
-  "Project Management": {
+  projectManagement: {
     text: "Project Management",
     variant: "human",
     group: "interpersonal",
     icon: "users",
   },
-  "Bug Hunting": {
+  bugHunting: {
     text: "Bug Hunting",
     variant: "topic",
     group: "interpersonal",
     icon: "bug",
   },
-  "Bug Fixing": {
+  bugFixing: {
     text: "Bug Fixing",
     variant: "topic",
     group: "interpersonal",
     icon: "bug",
   },
-  "Code Review": {
+  codeReview: {
     text: "Code Review",
     variant: "topic",
     group: "interpersonal",
   },
-  Prototyping: {
+  prototyping: {
     text: "Prototyping",
     variant: "topic",
     group: "interpersonal",
   },
-  Documentation: {
+  documentation: {
     text: "Documentation",
     variant: "topic",
     group: "interpersonal",
   },
-  Empathy: { text: "Empathy", variant: "human", group: "interpersonal" },
-  "Cross-Functional Collaboration": {
+  empathy: { text: "Empathy", variant: "human", group: "interpersonal" },
+  crossFunctionalCollaboration: {
     text: "Cross-Functional Collaboration",
     variant: "human",
     group: "interpersonal",
     icon: "users",
   },
-  "Cross-Company Collaboration": {
+  crossCompanyCollaboration: {
     text: "Cross-Company Collaboration",
     variant: "human",
     group: "interpersonal",
@@ -210,36 +210,36 @@ const interpersonalTags: Record<string, TagItem> = {
 };
 
 const softSkills: Record<string, TagItem> = {
-  Teamwork: {
+  teamwork: {
     text: "Teamwork",
     variant: "human",
     group: "soft",
     icon: "users",
   },
-  "Problem Solving": {
+  problemSolving: {
     text: "Problem Solving",
     variant: "human",
     group: "soft",
   },
-  Adaptability: {
+  adaptability: {
     text: "Adaptability",
     variant: "human",
     group: "soft",
   },
-  Mentorship: {
+  mentorship: {
     text: "Mentorship",
     variant: "human",
     group: "soft",
     icon: "users",
   },
-  Communication: {
+  communication: {
     text: "Communication",
     variant: "human",
     group: "soft",
     icon: "users",
   },
-  Passionate: { text: "Passionate", variant: "human", group: "soft" },
-  "Continuous Learning": {
+  passionate: { text: "Passionate", variant: "human", group: "soft" },
+  continuousLearning: {
     text: "Continuous Learning",
     variant: "human",
     group: "soft",
@@ -247,28 +247,28 @@ const softSkills: Record<string, TagItem> = {
 };
 
 const topicTags: Record<string, TagItem> = {
-  SEO: { text: "SEO", variant: "topic", group: "topic" },
-  Accessibility: {
+  seo: { text: "SEO", variant: "topic", group: "topic" },
+  accessibility: {
     text: "Accessibility",
     variant: "topic",
     icon: "a11y",
     group: "topic",
   },
-  WCAG: { text: "WCAG", variant: "topic", icon: "a11y", group: "topic" },
-  GenAI: { text: "GenAI", variant: "topic", icon: "robot", group: "topic" },
-  "Game Design": {
+  wcag: { text: "WCAG", variant: "topic", icon: "a11y", group: "topic" },
+  genai: { text: "GenAI", variant: "topic", icon: "robot", group: "topic" },
+  gameDesign: {
     text: "Game Design",
     variant: "topic",
     group: "topic",
     icon: "palette",
   },
-  "Game Development": {
+  gameDevelopment: {
     text: "Game Development",
     variant: "topic",
     group: "topic",
     icon: "controller",
   },
-  "Game Testing": {
+  gameTesting: {
     text: "Game Testing",
     variant: "topic",
     group: "topic",
