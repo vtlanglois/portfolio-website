@@ -12,9 +12,9 @@ interface TextProps
 
 const variantStyles = {
   heading1: "font-serif font-bold text-4xl",
-  heading2: "font-serif font-bold text-3xl",
+  heading2: "flex flex-row items-center gap-2 font-serif text-3xl font-bold",
   heading3:
-    "font-serif text-xl light:font-light flex flex-row items-center gap-2",
+    "light:font-light flex flex-row items-center gap-2 font-serif text-xl",
   paragraph: "font-sans text-xl tracking-tight",
 };
 
