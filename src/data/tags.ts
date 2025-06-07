@@ -277,7 +277,7 @@ const topicTags: Record<string, TagItem> = {
     group: "topic",
   },
   wcag: { text: "WCAG", variant: "topic", icon: "a11y", group: "topic" },
-  genai: { text: "GenAI", variant: "topic", icon: "robot", group: "topic" },
+  genai: { text: "GenAI", variant: "topic", icon: "robot", group: "ai" },
   gameDesign: {
     text: "Game Design",
     variant: "topic",
