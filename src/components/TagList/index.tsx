@@ -1,5 +1,5 @@
 import Tag from "@/components/Tag";
-import type { TagVariant } from "@/components/Tag";
+import type { TagVariant, IconName } from "@/components/Tag";
 import { sortTags } from "@/utils/tagUtils";
 import clsx from "clsx";
 
@@ -8,6 +8,8 @@ export interface TagItem {
   text: string;
   /** Optional variant for the tag */
   variant?: TagVariant;
+  /** Optional icon name for the tag */
+  icon?: IconName;
 }
 
 interface TagListProps extends React.HTMLAttributes<HTMLUListElement> {
@@ -34,7 +36,7 @@ export default function TagList({
     <ul className={classes} aria-label={ariaLabel}>
       {sortedTags.map((tag, index) => (
         <li key={index}>
-          <Tag variant={tag.variant || defaultVariant}>{tag.text}</Tag>
+          <Tag variant={tag.variant || defaultVariant} icon={tag.icon}>{tag.text}</Tag>
         </li>
       ))}
     </ul>

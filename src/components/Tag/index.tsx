@@ -1,13 +1,18 @@
 import { WithVariant } from "@/types";
-import { PersonIcon, WrenchIcon } from "@phosphor-icons/react/dist/ssr";
+import { PersonArmsSpreadIcon, PersonIcon, WrenchIcon } from "@phosphor-icons/react/dist/ssr";
 import clsx from "clsx";
 
 export type TagVariant = "tech" | "human";
 
+export type IconName = "a11y";
+
 interface TagProps
   extends WithVariant<TagVariant>,
     React.PropsWithChildren,
-    React.ComponentProps<"span"> {}
+    React.ComponentProps<"span"> {
+  /** Optional icon to display in the tag */
+  icon?: IconName;
+    }
 
 const variantStyles = {
   tech: "bg-secondary-100 text-foreground-secondary dark:bg-red dark:text-foreground",
@@ -19,8 +24,14 @@ const variantIcons = {
   human: <PersonIcon weight="fill" className="inline-block" />,
 };
 
+const icons: Record<IconName, React.ReactElement> = {
+  a11y: <PersonArmsSpreadIcon weight="fill" className="inline-block" />,
+}
+
+
 export default function Tag({
   variant = "tech",
+  icon,
   children,
   className = "",
 }: TagProps) {
@@ -31,7 +42,7 @@ export default function Tag({
   );
   return (
     <span className={classes}>
-      {variantIcons[variant]}
+      {(icon && icons[icon]) || variantIcons[variant]}
       {children}
     </span>
   );
