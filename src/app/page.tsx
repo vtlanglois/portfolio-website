@@ -165,6 +165,7 @@ export default function Home() {
               TAGS.nodejs,
               TAGS.accessibility,
               TAGS.html,
+              TAGS.semanticHtml,
               TAGS.css,
               TAGS.scss,
               TAGS.storybook,
@@ -214,6 +215,7 @@ export default function Home() {
               TAGS.gameDevelopment,
               TAGS.gameDesign,
               TAGS.gameTesting,
+              TAGS.promptEngineering,
             ]}
           />
           <Text as="h3" variant="heading3">
@@ -234,6 +236,8 @@ export default function Home() {
               TAGS.postman,
               TAGS.voiceover,
               TAGS.trello,
+              TAGS.prettier,
+              TAGS.npm,
             ]}
           />
         </Stack>

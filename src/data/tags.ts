@@ -42,6 +42,12 @@ const languageTags: Record<string, TagItem> = {
     icon: "file-code",
     group: "languages",
   },
+  semanticHtml: {
+    text: "Semantic HTML",
+    variant: "tech",
+    icon: "a11y",
+    group: "languages",
+  },
 };
 
 const cssTags: Record<string, TagItem> = {
@@ -149,12 +155,28 @@ const toolTags: Record<string, TagItem> = {
     variant: "tech",
     group: "tool",
   },
+  prettier: {
+    text: "Prettier",
+    variant: "tech",
+    group: "tool",
+  },
+  npm: {
+    text: "npm",
+    variant: "tech",
+    group: "tool",
+  },
 };
 
 const aiTags: Record<string, TagItem> = {
   copilot: {
     text: "GitHub Copilot",
     variant: "tech",
+    icon: "robot",
+    group: "ai",
+  },
+  promptEngineering: {
+    text: "Prompt Engineering",
+    variant: "topic",
     icon: "robot",
     group: "ai",
   },
