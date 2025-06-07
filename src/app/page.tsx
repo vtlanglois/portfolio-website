@@ -8,11 +8,13 @@ import {
   InfoIcon,
   NotebookIcon,
   KanbanIcon,
+  BriefcaseIcon,
+  BooksIcon,
 } from "@phosphor-icons/react/ssr";
 import Wrapper from "@/components/Wrapper";
 import Link from "@/components/Link";
 import Card from "@/components/Card";
-import Section from "@/components/Section";
+import Section, { SectionHeader } from "@/components/Section";
 import Grid from "@/components/Grid";
 import Stack from "@/components/Stack";
 import TagList from "@/components/TagList";
@@ -89,7 +91,11 @@ export default function Home() {
           </div>
         </Card>
       </Section>
-      <Section heading="Experience">
+      <Section>
+        <SectionHeader>
+          <BriefcaseIcon size="32" weight="duotone" />
+          Experience
+        </SectionHeader>
         <Stack className="gap-6">
           <Stack>
             <Text as="h3" variant="heading3">
@@ -124,7 +130,11 @@ export default function Home() {
           </Stack>
         </Stack>
       </Section>
-      <Section heading="Projects">
+      <Section>
+        <SectionHeader>
+          <BooksIcon size="32" weight="duotone" />
+          Projects
+        </SectionHeader>
         <Grid>
           <Stack>
             <Text as="h3" variant="heading3">
