@@ -1,4 +1,4 @@
-`use client`;
+'use client';
 
 import { WithVariant, WithAppearance } from "@/types";
 import clsx from "clsx";

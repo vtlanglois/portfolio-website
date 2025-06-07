@@ -1,6 +1,5 @@
 import Container from "@/components/Container";
-import Link from "@/components//Link";
-import { UserIcon } from "@phosphor-icons/react/dist/ssr";
+import Link from "@/components/Link";
 
 export default function Header() {
   return (

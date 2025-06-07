@@ -1,8 +1,6 @@
 import Stack from "@/components/Stack";
 
-interface MarkdownArticleProps extends React.PropsWithChildren {}
-
-export function MarkdownArticle({ children }: MarkdownArticleProps) {
+export function MarkdownArticle({ children }: React.PropsWithChildren) {
   return (
     <article>
       <Stack>{children}</Stack>

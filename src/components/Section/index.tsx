@@ -5,8 +5,6 @@ import Divider from "@/components/Divider";
 interface SectionProps
   extends React.PropsWithChildren,
     React.ComponentProps<"section"> {
-  /** The heading for the section */
-  heading?: React.ReactNode | string;
 }
 
 interface SectionHeaderProps
@@ -14,10 +12,10 @@ interface SectionHeaderProps
     React.ComponentProps<"div"> {}
 
 export function SectionHeader({ children, className }: SectionHeaderProps) {
-  const classes = clsx("w-full", className);
+  const classes = clsx("w-full flex flex-row gap-3", className);
   return (
     <div className="w-full">
-      <Text as="h2" variant="heading2" className="flex flex-row gap-3">
+      <Text as="h2" variant="heading2" className={classes}>
         {children}
       </Text>
       <Divider />
@@ -26,7 +24,6 @@ export function SectionHeader({ children, className }: SectionHeaderProps) {
 }
 
 export default function Section({
-  heading,
   children,
   className,
 }: SectionProps) {

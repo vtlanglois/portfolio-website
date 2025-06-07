@@ -1,7 +1,5 @@
 import clsx from "clsx";
 
-clsx;
-
 interface ContainerProps
   extends React.PropsWithChildren,
     React.ComponentProps<"div"> {}

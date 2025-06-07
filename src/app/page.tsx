@@ -40,7 +40,7 @@ export default function Home() {
             />
           </div>
           <Text as="h1" variant="heading1">
-            Hiya! I'm
+            Hiya! I&apos;m
             <br />
             <span className="decoration-secondary text-5xl font-black italic underline decoration-wavy decoration-2 underline-offset-4 dark:decoration-solid">
               Vincent Langlois
@@ -62,8 +62,8 @@ export default function Home() {
               href="https://www.example.com/"
             >
               a link
-            </Link>
-            {" "} is good
+            </Link>{" "}
+            is good
           </Text>
           <p>
             Well this is a <a href="#">Link</a>
