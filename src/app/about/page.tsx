@@ -1,3 +1,11 @@
+import Test from "@/content/test.mdx";
+import Stack from "@/components/Stack";
+import { MarkdownArticle } from "@/components/MarkdownArticle";
+
 export default function About() {
-  return <h1>About</h1>;
+  return (
+    <MarkdownArticle>
+      <Test />
+    </MarkdownArticle>
+  );
 }
