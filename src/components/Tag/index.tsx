@@ -16,6 +16,7 @@ import {
   UsersIcon,
   DatabaseIcon,
   GameControllerIcon,
+  FlaskIcon,
   BugIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import clsx from "clsx";
@@ -29,16 +30,18 @@ interface TagProps
   icon?: IconName;
 }
 
-const variantStyles = {
+const variantStyles: Record<TagVariant, string> = {
   tech: "bg-secondary-100 text-foreground-secondary dark:bg-red dark:text-foreground",
   human: "bg-green text-foreground dark:bg-purple",
   topic: "bg-magenta text-foreground dark:bg-teal",
+  tool: "bg-mint text-foreground-secondary dark:bg-cool-blue dark:text-foreground",
 };
 
 const variantIcons = {
-  tech: <WrenchIcon weight="fill" className="inline-block" />,
+  tech: <FlaskIcon weight="fill" className="inline-block" />,
   human: <PersonIcon weight="fill" className="inline-block" />,
   topic: <ScrollIcon weight="fill" className="inline-block" />,
+  tool: <WrenchIcon weight="fill" className="inline-block" />,
 };
 
 const icons = {

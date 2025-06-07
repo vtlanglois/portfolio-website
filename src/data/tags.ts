@@ -83,10 +83,10 @@ const backendTags: Record<string, TagItem> = {
 };
 
 const versionControlTags: Record<string, TagItem> = {
-  git: { text: "Git", variant: "tech", icon: "git", group: "version control" },
+  git: { text: "Git", variant: "tool", icon: "git", group: "version control" },
   github: {
     text: "GitHub",
-    variant: "tech",
+    variant: "tool",
     icon: "github",
     group: "version control",
   },
@@ -111,58 +111,58 @@ const miscTags: Record<string, TagItem> = {
 };
 
 const toolTags: Record<string, TagItem> = {
-  figma: { text: "Figma", variant: "tech", icon: "figma", group: "tool" },
+  figma: { text: "Figma", variant: "tool", icon: "figma", group: "tool" },
   vscode: {
     text: "Visual Studio Code",
-    variant: "tech",
+    variant: "tool",
     group: "tool",
   },
   storybook: {
     text: "Storybook",
-    variant: "tech",
+    variant: "tool",
     icon: "file-code",
     group: "tool",
   },
-  jest: { text: "Jest", variant: "tech", icon: "file-code", group: "tool" },
-  jira: { text: "JIRA", variant: "tech", group: "tool", icon: "browser" },
+  jest: { text: "Jest", variant: "tool", icon: "file-code", group: "tool" },
+  jira: { text: "JIRA", variant: "tool", group: "tool", icon: "browser" },
   confluence: {
     text: "Confluence",
-    variant: "tech",
+    variant: "tool",
     group: "tool",
     icon: "browser",
   },
-  slack: { text: "Slack", variant: "tech", group: "tool", icon: "browser" },
+  slack: { text: "Slack", variant: "tool", group: "tool", icon: "browser" },
   teams: {
     text: "Microsoft Teams",
-    variant: "tech",
+    variant: "tool",
     group: "tool",
     icon: "browser",
   },
   postman: {
     text: "Postman",
-    variant: "tech",
+    variant: "tool",
     group: "tool",
     icon: "browser",
   },
   voiceover: {
     text: "VoiceOver",
-    variant: "tech",
+    variant: "tool",
     group: "tool",
     icon: "a11y",
   },
   trello: {
     text: "Trello",
-    variant: "tech",
+    variant: "tool",
     group: "tool",
   },
   prettier: {
     text: "Prettier",
-    variant: "tech",
+    variant: "tool",
     group: "tool",
   },
   npm: {
     text: "npm",
-    variant: "tech",
+    variant: "tool",
     group: "tool",
   },
 };
@@ -170,7 +170,7 @@ const toolTags: Record<string, TagItem> = {
 const aiTags: Record<string, TagItem> = {
   copilot: {
     text: "GitHub Copilot",
-    variant: "tech",
+    variant: "tool",
     icon: "robot",
     group: "ai",
   },

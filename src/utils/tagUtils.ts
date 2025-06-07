@@ -1,5 +1,5 @@
-import { TagVariant } from "@/components/Tag";
-import type { TagGroup, TagItem } from "@/components/TagList";
+import { TagVariant } from "@/types/tagTypes";
+import type { TagGroup, TagItem } from "@/types/tagTypes";
 
 export const sortTags = (tags: TagItem[]): TagItem[] => {
   // First, sort by variant and alphabetically
@@ -8,6 +8,7 @@ export const sortTags = (tags: TagItem[]): TagItem[] => {
       tech: 1,
       human: 2,
       topic: 3,
+      tool: 4,
     };
     const aPriority = variantPriority[a.variant || "tech"] || 0;
     const bPriority = variantPriority[b.variant || "tech"] || 0;

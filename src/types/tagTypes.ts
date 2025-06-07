@@ -1,4 +1,4 @@
-export type TagVariant = "tech" | "human" | "topic";
+export type TagVariant = "tech" | "human" | "topic" | "tool";
 
 export type IconName =
   | "a11y"

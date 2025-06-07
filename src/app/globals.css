@@ -32,6 +32,8 @@
   --green: #417b5a;
   --magenta: #9e4770;
   --teal: #087e8b;
+  --mint: #61c9a8;
+  --cool-blue: #3d52d5;
 
   --background: linear-gradient(
     180deg,
@@ -78,6 +80,8 @@
   --color-green: var(--green);
   --color-magenta: var(--magenta);
   --color-teal: var(--teal);
+  --color-mint: var(--mint);
+  --color-cool-blue: var(--cool-blue);
 
   --font-sans: var(--font-inter);
   --font-serif: var(--font-merriweather);

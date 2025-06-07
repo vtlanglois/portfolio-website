@@ -173,6 +173,8 @@ export default function Home() {
               TAGS.seo,
               TAGS.wcag,
               TAGS.apiIntegration,
+              TAGS.postman,
+              TAGS.npm,
             ]}
           />
           <Text as="h3" variant="heading3">
@@ -233,11 +235,9 @@ export default function Home() {
               TAGS.confluence,
               TAGS.slack,
               TAGS.teams,
-              TAGS.postman,
               TAGS.voiceover,
               TAGS.trello,
               TAGS.prettier,
-              TAGS.npm,
             ]}
           />
         </Stack>
