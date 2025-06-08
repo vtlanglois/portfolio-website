@@ -4,8 +4,7 @@ import Divider from "@/components/Divider";
 
 interface SectionProps
   extends React.PropsWithChildren,
-    React.ComponentProps<"section"> {
-}
+    React.ComponentProps<"section"> {}
 
 interface SectionHeaderProps
   extends React.PropsWithChildren,
@@ -23,10 +22,7 @@ export function SectionHeader({ children, className }: SectionHeaderProps) {
   );
 }
 
-export default function Section({
-  children,
-  className,
-}: SectionProps) {
+export default function Section({ children, className }: SectionProps) {
   const classes = clsx(
     "flex flex-col items-start justify-stretch gap-4 py-12",
     className,
