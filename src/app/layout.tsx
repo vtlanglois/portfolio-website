@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistMono.variable} ${inter.variable} ${merriweather.variable} antialiased`}
+        className={`${geistMono.variable} ${inter.variable} ${merriweather.variable} bg-primary-200 antialiased dark:bg-black`}
       >
         <Header />
         <div className="mt-4 lg:mt-8">

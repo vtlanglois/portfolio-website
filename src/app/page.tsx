@@ -42,7 +42,7 @@ export default function Home() {
           <Text as="h1" variant="heading1">
             Hiya! I&apos;m
             <br />
-            <span className="decoration-secondary text-5xl font-black italic underline decoration-wavy decoration-2 underline-offset-4 dark:decoration-solid">
+            <span className="decoration-secondary dark:decoration-red text-5xl font-black italic underline decoration-wavy decoration-2 underline-offset-4 dark:decoration-solid">
               Vincent Langlois
             </span>
             ,
