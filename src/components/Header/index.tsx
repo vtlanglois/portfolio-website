@@ -1,5 +1,5 @@
 import Container from "@/components/Container";
-import Link from "@/components/Link";
+import NavLink from "@/components/NavLink";
 import ThemeToggle from "../ThemeToggle";
 
 export default function Header() {
@@ -8,40 +8,40 @@ export default function Header() {
       <Container>
         <nav className="grid-cols-5 content-between lg:grid">
           <div className="col-span-3">
-            <Link
+            <NavLink
               variant="text"
               appearance="primary"
               href="/"
               className="mx-0 text-xl"
             >
               Vincent Langlois
-            </Link>
+            </NavLink>
           </div>
           <div className="col-span-2 hidden flex-row justify-end gap-3 lg:flex">
-            <Link
+            <NavLink
               variant="text"
               appearance="primary"
               href="/about"
               className="mx-0 text-xl"
             >
               About
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               variant="text"
               appearance="primary"
               href="/projects"
               className="mx-0 text-xl"
             >
               Projects
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               variant="text"
               appearance="primary"
               href="/"
               className="mx-0 text-xl"
             >
               Resume
-            </Link>
+            </NavLink>
             <ThemeToggle />
           </div>
         </nav>

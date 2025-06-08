@@ -16,7 +16,7 @@ import {
   UsersThreeIcon,
   BrowserIcon,
 } from "@phosphor-icons/react/ssr";
-import Link from "@/components/Link";
+import NavLink from "@/components/NavLink";
 import Card from "@/components/Card";
 import Section, { SectionHeader } from "@/components/Section";
 import Grid from "@/components/Grid";
@@ -56,13 +56,13 @@ export default function Home() {
           </Text>
           <Text as="p" variant="paragraph">
             Well this{" "}
-            <Link
+            <NavLink
               variant="text"
               appearance="primary"
               href="https://www.example.com/"
             >
               a link
-            </Link>{" "}
+            </NavLink>{" "}
             is good
           </Text>
           <p>
@@ -70,7 +70,7 @@ export default function Home() {
           </p>
           <div className="flex w-full flex-row items-center justify-between gap-3">
             <div className="flex flex-row gap-3">
-              <Link
+              <NavLink
                 variant="button"
                 appearance="primary"
                 href="/about"
@@ -78,8 +78,8 @@ export default function Home() {
               >
                 <InfoIcon size="24" weight="fill" />
                 About Me
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 variant="button"
                 appearance="primary"
                 href="#"
@@ -87,25 +87,25 @@ export default function Home() {
               >
                 <NotebookIcon size="24" weight="fill" />
                 Resume
-              </Link>
+              </NavLink>
             </div>
             <div>
-              <Link
+              <NavLink
                 variant="icon"
                 appearance="primary"
                 href="https://github.com/vtlanglois"
                 aria-label="Github"
               >
                 <GithubLogoIcon size="32" weight="fill" />
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 variant="icon"
                 appearance="primary"
                 href="https://www.linkedin.com/in/vtlanglois/"
                 aria-label="LinkedIn"
               >
                 <LinkedinLogoIcon size="32" weight="fill" />
-              </Link>
+              </NavLink>
             </div>
           </div>
         </Card>
@@ -301,7 +301,7 @@ export default function Home() {
             </Text>
           </Stack>
         </Grid>
-        <Link
+        <NavLink
           variant="button"
           appearance="primary"
           href="/projects"
@@ -309,7 +309,7 @@ export default function Home() {
         >
           <KanbanIcon size="24" weight="duotone" />
           View All Projects
-        </Link>
+        </NavLink>
       </Section>
     </>
   );

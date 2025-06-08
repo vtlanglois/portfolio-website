@@ -2,19 +2,21 @@
 
 import { WithVariant, WithAppearance } from "@/types";
 import clsx from "clsx";
-import * as NextLink from "next/link";
+import Link from "next/link";
 
-type LinkVariant = "button" | "icon" | "text";
-type LinkAppearance = "primary" | "secondary";
+type NavLinkVariant = "button" | "icon" | "text";
+type NavLinkAppearance = "primary" | "secondary";
 
 interface LinkProps
-  extends WithVariant<LinkVariant>,
-    WithAppearance<LinkAppearance>,
-    React.ComponentProps<"a"> {}
+  extends WithVariant<NavLinkVariant>,
+    WithAppearance<NavLinkAppearance>,
+    React.ComponentProps<"a"> {
+      href: string,
+    }
 
 const variantStyles: Record<
-  LinkVariant,
-  Record<LinkAppearance, string> & { base: string }
+  NavLinkVariant,
+  Record<NavLinkAppearance, string> & { base: string }
 > = {
   button: {
     base: "text-md inline-flex items-center justify-center gap-2 rounded-xl p-3 font-sans tracking-tight",
@@ -35,7 +37,7 @@ const variantStyles: Record<
   },
 };
 
-export default function Link({
+export default function NavLink({
   variant = "text",
   appearance = "primary",
   children,
@@ -53,9 +55,9 @@ export default function Link({
 
   if (!href?.startsWith("http")) {
     return (
-      <NextLink className={classes} href={href} {...props}>
+      <Link className={classes} href={href} {...props}>
         {children}
-      </NextLink>
+      </Link>
     );
   }
 
