@@ -339,8 +339,8 @@ export const hobbyTags: Record<string, TagItem> = {
     text: "Reading",
     variant: "hobby",
     group: "hobby",
-    icon: "book"
-  }
+    icon: "book",
+  },
 };
 
 export const mediaTags: Record<string, TagItem> = {
