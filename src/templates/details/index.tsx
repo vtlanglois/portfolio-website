@@ -1,7 +1,11 @@
-import Test from "@/content/test.mdx";
+import Text from "@/components/Text";
 import Markdown from "@/components/Markdown";
+import Stack from "@/components/Stack";
+import Article from "@/components/Article";
 
 interface DetailsTemplateProps {
+  /** Heading to show above all content */
+  heading: string;
   /** MDX content to render */
   mainContent: React.ReactNode;
   /** Aside content to render alongside content */
@@ -10,17 +14,23 @@ interface DetailsTemplateProps {
 }
 
 export default function DetailsTemplate({
+  heading,
   mainContent,
   asideContent,
 }: DetailsTemplateProps) {
   return (
-    <article className="grid grid-cols-1 gap-12 py-3 lg:grid-cols-5 lg:py-12">
+    <Article>
       <div className="col-span-3">
-        <Markdown>{mainContent}</Markdown>
+        <Stack>
+          <Text as="h1" variant="heading1">
+            {heading}
+          </Text>
+          <Markdown>{mainContent}</Markdown>
+        </Stack>
       </div>
       <aside className="col-span-2 lg:sticky lg:top-24 lg:self-start">
         {asideContent}
       </aside>
-    </article>
+    </Article>
   );
 }

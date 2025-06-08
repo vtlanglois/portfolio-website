@@ -10,6 +10,7 @@ import DetailsTemplate from "@/templates/details";
 export default function About() {
   return (
     <DetailsTemplate
+      heading="About me"
       mainContent={<Test />}
       asideContent={
         <Stack>
