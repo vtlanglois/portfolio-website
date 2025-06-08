@@ -19,6 +19,8 @@ export type IconName =
   | "potted-plant"
   | "hiking"
   | "cooking"
+  | "song"
+  | "book"
   | TagVariant;
 
 /** Used to pair similar tags together */

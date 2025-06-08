@@ -5,7 +5,7 @@ import Stack from "@/components/Stack";
 import Test from "@/content/test.mdx";
 import Divider from "@/components/Divider";
 import TagList from "@/components/TagList";
-import { TAGS, hobbyTags } from "@/data/tags";
+import { TAGS, hobbyTags, mediaTags } from "@/data/tags";
 
 export default function About() {
   return (
@@ -27,12 +27,10 @@ export default function About() {
           </Text>
           <TagList
             tags={[
-              TAGS.javascript,
-              TAGS.react,
-              TAGS.projectManagement,
-              TAGS.nodejs,
+              TAGS.webDevelopment,
+              TAGS.gameDevelopment,
               TAGS.accessibility,
-              TAGS.genai,
+              TAGS.react,
             ]}
           />
           <Text as="h2" variant="heading3">
@@ -40,31 +38,9 @@ export default function About() {
           </Text>
           <TagList tags={Object.values(hobbyTags)} />
           <Text as="h2" variant="heading3">
-            Highlighted Technical Skills
-          </Text>
-          <TagList
-            tags={[
-              TAGS.javascript,
-              TAGS.react,
-              TAGS.projectManagement,
-              TAGS.nodejs,
-              TAGS.accessibility,
-              TAGS.genai,
-            ]}
-          />
-          <Text as="h2" variant="heading3">
             My favorite media
           </Text>
-          <TagList
-            tags={[
-              TAGS.javascript,
-              TAGS.react,
-              TAGS.projectManagement,
-              TAGS.nodejs,
-              TAGS.accessibility,
-              TAGS.genai,
-            ]}
-          />
+          <TagList tags={Object.values(mediaTags)} />
           <Divider />
         </Stack>
       </div>

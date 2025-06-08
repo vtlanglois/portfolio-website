@@ -23,6 +23,8 @@ import {
   PottedPlantIcon,
   PersonSimpleHikeIcon,
   CookingPotIcon,
+  MusicNoteIcon,
+  BookIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import clsx from "clsx";
 import { TagVariant, IconName } from "@/types/tagTypes";
@@ -70,6 +72,8 @@ const icons = {
   "potted-plant": <PottedPlantIcon weight="fill" className="inline-block" />,
   hiking: <PersonSimpleHikeIcon weight="fill" className="inline-block" />,
   cooking: <CookingPotIcon weight="fill" className="inline-block" />,
+  song: <MusicNoteIcon weight="fill" className="inline-block" />,
+  book: <BookIcon weight="fill" className="inline-block" />,
 };
 
 export default function Tag({

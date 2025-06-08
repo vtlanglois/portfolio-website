@@ -296,6 +296,12 @@ const topicTags: Record<string, TagItem> = {
     group: "topic",
     icon: "bug",
   },
+  webDevelopment: {
+    text: "Web Development",
+    variant: "topic",
+    icon: "atom",
+    group: "topic",
+  },
 };
 
 export const hobbyTags: Record<string, TagItem> = {
@@ -331,6 +337,45 @@ export const hobbyTags: Record<string, TagItem> = {
   },
 };
 
+export const mediaTags: Record<string, TagItem> = {
+  houseOfLeaves: {
+    text: "House of Leaves",
+    variant: "hobby",
+    group: "hobby",
+    icon: "book",
+  },
+  mrBlueSky: {
+    text: "Mr Blue Sky",
+    variant: "hobby",
+    group: "hobby",
+    icon: "song",
+  },
+  starless: {
+    text: "Starless",
+    variant: "hobby",
+    group: "hobby",
+    icon: "song",
+  },
+  electricState: {
+    text: "The Electric State",
+    variant: "hobby",
+    group: "hobby",
+    icon: "book",
+  },
+  minecraft: {
+    text: "Minecraft",
+    variant: "hobby",
+    group: "hobby",
+    icon: "controller",
+  },
+  cyberpunk: {
+    text: "Cyberpunk 2077",
+    variant: "hobby",
+    group: "hobby",
+    icon: "controller",
+  },
+};
+
 export const TAGS: Record<string, TagItem> = {
   ...frameworkTags,
   ...languageTags,
@@ -345,4 +390,5 @@ export const TAGS: Record<string, TagItem> = {
   ...interpersonalTags,
   ...topicTags,
   ...hobbyTags,
+  ...mediaTags,
 };
