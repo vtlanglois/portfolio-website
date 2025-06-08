@@ -1,73 +1,82 @@
-import Test from "@/content/test.mdx";
+import Article from "@/components/Article";
 import Markdown from "@/components/Markdown";
-import TagList from "@/components/TagList";
-import { TAGS } from "@/data/tags";
 import Text from "@/components/Text";
 import Stack from "@/components/Stack";
-import Image from "next/image";
-import DetailsTemplate from "@/templates/details";
+import Test from "@/content/test.mdx";
+import Divider from "@/components/Divider";
+import TagList from "@/components/TagList";
+import { TAGS } from "@/data/tags";
 
 export default function About() {
   return (
-    <DetailsTemplate
-      heading="About me"
-      mainContent={<Test />}
-      asideContent={
+    <Article>
+      <div className="col-span-3">
         <Stack>
-          <Text as="h3" variant="heading3">
-            My favs
+          <Text as="h1" variant="heading1">
+            About me
           </Text>
-          <TagList
-            tags={[
-              TAGS.javascript,
-              TAGS.typescript,
-              TAGS.react,
-              TAGS.nextjs,
-              TAGS.tailwind,
-              TAGS.bootstrap,
-            ]}
-          />
-          <Text as="h3" variant="heading3">
-            My favs
-          </Text>
-          <TagList
-            tags={[
-              TAGS.javascript,
-              TAGS.typescript,
-              TAGS.react,
-              TAGS.nextjs,
-              TAGS.tailwind,
-              TAGS.bootstrap,
-            ]}
-          />
-          <Text as="h3" variant="heading3">
-            My favs
-          </Text>
-          <TagList
-            tags={[
-              TAGS.javascript,
-              TAGS.typescript,
-              TAGS.react,
-              TAGS.nextjs,
-              TAGS.tailwind,
-              TAGS.bootstrap,
-            ]}
-          />
-          <Text as="h3" variant="heading3">
-            My favs
-          </Text>
-          <TagList
-            tags={[
-              TAGS.javascript,
-              TAGS.typescript,
-              TAGS.react,
-              TAGS.nextjs,
-              TAGS.tailwind,
-              TAGS.bootstrap,
-            ]}
-          />
+          <Markdown>
+            <Test />
+          </Markdown>
         </Stack>
-      }
-    />
+      </div>
+      <div className="col-span-2">
+        <Stack>
+          <Text as="h2" variant="heading3">
+            My hobbies
+          </Text>
+          <TagList
+            tags={[
+              TAGS.javascript,
+              TAGS.react,
+              TAGS.projectManagement,
+              TAGS.nodejs,
+              TAGS.accessibility,
+              TAGS.genai,
+            ]}
+          />
+          <Text as="h2" variant="heading3">
+            My hobbies
+          </Text>
+          <TagList
+            tags={[
+              TAGS.javascript,
+              TAGS.react,
+              TAGS.projectManagement,
+              TAGS.nodejs,
+              TAGS.accessibility,
+              TAGS.genai,
+            ]}
+          />
+          <Text as="h2" variant="heading3">
+            Highlighted Technical Skills
+          </Text>
+          <TagList
+            tags={[
+              TAGS.javascript,
+              TAGS.react,
+              TAGS.projectManagement,
+              TAGS.nodejs,
+              TAGS.accessibility,
+              TAGS.genai,
+            ]}
+          />
+          <Text as="h2" variant="heading3">
+            My favorite media
+          </Text>
+          <TagList
+            tags={[
+              TAGS.javascript,
+              TAGS.react,
+              TAGS.projectManagement,
+              TAGS.nodejs,
+              TAGS.accessibility,
+              TAGS.genai,
+            ]}
+          />
+          <Divider />
+        </Stack>
+      </div>
+    </Article>
   );
 }
