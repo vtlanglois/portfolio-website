@@ -2,6 +2,14 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+html {
+  color-scheme: normal;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
 :root {
   --white: #fafafa;
   --black: #212121;
