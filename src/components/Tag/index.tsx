@@ -18,6 +18,11 @@ import {
   GameControllerIcon,
   FlaskIcon,
   BugIcon,
+  LegoIcon,
+  StarIcon,
+  PottedPlantIcon,
+  PersonSimpleHikeIcon,
+  CookingPotIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import clsx from "clsx";
 import { TagVariant, IconName } from "@/types/tagTypes";
@@ -35,6 +40,7 @@ const variantStyles: Record<TagVariant, string> = {
   human: "bg-green text-foreground dark:bg-purple",
   topic: "bg-magenta text-foreground dark:bg-teal",
   tool: "bg-mint text-foreground-secondary dark:bg-cool-blue dark:text-foreground",
+  hobby: "bg-green text-foreground dark:bg-purple",
 };
 
 const variantIcons = {
@@ -42,6 +48,7 @@ const variantIcons = {
   human: <PersonIcon weight="fill" className="inline-block" />,
   topic: <ScrollIcon weight="fill" className="inline-block" />,
   tool: <WrenchIcon weight="fill" className="inline-block" />,
+  hobby: <StarIcon weight="fill" className="inline-block" />,
 };
 
 const icons = {
@@ -59,6 +66,10 @@ const icons = {
   db: <DatabaseIcon weight="fill" className="inline-block" />,
   controller: <GameControllerIcon weight="fill" className="inline-block" />,
   bug: <BugIcon weight="fill" className="inline-block" />,
+  lego: <LegoIcon weight="fill" className="inline-block" />,
+  "potted-plant": <PottedPlantIcon weight="fill" className="inline-block" />,
+  hiking: <PersonSimpleHikeIcon weight="fill" className="inline-block" />,
+  cooking: <CookingPotIcon weight="fill" className="inline-block" />,
 };
 
 export default function Tag({

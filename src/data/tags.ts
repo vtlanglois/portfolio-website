@@ -231,7 +231,7 @@ const interpersonalTags: Record<string, TagItem> = {
   },
 };
 
-const softSkills: Record<string, TagItem> = {
+const softSkillTags: Record<string, TagItem> = {
   teamwork: {
     text: "Teamwork",
     variant: "human",
@@ -298,6 +298,39 @@ const topicTags: Record<string, TagItem> = {
   },
 };
 
+export const hobbyTags: Record<string, TagItem> = {
+  legos: {
+    text: "LEGOs",
+    variant: "hobby",
+    group: "hobby",
+    icon: "lego",
+  },
+  gardening: {
+    text: "Gardening",
+    variant: "hobby",
+    group: "hobby",
+    icon: "potted-plant",
+  },
+  videoGames: {
+    text: "Video Games",
+    variant: "hobby",
+    group: "hobby",
+    icon: "controller",
+  },
+  hiking: {
+    text: "Hiking",
+    variant: "hobby",
+    group: "hobby",
+    icon: "hiking",
+  },
+  cooking: {
+    text: "Cooking",
+    variant: "hobby",
+    group: "hobby",
+    icon: "cooking",
+  },
+};
+
 export const TAGS: Record<string, TagItem> = {
   ...frameworkTags,
   ...languageTags,
@@ -308,7 +341,8 @@ export const TAGS: Record<string, TagItem> = {
   ...miscTags,
   ...toolTags,
   ...aiTags,
-  ...softSkills,
+  ...softSkillTags,
   ...interpersonalTags,
   ...topicTags,
+  ...hobbyTags,
 };

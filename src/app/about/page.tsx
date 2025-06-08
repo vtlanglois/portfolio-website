@@ -5,7 +5,7 @@ import Stack from "@/components/Stack";
 import Test from "@/content/test.mdx";
 import Divider from "@/components/Divider";
 import TagList from "@/components/TagList";
-import { TAGS } from "@/data/tags";
+import { TAGS, hobbyTags } from "@/data/tags";
 
 export default function About() {
   return (
@@ -23,7 +23,7 @@ export default function About() {
       <div className="col-span-2">
         <Stack>
           <Text as="h2" variant="heading3">
-            My hobbies
+            My technical interests
           </Text>
           <TagList
             tags={[
@@ -38,16 +38,7 @@ export default function About() {
           <Text as="h2" variant="heading3">
             My hobbies
           </Text>
-          <TagList
-            tags={[
-              TAGS.javascript,
-              TAGS.react,
-              TAGS.projectManagement,
-              TAGS.nodejs,
-              TAGS.accessibility,
-              TAGS.genai,
-            ]}
-          />
+          <TagList tags={Object.values(hobbyTags)} />
           <Text as="h2" variant="heading3">
             Highlighted Technical Skills
           </Text>

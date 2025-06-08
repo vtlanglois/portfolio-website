@@ -9,6 +9,7 @@ export const sortTags = (tags: TagItem[]): TagItem[] => {
       human: 2,
       topic: 3,
       tool: 4,
+      hobby: 5,
     };
     const aPriority = variantPriority[a.variant || "tech"] || 0;
     const bPriority = variantPriority[b.variant || "tech"] || 0;
@@ -36,6 +37,7 @@ export const sortTags = (tags: TagItem[]): TagItem[] => {
     interpersonal: 10,
     topic: 11,
     tool: 12,
+    hobby: 13,
   };
 
   for (const tag of sorted) {

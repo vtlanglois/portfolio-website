@@ -1,4 +1,4 @@
-export type TagVariant = "tech" | "human" | "topic" | "tool";
+export type TagVariant = "tech" | "human" | "topic" | "tool" | "hobby";
 
 export type IconName =
   | "a11y"
@@ -15,6 +15,10 @@ export type IconName =
   | "db"
   | "controller"
   | "bug"
+  | "lego"
+  | "potted-plant"
+  | "hiking"
+  | "cooking"
   | TagVariant;
 
 /** Used to pair similar tags together */
@@ -30,7 +34,8 @@ export type TagGroup =
   | "ai"
   | "soft"
   | "interpersonal"
-  | "topic";
+  | "topic"
+  | "hobby";
 
 export interface TagItem {
   /** The tag text */
