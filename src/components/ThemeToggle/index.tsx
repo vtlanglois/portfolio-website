@@ -1,50 +1,56 @@
 "use client";
 
-import toggleTheme from "@/utils/themes";
+import { useTheme } from "@/components/ThemeProvider";
 import { useEffect, useState } from "react";
+import type { Theme } from "@/utils/cookieTheme";
+import { Desktop, MoonStars, SunDim } from "phosphor-react";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<string>("");
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    //   localStorage.removeItem("theme");
-    //   return;
-    // }
-
-    toggleTheme()
-
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      localStorage.setItem("theme", "dark");
-      setTheme("dark");
-    } else {
-      localStorage.setItem("theme", "light");
-      setTheme("light");
-    }
+    setMounted(true);
   }, []);
 
-  const handleToggle = () => {
-    if (theme === "light") {
-      console.log("is light, swithcing to darj");
-      localStorage.setItem("theme", "dark");
-      setTheme("dark");
-    } else {
-      // toggleTheme("dark")
-      console.log("is dark, swithcing to lighjt");
-      localStorage.setItem("theme", "light");
-      setTheme("light");
+  const toggleTheme = () => {
+    const newTheme: Theme =
+      theme === "system" ? "light" : theme === "light" ? "dark" : "system";
+
+    setTheme(newTheme);
+  };
+
+  if (!mounted) return null;
+
+  const getIcon = () => {
+    if (theme === "system") {
+      // Always show computer icon when in system mode
+      return <Desktop weight="fill" size="24" />;
     }
-    toggleTheme();
-    // console.log(theme);
+    // For manual modes, show the corresponding icon
+    return theme === "dark" ? (
+      <MoonStars weight="fill" size="24" />
+    ) : (
+      <SunDim weight="fill" size="24" />
+    );
+  };
+
+  // Get the currently active theme for the tooltip/aria-label
+  const getNextTheme = () => {
+    if (theme === "system") return "light";
+    if (theme === "light") return "dark";
+    return "system";
   };
 
   return (
-    <>
-      <button onClick={() => handleToggle(theme)}>{theme}</button>
-    </>
+    <button
+      onClick={toggleTheme}
+      className="hover:bg-secondary-100 rounded-md p-2 transition-colors dark:hover:bg-gray-800"
+      aria-label={`Switch to ${getNextTheme()} theme`}
+      title={`Switch to ${getNextTheme()} theme`}
+    >
+      <span className="sr-only">Toggle theme (Light/Dark/System)</span>
+      {getIcon()}
+    </button>
   );
 }

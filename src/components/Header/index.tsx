@@ -17,7 +17,7 @@ export default function Header() {
               Vincent Langlois
             </NavLink>
           </div>
-          <div className="col-span-2 hidden flex-row justify-end gap-3 lg:flex">
+          <div className="col-span-2 hidden flex-row items-center justify-end gap-3 lg:flex">
             <NavLink
               variant="text"
               appearance="primary"

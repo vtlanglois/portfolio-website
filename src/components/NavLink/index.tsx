@@ -11,8 +11,8 @@ interface LinkProps
   extends WithVariant<NavLinkVariant>,
     WithAppearance<NavLinkAppearance>,
     React.ComponentProps<"a"> {
-      href: string,
-    }
+  href: string;
+}
 
 const variantStyles: Record<
   NavLinkVariant,
