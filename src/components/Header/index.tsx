@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import NavLink from "@/components/NavLink";
 import ThemeToggle from "../ThemeToggle";
+import Divider from "../Divider";
 
 export default function Header() {
   return (
@@ -38,10 +39,11 @@ export default function Header() {
               variant="text"
               appearance="primary"
               href="/"
-              className="mx-0 text-xl"
+              className="mx-0 border-y-0 text-xl"
             >
               Resume
             </NavLink>
+            <Divider variant="secondary" ariaOrientation="vertical" />
             <ThemeToggle />
           </div>
         </nav>
