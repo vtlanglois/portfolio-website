@@ -3,11 +3,6 @@ import {
   HandPeaceIcon,
   HandWavingIcon,
   HandPointingIcon,
-  GithubLogoIcon,
-  LinkedinLogoIcon,
-  InfoIcon,
-  NotebookIcon,
-  KanbanIcon,
   BriefcaseIcon,
   BooksIcon,
   ListStarIcon,
@@ -25,6 +20,7 @@ import Grid from "@/components/Grid";
 import Stack from "@/components/Stack";
 import TagList from "@/components/TagList";
 import { TAGS } from "@/data/tags";
+import { GitHubIconLink, LinkedInIconLink } from "@/components/SocialIconLink";
 
 export default function Home() {
   return (
@@ -79,22 +75,8 @@ export default function Home() {
             </div>
 
             <div className="flex flex-row gap-3">
-              <NavLink
-                variant="icon"
-                appearance="primary"
-                href="https://github.com/vtlanglois"
-                aria-label="Github"
-              >
-                <GithubLogoIcon size="32" weight="bold" />
-              </NavLink>
-              <NavLink
-                variant="icon"
-                appearance="primary"
-                href="https://www.linkedin.com/in/vtlanglois/"
-                aria-label="LinkedIn"
-              >
-                <LinkedinLogoIcon size="32" weight="bold" />
-              </NavLink>
+              <GitHubIconLink />
+              <LinkedInIconLink />
             </div>
           </div>
         </Card>
