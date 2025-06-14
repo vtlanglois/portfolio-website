@@ -31,7 +31,7 @@ export default function Home() {
     <>
       <Section>
         <Card className="flex flex-col items-start justify-start gap-3">
-          <div className="flex flex-row items-center gap-1 lg:justify-start justify-center w-full">
+          <div className="flex w-full flex-row items-center justify-center gap-1 lg:justify-start">
             <HandWavingIcon size="64" weight="duotone" className="hand-icon" />
             <HandPeaceIcon size="64" weight="duotone" className="hand-icon" />
             <HandPointingIcon
