@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Wrapper from "@/components/Wrapper";
 import ThemeProvider from "@/components/ThemeProvider";
+import SkipToMainContentJumpLink from "@/components/SkipToMainContentJumpLink";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -54,10 +55,11 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <ThemeProvider>
+          <SkipToMainContentJumpLink />
           <Header />
           <div className="mt-4 lg:mt-8">
             <Wrapper>
-              <main>{children}</main>
+              <main id="main">{children}</main>
             </Wrapper>
           </div>
           <Footer />

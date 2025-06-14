@@ -5,7 +5,7 @@ import Divider from "../Divider";
 
 export default function Header() {
   return (
-    <header className="border-primary-600 bg-primary-400 dark:bg-red light:shadow-lg sticky top-0 z-50 rounded-b-lg border-b-2 border-solid px-3 py-4 lg:px-16 2xl:mx-auto 2xl:max-w-screen-xl dark:border-transparent">
+    <header className="border-primary-600 bg-primary-400 dark:bg-red light:shadow-lg sticky top-0 z-40 rounded-b-lg border-b-2 border-solid px-3 py-4 lg:px-16 2xl:mx-auto 2xl:max-w-screen-xl dark:border-transparent">
       <Container>
         <nav className="grid-cols-5 content-between lg:grid">
           <div className="col-span-3">
