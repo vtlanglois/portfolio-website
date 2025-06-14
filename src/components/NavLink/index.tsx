@@ -19,10 +19,10 @@ const variantStyles: Record<
   Record<NavLinkAppearance, string> & { base: string }
 > = {
   button: {
-    base: "text-md inline-flex items-center justify-center gap-2 rounded-xl p-3 font-sans tracking-tight",
+    base: "text-md inline-flex items-center justify-center gap-2 rounded-xl font-sans tracking-tight",
     primary:
-      "bg-secondary dark:bg-red transition-color text-foreground-secondary dark:text-foreground font-bold shadow-none motion-safe:transition-shadow motion-safe:transition-transform motion-safe:duration-200 motion-safe:hover:translate-x-0.5 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-105 hover:bg-secondary-50 active:bg-secondary-300 hover:shadow-sm",
-    secondary: "bg-gray-200 hover:bg-gray-300 text-gray-800",
+      "text-md transition-color bg-secondary p-3 font-bold text-foreground-secondary shadow-none hover:bg-secondary-50 hover:shadow-sm active:bg-secondary-300 motion-safe:transition-shadow motion-safe:transition-transform motion-safe:duration-200 motion-safe:hover:translate-x-0.5 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-105 dark:bg-red dark:text-foreground",
+    secondary: "p-2 text-foreground duration-200 hover:bg-primary-50 motion-safe:transition-colors dark:hover:bg-black",
   },
   icon: {
     base: "inline-flex items-center justify-center rounded-xl p-2",
