@@ -45,7 +45,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="hover:bg-secondary-100 rounded-md p-2 transition-colors dark:hover:bg-gray-800"
+      className="hover:bg-secondary-100 rounded-md p-2 motion-safe:transition-colors motion-safe:duration-200 dark:hover:bg-gray-800"
       aria-label={`Switch to ${getNextTheme()} theme`}
       title={`Switch to ${getNextTheme()} theme`}
     >

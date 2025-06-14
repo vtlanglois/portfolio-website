@@ -15,6 +15,8 @@ import {
   ToolboxIcon,
   UsersThreeIcon,
   BrowserIcon,
+  ArrowRightIcon,
+  DownloadIcon,
 } from "@phosphor-icons/react/ssr";
 import NavLink from "@/components/NavLink";
 import Card from "@/components/Card";
@@ -54,59 +56,42 @@ export default function Home() {
             currently working at Eli Lilly and Company as a senior software
             engineer.
           </Text>
-          <Text as="p" variant="paragraph">
-            Well this{" "}
+          <div className="flex w-full flex-row items-center gap-3">
             <NavLink
-              variant="text"
+              variant="button"
               appearance="primary"
-              href="https://www.example.com/"
+              href="/about"
+              aria-label="About Me"
             >
-              a link
-            </NavLink>{" "}
-            is good
-          </Text>
-          <p>
-            Well this is a <a href="#">Link</a>
-          </p>
-          <div className="flex w-full flex-row items-center justify-between gap-3">
-            <div className="flex flex-row gap-3">
-              <NavLink
-                variant="button"
-                appearance="primary"
-                href="/about"
-                aria-label="About Me"
-              >
-                <InfoIcon size="24" weight="fill" />
-                About Me
-              </NavLink>
-              <NavLink
-                variant="button"
-                appearance="primary"
-                href="#"
-                aria-label="My Resume"
-              >
-                <NotebookIcon size="24" weight="fill" />
-                Resume
-              </NavLink>
-            </div>
-            <div>
-              <NavLink
-                variant="icon"
-                appearance="primary"
-                href="https://github.com/vtlanglois"
-                aria-label="Github"
-              >
-                <GithubLogoIcon size="32" weight="fill" />
-              </NavLink>
-              <NavLink
-                variant="icon"
-                appearance="primary"
-                href="https://www.linkedin.com/in/vtlanglois/"
-                aria-label="LinkedIn"
-              >
-                <LinkedinLogoIcon size="32" weight="fill" />
-              </NavLink>
-            </div>
+              About Me
+              <ArrowRightIcon size="24" weight="bold" />
+            </NavLink>
+            <NavLink
+              variant="button"
+              appearance="primary"
+              href="#"
+              aria-label="My Resume"
+            >
+              Resume
+              <DownloadIcon size="24" weight="bold" />
+            </NavLink>
+
+            <NavLink
+              variant="icon"
+              appearance="primary"
+              href="https://github.com/vtlanglois"
+              aria-label="Github"
+            >
+              <GithubLogoIcon size="32" weight="bold" />
+            </NavLink>
+            <NavLink
+              variant="icon"
+              appearance="primary"
+              href="https://www.linkedin.com/in/vtlanglois/"
+              aria-label="LinkedIn"
+            >
+              <LinkedinLogoIcon size="32" weight="bold" />
+            </NavLink>
           </div>
         </Card>
       </Section>
@@ -307,8 +292,8 @@ export default function Home() {
           href="/projects"
           className="self-end"
         >
-          <KanbanIcon size="24" weight="duotone" />
           View All Projects
+          <ArrowRightIcon size="24" weight="bold" />
         </NavLink>
       </Section>
     </>

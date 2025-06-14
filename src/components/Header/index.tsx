@@ -5,9 +5,9 @@ import Divider from "../Divider";
 
 export default function Header() {
   return (
-    <header className="border-primary-600 bg-primary-400 dark:bg-red shadow-lg dark:shadow-none sticky top-0 z-40 rounded-b-lg border-b-2 border-solid p-2 lg:py-4 lg:px-16 2xl:mx-auto 2xl:max-w-screen-xl dark:border-transparent">
+    <header className="border-primary-600 bg-primary-400 dark:bg-red sticky top-0 z-40 rounded-b-lg border-b-2 border-solid p-2 shadow-lg lg:px-16 lg:py-4 2xl:mx-auto 2xl:max-w-screen-xl dark:border-transparent dark:shadow-none">
       <Container>
-        <nav className="grid-cols-5 content-between lg:grid place-content-center justify-content-center">
+        <nav className="justify-content-center grid-cols-5 place-content-center content-between lg:grid">
           <div className="col-span-3">
             <NavLink
               variant="button"

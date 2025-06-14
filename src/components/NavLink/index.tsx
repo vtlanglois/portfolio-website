@@ -19,15 +19,16 @@ const variantStyles: Record<
   Record<NavLinkAppearance, string> & { base: string }
 > = {
   button: {
-    base: "text-md inline-flex items-center justify-center gap-2 rounded-xl font-sans tracking-tight",
+    base: "text-md inline-flex items-center justify-center gap-2 rounded-md font-sans tracking-tight",
     primary:
-      "text-md transition-color bg-secondary p-3 font-bold text-foreground-secondary shadow-none hover:bg-secondary-50 hover:shadow-sm active:bg-secondary-300 motion-safe:transition-shadow motion-safe:transition-transform motion-safe:duration-200 motion-safe:hover:translate-x-0.5 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-105 dark:bg-red dark:text-foreground",
-    secondary: "p-2 text-foreground duration-200 hover:bg-primary-50 motion-safe:transition-colors dark:hover:bg-black",
+      "transition-color bg-secondary p-3 font-bold text-foreground-secondary shadow-none hover:bg-secondary-50 hover:shadow-sm active:bg-secondary-300 motion-safe:transition-shadow motion-safe:transition-transform motion-safe:duration-200 motion-safe:hover:translate-x-0.5 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-105 dark:bg-red dark:text-foreground dark:hover:bg-cool-blue",
+    secondary:
+      "p-2 text-foreground duration-200 hover:bg-primary-50 motion-safe:transition-colors dark:hover:bg-black",
   },
   icon: {
-    base: "inline-flex items-center justify-center rounded-xl p-2",
+    base: "inline-flex items-center justify-center rounded-md p-2",
     primary:
-      "transition-color bg-transparent text-white shadow-none motion-safe:transition-shadow motion-safe:transition-transform motion-safe:duration-200 motion-safe:hover:translate-x-0.5 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-105 hover:bg-blue-50 hover:text-blue-600 hover:shadow-sm",
+      " bg-transparent text-white motion-safe:transition-colors hover:bg-secondary-100 dark:hover:bg-red motion-safe:duration-200",
     secondary: "text-gray-800 hover:text-gray-900",
   },
   text: {
