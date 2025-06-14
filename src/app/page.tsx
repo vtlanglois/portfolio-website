@@ -30,8 +30,8 @@ export default function Home() {
   return (
     <>
       <Section>
-        <Card className="flex max-w-4xl flex-col items-start justify-start gap-3">
-          <div className="flex flex-row gap-1">
+        <Card className="flex flex-col items-start justify-start gap-3">
+          <div className="flex flex-row items-center gap-1 lg:justify-start justify-center w-full">
             <HandWavingIcon size="64" weight="duotone" className="hand-icon" />
             <HandPeaceIcon size="64" weight="duotone" className="hand-icon" />
             <HandPointingIcon
@@ -41,10 +41,10 @@ export default function Home() {
               className="hand-icon"
             />
           </div>
-          <Text as="h1" variant="heading1">
+          <Text as="h1" variant="heading1" className="">
             Hiya! I&apos;m
             <br />
-            <span className="decoration-secondary dark:decoration-red text-5xl font-black italic underline decoration-wavy decoration-2 underline-offset-4 dark:decoration-solid">
+            <span className="decoration-secondary dark:decoration-red text-4xl font-black italic underline decoration-wavy decoration-2 underline-offset-4 lg:text-5xl dark:decoration-solid">
               Vincent Langlois
             </span>
             ,
@@ -56,42 +56,46 @@ export default function Home() {
             currently working at Eli Lilly and Company as a senior software
             engineer.
           </Text>
-          <div className="flex w-full flex-row items-center gap-3">
-            <NavLink
-              variant="button"
-              appearance="primary"
-              href="/about"
-              aria-label="About Me"
-            >
-              About Me
-              <ArrowRightIcon size="24" weight="bold" />
-            </NavLink>
-            <NavLink
-              variant="button"
-              appearance="primary"
-              href="#"
-              aria-label="My Resume"
-            >
-              Resume
-              <DownloadIcon size="24" weight="bold" />
-            </NavLink>
+          <div className="flex w-full flex-col items-start gap-3 lg:flex-row lg:items-center">
+            <div className="flex flex-row gap-3">
+              <NavLink
+                variant="button"
+                appearance="primary"
+                href="/about"
+                aria-label="About Me"
+              >
+                About Me
+                <ArrowRightIcon size="24" weight="bold" />
+              </NavLink>
+              <NavLink
+                variant="button"
+                appearance="primary"
+                href="#"
+                aria-label="My Resume"
+              >
+                Resume
+                <DownloadIcon size="24" weight="bold" />
+              </NavLink>
+            </div>
 
-            <NavLink
-              variant="icon"
-              appearance="primary"
-              href="https://github.com/vtlanglois"
-              aria-label="Github"
-            >
-              <GithubLogoIcon size="32" weight="bold" />
-            </NavLink>
-            <NavLink
-              variant="icon"
-              appearance="primary"
-              href="https://www.linkedin.com/in/vtlanglois/"
-              aria-label="LinkedIn"
-            >
-              <LinkedinLogoIcon size="32" weight="bold" />
-            </NavLink>
+            <div className="flex flex-row gap-3">
+              <NavLink
+                variant="icon"
+                appearance="primary"
+                href="https://github.com/vtlanglois"
+                aria-label="Github"
+              >
+                <GithubLogoIcon size="32" weight="bold" />
+              </NavLink>
+              <NavLink
+                variant="icon"
+                appearance="primary"
+                href="https://www.linkedin.com/in/vtlanglois/"
+                aria-label="LinkedIn"
+              >
+                <LinkedinLogoIcon size="32" weight="bold" />
+              </NavLink>
+            </div>
           </div>
         </Card>
       </Section>

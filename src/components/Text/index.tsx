@@ -11,11 +11,12 @@ interface TextProps
 }
 
 const variantStyles = {
-  heading1: "font-serif font-bold text-4xl",
-  heading2: "flex flex-row items-center gap-2 font-serif text-3xl font-bold",
+  heading1: "font-serif font-bold text-3xl lg:text-4xl",
+  heading2:
+    "flex flex-row items-center gap-2 font-serif text-2xl lg:text-3xl font-bold",
   heading3:
-    "light:font-light flex flex-row items-center gap-2 font-serif text-xl",
-  paragraph: "font-sans text-xl tracking-tight",
+    "light:font-light flex flex-row items-center gap-2 font-serif text-lg lg:text-xl",
+  paragraph: "font-sans text-lg lg:text-xl tracking-tight",
 };
 
 export default function Text({ as, variant, children, className }: TextProps) {
