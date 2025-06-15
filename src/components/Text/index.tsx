@@ -1,7 +1,12 @@
 import { WithVariant } from "@/types";
 import clsx from "clsx";
 
-type TextVariant = "heading1" | "heading2" | "heading3" | "paragraph";
+type TextVariant =
+  | "heading1"
+  | "heading2"
+  | "heading3"
+  | "paragraph"
+  | "caption";
 
 interface TextProps
   extends WithVariant<TextVariant>,
@@ -17,6 +22,7 @@ const variantStyles = {
   heading3:
     "light:font-light flex flex-row items-center gap-2 font-serif text-lg lg:text-xl",
   paragraph: "font-sans text-lg lg:text-xl tracking-tight",
+  caption: "font-sans text-sm tracking-tight",
 };
 
 export default function Text({ as, variant, children, className }: TextProps) {

@@ -18,8 +18,7 @@ export default function Divider({
     variant === "primary" && "border-foreground dark:border-red",
     variant === "secondary" && "border-white",
     ariaOrientation === "horizontal" && "h-2 w-full translate-y-0.5 border-t-3",
-    ariaOrientation === "vertical" &&
-      "h-full w-1 translate-x-0.5 border-0 border-s-3",
+    ariaOrientation === "vertical" && "h-[75%] w-0.5 border-0 border-s-2",
     className,
   );
   return (
