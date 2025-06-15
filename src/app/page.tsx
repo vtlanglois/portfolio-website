@@ -21,6 +21,7 @@ import Stack from "@/components/Stack";
 import TagList from "@/components/TagList";
 import { TAGS } from "@/data/tags";
 import { GitHubIconLink, LinkedInIconLink } from "@/components/SocialIconLink";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function Home() {
   return (
@@ -232,55 +233,37 @@ export default function Home() {
           <BooksIcon size="32" weight="fill" />
           Projects
         </SectionHeader>
-        <Grid>
-          <Stack>
-            <Text as="h3" variant="heading3">
-              Project 1
-            </Text>
-            <Text as="p" variant="paragraph">
-              Description of project 1.
-            </Text>
-          </Stack>
-          <Stack>
-            <Text as="h3" variant="heading3">
-              Project 2
-            </Text>
-            <Text as="p" variant="paragraph">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-              optio ut praesentium cum, laudantium reprehenderit, quisquam
-              voluptatum tenetur debitis et a. Optio odit sunt ut, repellat in
-              error temporibus nemo?
-            </Text>
-            <TagList
-              tags={[
-                TAGS.javascript,
-                TAGS.react,
-                TAGS.projectManagement,
-                TAGS.nodejs,
-                TAGS.accessibility,
-                TAGS.genai,
-              ]}
+        <Stack>
+          <Grid>
+            <ProjectCard
+              heading="Project 1"
+              summary="This is a test"
+              tags={[TAGS.javascript, TAGS.react, TAGS.nodejs]}
+              internalUrl="/"
             />
-          </Stack>
-          <Stack>
-            <Text as="h3" variant="heading3">
-              Project 3
-            </Text>
-            <Text as="p" variant="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              voluptatum. Quisquam, voluptatum.
-            </Text>
-          </Stack>
-        </Grid>
-        <NavLink
-          variant="button"
-          appearance="primary"
-          href="/projects"
-          className="self-end"
-        >
-          View All Projects
-          <ArrowRightIcon size="24" weight="bold" />
-        </NavLink>
+            <ProjectCard
+              heading="Project 1"
+              summary="Lorem Ipsum aisubfiasufbuiasjfbviasjkdvn hjb andoklnvjk bijkhwa vijkbn foikhcvwiousaghbnvjcpoascisz "
+              tags={[TAGS.javascript, TAGS.react, TAGS.projectManagement]}
+              internalUrl="/"
+            />
+            <ProjectCard
+              heading="Project 1"
+              summary="This is a test"
+              tags={[TAGS.accessibility, TAGS.genai]}
+              internalUrl="/"
+            />
+          </Grid>
+          <NavLink
+            variant="button"
+            appearance="primary"
+            href="/projects"
+            className="self-end"
+          >
+            View All Projects
+            <ArrowRightIcon size="24" weight="bold" />
+          </NavLink>
+        </Stack>
       </Section>
     </>
   );
