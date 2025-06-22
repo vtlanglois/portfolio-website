@@ -1,6 +1,10 @@
 import Container from "@/components/Container";
 import Text from "@/components/Text";
-import { GitHubIconLink, LinkedInIconLink } from "@/components/SocialIconLink";
+import {
+  CodepenIconLink,
+  GitHubIconLink,
+  LinkedInIconLink,
+} from "@/components/SocialIconLink";
 import Divider from "../Divider";
 
 export default function Footer() {
@@ -16,6 +20,7 @@ export default function Footer() {
           <div className="flex flex-row gap-3">
             <GitHubIconLink className="dark:hover:!bg-black" />
             <LinkedInIconLink className="dark:hover:!bg-black" />
+            <CodepenIconLink className="dark:hover:!bg-black" />
           </div>
         </div>
       </Container>

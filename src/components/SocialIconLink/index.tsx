@@ -1,7 +1,11 @@
 "use client";
 
 import NavLink from "@/components/NavLink";
-import { GithubLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react";
+import {
+  GithubLogoIcon,
+  LinkedinLogoIcon,
+  CodepenLogoIcon,
+} from "@phosphor-icons/react";
 
 export function GitHubIconLink({ className }: React.HTMLAttributes<"a">) {
   return (
@@ -27,6 +31,20 @@ export function LinkedInIconLink({ className }: React.HTMLAttributes<"a">) {
       className={className}
     >
       <LinkedinLogoIcon size="32" weight="bold" />
+    </NavLink>
+  );
+}
+
+export function CodepenIconLink({ className }: React.HTMLAttributes<"a">) {
+  return (
+    <NavLink
+      variant="icon"
+      appearance="primary"
+      href="https://codepen.io/vtlanglois"
+      aria-label="CodePen"
+      className={className}
+    >
+      <CodepenLogoIcon size="32" />
     </NavLink>
   );
 }

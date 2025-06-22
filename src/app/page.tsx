@@ -14,13 +14,16 @@ import {
   DownloadIcon,
 } from "@phosphor-icons/react/ssr";
 import NavLink from "@/components/NavLink";
-import Card from "@/components/Card";
 import Section, { SectionHeader } from "@/components/Section";
 import Grid from "@/components/Grid";
 import Stack from "@/components/Stack";
 import TagList from "@/components/TagList";
 import { TAGS } from "@/data/tags";
-import { GitHubIconLink, LinkedInIconLink } from "@/components/SocialIconLink";
+import {
+  GitHubIconLink,
+  LinkedInIconLink,
+  CodepenIconLink,
+} from "@/components/SocialIconLink";
 import ProjectCard from "@/components/ProjectCard";
 import ExperienceCard from "@/components/ExperienceCard";
 
@@ -70,6 +73,7 @@ export default function Home() {
             <div className="flex flex-row gap-3">
               <GitHubIconLink />
               <LinkedInIconLink />
+              <CodepenIconLink />
             </div>
           </div>
         </div>
