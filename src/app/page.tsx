@@ -65,15 +65,6 @@ export default function Home() {
                 About Me
                 <ArrowRightIcon size="24" weight="bold" />
               </NavLink>
-              <NavLink
-                variant="button"
-                appearance="primary"
-                href="#"
-                aria-label="My Resume"
-              >
-                Resume
-                <DownloadIcon size="24" weight="bold" />
-              </NavLink>
             </div>
 
             <div className="flex flex-row gap-3">
@@ -141,6 +132,16 @@ export default function Home() {
               TAGS.genai,
             ]}
           />
+          <NavLink
+            variant="button"
+            appearance="primary"
+            href="#"
+            aria-label="My Resume"
+            className="self-end"
+          >
+            View Resume
+            <DownloadIcon size="24" weight="bold" />
+          </NavLink>
         </Stack>
       </Section>
       <Section>
