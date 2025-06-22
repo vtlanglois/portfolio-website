@@ -145,6 +145,43 @@ export default function Home() {
       </Section>
       <Section>
         <SectionHeader>
+          <BooksIcon size="32" weight="fill" />
+          Projects
+        </SectionHeader>
+        <Stack>
+          <Grid>
+            <ProjectCard
+              heading="Project 1"
+              summary="This is a test"
+              tags={[TAGS.javascript, TAGS.react, TAGS.nodejs]}
+              internalUrl="/"
+            />
+            <ProjectCard
+              heading="Project 1"
+              summary="Lorem Ipsum aisubfiasufbuiasjfbviasjkdvn hjb andoklnvjk bijkhwa vijkbn foikhcvwiousaghbnvjcpoascisz "
+              tags={[TAGS.javascript, TAGS.react, TAGS.projectManagement]}
+              internalUrl="/"
+            />
+            <ProjectCard
+              heading="Project 1"
+              summary="This is a test"
+              tags={[TAGS.accessibility, TAGS.genai]}
+              internalUrl="/"
+            />
+          </Grid>
+          <NavLink
+            variant="button"
+            appearance="primary"
+            href="/projects"
+            className="self-end"
+          >
+            View All Projects
+            <ArrowRightIcon size="24" weight="bold" />
+          </NavLink>
+        </Stack>
+      </Section>
+            <Section>
+        <SectionHeader>
           <ListStarIcon size="32" weight="fill" />
           Skills
         </SectionHeader>
@@ -239,43 +276,6 @@ export default function Home() {
               TAGS.prettier,
             ]}
           />
-        </Stack>
-      </Section>
-      <Section>
-        <SectionHeader>
-          <BooksIcon size="32" weight="fill" />
-          Projects
-        </SectionHeader>
-        <Stack>
-          <Grid>
-            <ProjectCard
-              heading="Project 1"
-              summary="This is a test"
-              tags={[TAGS.javascript, TAGS.react, TAGS.nodejs]}
-              internalUrl="/"
-            />
-            <ProjectCard
-              heading="Project 1"
-              summary="Lorem Ipsum aisubfiasufbuiasjfbviasjkdvn hjb andoklnvjk bijkhwa vijkbn foikhcvwiousaghbnvjcpoascisz "
-              tags={[TAGS.javascript, TAGS.react, TAGS.projectManagement]}
-              internalUrl="/"
-            />
-            <ProjectCard
-              heading="Project 1"
-              summary="This is a test"
-              tags={[TAGS.accessibility, TAGS.genai]}
-              internalUrl="/"
-            />
-          </Grid>
-          <NavLink
-            variant="button"
-            appearance="primary"
-            href="/projects"
-            className="self-end"
-          >
-            View All Projects
-            <ArrowRightIcon size="24" weight="bold" />
-          </NavLink>
         </Stack>
       </Section>
     </>
