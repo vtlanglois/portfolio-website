@@ -26,7 +26,7 @@ export default function About() {
           </Markdown>
         </Stack>
       </div>
-      <div className="col-span-2">
+      <aside className="col-span-2">
         <Stack>
           <Text as="h2" variant="heading3">
             My technical interests
@@ -54,7 +54,7 @@ export default function About() {
             <CodepenIconLink href={CODEPEN_URL} />
           </div>
         </Stack>
-      </div>
+      </aside>
     </Article>
   );
 }
