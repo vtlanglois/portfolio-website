@@ -13,7 +13,7 @@ export default function Header() {
               variant="button"
               appearance="secondary"
               href="/"
-              className="mx-0 lg:text-xl"
+              className="mx-0 font-bold lg:text-xl"
             >
               Vincent Langlois
             </NavLink>
@@ -23,7 +23,7 @@ export default function Header() {
               variant="button"
               appearance="secondary"
               href="/about"
-              className="mx-0 text-xl"
+              className="mx-0 text-xl font-bold"
             >
               About
             </NavLink>
@@ -31,7 +31,7 @@ export default function Header() {
               variant="button"
               appearance="secondary"
               href="/projects"
-              className="mx-0 text-xl"
+              className="mx-0 text-xl font-bold"
             >
               Projects
             </NavLink>
@@ -39,7 +39,7 @@ export default function Header() {
               variant="button"
               appearance="secondary"
               href="/"
-              className="mx-0 border-y-0 text-xl"
+              className="mx-0 border-y-0 text-xl font-bold"
             >
               Resume
             </NavLink>

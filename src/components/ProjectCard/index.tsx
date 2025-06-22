@@ -31,8 +31,8 @@ export default function ProjectCard({
   // const headingClasses = clsx(internalUrl && "hover:underline");
 
   return (
-    <div className="border-primary-400 dark:border-red row-span-4 mb-3 grid grid-rows-subgrid gap-3 rounded-xl border-4 shadow-lg dark:shadow-none">
-      <header className="bg-primary-400 dark:bg-red rounded-t-lg p-3">
+    <div className="border-primary-400 bg-primary-400 dark:bg-red dark:border-red row-span-4 mb-3 grid grid-rows-subgrid gap-3 rounded-xl border-4 shadow-lg dark:bg-transparent dark:shadow-none">
+      <header className="dark:bg-red rounded-t-lg p-3">
         <Text as="h3" variant="heading3">
           {heading}
         </Text>
@@ -41,7 +41,7 @@ export default function ProjectCard({
         {summary}
       </Text>
       <TagList tags={tags} className="p-3" />
-      <footer className="bg-primary-400 dark:bg-red flex flex-row items-stretch justify-between rounded-b-lg p-3">
+      <footer className="dark:bg-red flex flex-row items-stretch justify-between rounded-b-lg p-3">
         {internalUrl && (
           <NavLink variant="button" appearance="secondary" href={internalUrl}>
             Read More <ArrowRightIcon size="20" weight="bold" />
