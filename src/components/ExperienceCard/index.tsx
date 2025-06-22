@@ -27,7 +27,7 @@ export default function ExperienceCard({
   tags,
 }: ExperienceCardProps) {
   return (
-    <Stack className="border-primary-400 bg-primary-400 dark:border-red rounded-xl border-4 shadow-lg dark:bg-transparent dark:shadow-none">
+    <Stack className="border-primary-400 bg-primary-400 dark:border-red rounded-xl border-4 shadow-lg transition-transform duration-200 ease-in-out motion-safe:hover:scale-105 dark:bg-transparent dark:shadow-none">
       <div className="dark:bg-red flex flex-col items-start justify-between rounded-t-lg p-3 lg:flex-row">
         <Text as="h3" variant="heading3">
           {heading}

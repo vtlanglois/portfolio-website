@@ -31,7 +31,7 @@ export default function ProjectCard({
   // const headingClasses = clsx(internalUrl && "hover:underline");
 
   return (
-    <div className="border-primary-400 bg-primary-400 dark:bg-red dark:border-red row-span-4 mb-3 grid grid-rows-subgrid gap-3 rounded-xl border-4 shadow-lg dark:bg-transparent dark:shadow-none">
+    <div className="border-primary-400 bg-primary-400 dark:bg-red dark:border-red row-span-4 mb-3 grid grid-rows-subgrid gap-3 rounded-xl border-4 shadow-lg transition-transform duration-200 ease-in-out motion-safe:hover:scale-105 dark:bg-transparent dark:shadow-none">
       <header className="dark:bg-red rounded-t-lg p-3">
         <Text as="h3" variant="heading3">
           {heading}
