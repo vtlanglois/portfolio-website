@@ -6,6 +6,12 @@ import Test from "@/content/test.mdx";
 import Divider from "@/components/Divider";
 import TagList from "@/components/TagList";
 import { TAGS, hobbyTags, mediaTags } from "@/data/tags";
+import {
+  GitHubIconLink,
+  LinkedInIconLink,
+  CodepenIconLink,
+} from "@/components/SocialIconLink";
+import { GITHUB_URL, LINKEDIN_URL, CODEPEN_URL } from "@/constants";
 
 export default function About() {
   return (
@@ -41,7 +47,12 @@ export default function About() {
             My favorite media
           </Text>
           <TagList tags={Object.values(mediaTags)} />
-          <Divider />
+          <Divider className="hidden lg:block" />
+          <div className="hidden flex-row gap-3 lg:flex">
+            <GitHubIconLink href={GITHUB_URL} />
+            <LinkedInIconLink href={LINKEDIN_URL} />
+            <CodepenIconLink href={CODEPEN_URL} />
+          </div>
         </Stack>
       </div>
     </Article>
