@@ -7,12 +7,16 @@ import {
   CodepenLogoIcon,
 } from "@phosphor-icons/react";
 
-export function GitHubIconLink({ className }: React.HTMLAttributes<"a">) {
+interface IconLinkProps extends React.HTMLAttributes<HTMLAnchorElement> {
+  href: string;
+}
+
+export function GitHubIconLink({ className, href }: IconLinkProps) {
   return (
     <NavLink
       variant="icon"
       appearance="primary"
-      href="https://github.com/vtlanglois"
+      href={href}
       aria-label="Github"
       className={className}
     >
@@ -21,12 +25,12 @@ export function GitHubIconLink({ className }: React.HTMLAttributes<"a">) {
   );
 }
 
-export function LinkedInIconLink({ className }: React.HTMLAttributes<"a">) {
+export function LinkedInIconLink({ className, href }: IconLinkProps) {
   return (
     <NavLink
       variant="icon"
       appearance="primary"
-      href="https://www.linkedin.com/in/vtlanglois/"
+      href={href}
       aria-label="LinkedIn"
       className={className}
     >
@@ -35,12 +39,12 @@ export function LinkedInIconLink({ className }: React.HTMLAttributes<"a">) {
   );
 }
 
-export function CodepenIconLink({ className }: React.HTMLAttributes<"a">) {
+export function CodepenIconLink({ className, href }: IconLinkProps) {
   return (
     <NavLink
       variant="icon"
       appearance="primary"
-      href="https://codepen.io/vtlanglois"
+      href={href}
       aria-label="CodePen"
       className={className}
     >

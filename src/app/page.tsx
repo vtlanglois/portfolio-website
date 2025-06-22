@@ -26,6 +26,7 @@ import {
 } from "@/components/SocialIconLink";
 import ProjectCard from "@/components/ProjectCard";
 import ExperienceCard from "@/components/ExperienceCard";
+import { CODEPEN_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
 
 export default function Home() {
   return (
@@ -71,9 +72,9 @@ export default function Home() {
             </div>
 
             <div className="flex flex-row gap-3">
-              <GitHubIconLink />
-              <LinkedInIconLink />
-              <CodepenIconLink />
+              <GitHubIconLink href={GITHUB_URL} />
+              <LinkedInIconLink href={LINKEDIN_URL} />
+              <CodepenIconLink href={CODEPEN_URL} />
             </div>
           </div>
         </div>

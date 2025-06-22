@@ -5,7 +5,7 @@ import {
   GitHubIconLink,
   LinkedInIconLink,
 } from "@/components/SocialIconLink";
-import Divider from "../Divider";
+import { CODEPEN_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
 
 export default function Footer() {
   return (
@@ -18,9 +18,18 @@ export default function Footer() {
             Made with Next.js, Tailwind, and Typescript.
           </Text>
           <div className="flex flex-row gap-3">
-            <GitHubIconLink className="dark:hover:!bg-black" />
-            <LinkedInIconLink className="dark:hover:!bg-black" />
-            <CodepenIconLink className="dark:hover:!bg-black" />
+            <GitHubIconLink
+              className="dark:hover:!bg-black"
+              href={GITHUB_URL}
+            />
+            <LinkedInIconLink
+              className="dark:hover:!bg-black"
+              href={LINKEDIN_URL}
+            />
+            <CodepenIconLink
+              className="dark:hover:!bg-black"
+              href={CODEPEN_URL}
+            />
           </div>
         </div>
       </Container>
