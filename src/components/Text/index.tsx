@@ -20,13 +20,23 @@ const variantStyles = {
   heading2:
     "flex flex-row items-center gap-2 font-serif text-2xl lg:text-3xl font-bold",
   heading3:
-    "light:font-light flex flex-row items-center gap-2 font-serif text-lg lg:text-xl",
+    "font-semibold flex flex-row items-center gap-2 font-serif text-lg lg:text-xl",
   paragraph: "font-sans text-lg lg:text-xl tracking-tight",
   caption: "font-sans text-sm tracking-tight",
 };
 
-export default function Text({ as, variant, children, className }: TextProps) {
+export default function Text({
+  as,
+  variant,
+  children,
+  className,
+  ...rest
+}: TextProps) {
   const Element = as;
   const classes = clsx(variantStyles[variant], className, "text-foreground");
-  return <Element className={classes}>{children}</Element>;
+  return (
+    <Element className={classes} {...rest}>
+      {children}
+    </Element>
+  );
 }

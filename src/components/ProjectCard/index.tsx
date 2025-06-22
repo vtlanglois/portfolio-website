@@ -9,7 +9,7 @@ import clsx from "clsx";
 interface ProjectCardProps {
   /** Heading for the project card. Is also part of the internal link */
   heading: string | React.ReactNode;
-  /** Paragraph summary of the projec t*/
+  /** Paragraph summary of the project */
   summary: string | React.ReactNode;
   /** Tools, concepts, etc that is associated with the project.
    * @example The tag `React` is for projects that use React

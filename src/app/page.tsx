@@ -22,6 +22,7 @@ import TagList from "@/components/TagList";
 import { TAGS } from "@/data/tags";
 import { GitHubIconLink, LinkedInIconLink } from "@/components/SocialIconLink";
 import ProjectCard from "@/components/ProjectCard";
+import ExperienceCard from "@/components/ExperienceCard";
 
 export default function Home() {
   return (
@@ -88,46 +89,58 @@ export default function Home() {
           Experience
         </SectionHeader>
         <Stack className="gap-6">
-          <Stack>
-            <Text as="h3" variant="heading3">
-              Senior Software Engineer at Eli Lilly and Company
-            </Text>
-            <Text as="p" variant="paragraph">
-              Currently working on building and maintaining software solutions
+          <ExperienceCard
+            heading="Senior Software Engineer at Eli Lilly and Company"
+            duration={{
+              text: "July 2023 - Present",
+              ariaLabel: "July 2023 to Present",
+            }}
+            summary="Currently working on building and maintaining software solutions
               for the pharmaceutical industry, focusing on improving patient
-              outcomes through technology.
-            </Text>
-          </Stack>
-          <Stack>
-            <Text as="h3" variant="heading3">
-              Senior Software Engineer at Eli Lilly and Company
-            </Text>
-            <Text as="p" variant="paragraph">
-              Currently working on building and maintaining software solutions
+              outcomes through technology."
+            tags={[
+              TAGS.javascript,
+              TAGS.react,
+              TAGS.projectManagement,
+              TAGS.nodejs,
+              TAGS.accessibility,
+              TAGS.genai,
+            ]}
+          />
+          <ExperienceCard
+            heading="Senior Software Engineer at Eli Lilly and Company"
+            duration={{
+              text: "July 2023 - Present",
+              ariaLabel: "July 2023 to Present",
+            }}
+            summary="Currently working on building and maintaining software solutions
               for the pharmaceutical industry, focusing on improving patient
-              outcomes through technology.
-            </Text>
-            <TagList
-              tags={[
-                TAGS.javascript,
-                TAGS.react,
-                TAGS.projectManagement,
-                TAGS.nodejs,
-                TAGS.accessibility,
-                TAGS.genai,
-              ]}
-            />
-          </Stack>
-          <Stack>
-            <Text as="h3" variant="heading3">
-              Senior Software Engineer at Eli Lilly and Company
-            </Text>
-            <Text as="p" variant="paragraph">
-              Currently working on building and maintaining software solutions
-              for the pharmaceutical industry, focusing on improving patient
-              outcomes through technology.
-            </Text>
-          </Stack>
+              outcomes through technology."
+            tags={[
+              TAGS.javascript,
+              TAGS.react,
+              TAGS.projectManagement,
+              TAGS.nodejs,
+              TAGS.accessibility,
+              TAGS.genai,
+            ]}
+          />
+          <ExperienceCard
+            heading="Senior Software Engineer at Eli Lilly and Company"
+            duration={{
+              text: "July 2023 - Present",
+              ariaLabel: "July 2023 to Present",
+            }}
+            summary="Currently working "
+            tags={[
+              TAGS.javascript,
+              TAGS.react,
+              TAGS.projectManagement,
+              TAGS.nodejs,
+              TAGS.accessibility,
+              TAGS.genai,
+            ]}
+          />
         </Stack>
       </Section>
       <Section>
