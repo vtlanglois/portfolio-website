@@ -16,7 +16,7 @@ export function GitHubIconLink({ className, href }: IconLinkProps) {
     <NavLink
       variant="icon"
       appearance="primary"
-      href={href}
+      href={href ?? "#"}
       aria-label="Github"
       className={className}
     >
@@ -30,7 +30,7 @@ export function LinkedInIconLink({ className, href }: IconLinkProps) {
     <NavLink
       variant="icon"
       appearance="primary"
-      href={href}
+      href={href ?? "#"}
       aria-label="LinkedIn"
       className={className}
     >
@@ -44,7 +44,7 @@ export function CodepenIconLink({ className, href }: IconLinkProps) {
     <NavLink
       variant="icon"
       appearance="primary"
-      href={href}
+      href={href ?? "#"}
       aria-label="CodePen"
       className={className}
     >
