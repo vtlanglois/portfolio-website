@@ -1,5 +1,6 @@
 import { WithVariant } from "@/types";
 import clsx from "clsx";
+import { useMemo } from "react";
 
 type TextVariant =
   | "heading1"
@@ -33,7 +34,10 @@ export default function Text({
   ...rest
 }: TextProps) {
   const Element = as;
-  const classes = clsx(variantStyles[variant], className, "text-foreground");
+  const classes = useMemo(
+    () => clsx(variantStyles[variant], className, "text-foreground"),
+    [variant, className]
+  );
   return (
     <Element className={classes} {...rest}>
       {children}

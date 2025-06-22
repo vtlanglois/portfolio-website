@@ -27,6 +27,7 @@ import {
   BookIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import clsx from "clsx";
+import { useMemo } from "react";
 import { TagVariant, IconName } from "@/types/tagTypes";
 
 interface TagProps
@@ -82,10 +83,14 @@ export default function Tag({
   children,
   className = "",
 }: TagProps) {
-  const classes = clsx(
-    "flex items-center gap-1 rounded-full px-2 py-1 font-sans text-sm leading-none font-bold tracking-tight lg:px-3 lg:py-1.5 shadow-md dark:shadow-none",
-    variantStyles[variant],
-    className,
+  const classes = useMemo(
+    () =>
+      clsx(
+        "flex items-center gap-1 rounded-full px-2 py-1 font-sans text-sm leading-none font-bold tracking-tight lg:px-3 lg:py-1.5 shadow-md dark:shadow-none",
+        variantStyles[variant],
+        className,
+      ),
+    [variant, className],
   );
 
   const selectedIcon = () => {

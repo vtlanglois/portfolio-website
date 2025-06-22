@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       <Section>
-        <Card className="flex flex-col items-start justify-start gap-3">
+        <div className="flex flex-col items-start justify-start gap-3">
           <div className="flex w-full flex-row items-center justify-center gap-1 lg:justify-start">
             <HandWavingIcon size="64" weight="duotone" className="hand-icon" />
             <HandPeaceIcon size="64" weight="duotone" className="hand-icon" />
@@ -81,7 +81,7 @@ export default function Home() {
               <LinkedInIconLink />
             </div>
           </div>
-        </Card>
+        </div>
       </Section>
       <Section>
         <SectionHeader>

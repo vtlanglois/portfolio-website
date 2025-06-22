@@ -19,9 +19,7 @@ export default function TagList({
   ariaLabel,
   className,
 }: TagListProps) {
-  const classes = useMemo(() => {
-    return clsx("flex flex-wrap gap-x-2 gap-y-3", className);
-  }, [className]);
+  const classes = useMemo(() => clsx("flex flex-wrap gap-x-2 gap-y-3", className), [className]);
 
   const sortedTags = useMemo(() => sortTags(tags), [tags]);
 

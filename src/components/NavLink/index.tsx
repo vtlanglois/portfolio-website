@@ -3,6 +3,7 @@
 import { WithVariant, WithAppearance } from "@/types";
 import clsx from "clsx";
 import Link from "next/link";
+import { useMemo } from "react";
 
 type NavLinkVariant = "button" | "icon" | "text";
 type NavLinkAppearance = "primary" | "secondary";
@@ -48,10 +49,14 @@ export default function NavLink({
   rel,
   ...props
 }: LinkProps) {
-  const classes = clsx(
-    variantStyles[variant].base,
-    variantStyles[variant][appearance],
-    className,
+  const classes = useMemo(
+    () =>
+      clsx(
+        variantStyles[variant].base,
+        variantStyles[variant][appearance],
+        className,
+      ),
+    [variant, appearance, className],
   );
 
   if (!href?.startsWith("http")) {

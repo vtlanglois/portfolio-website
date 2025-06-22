@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { useMemo } from "react";
 import { WithVariant } from "@/types";
 
 type DividerVariant = "primary" | "secondary";
@@ -14,13 +15,19 @@ export default function Divider({
   className,
   ...props
 }: DividerProps) {
-  const classes = clsx(
-    variant === "primary" && "border-foreground dark:border-red",
-    variant === "secondary" && "border-white",
-    ariaOrientation === "horizontal" && "h-2 w-full translate-y-0.5 border-t-3",
-    ariaOrientation === "vertical" && "h-[75%] w-0.5 border-0 border-s-2",
-    className,
+  const classes = useMemo(
+    () =>
+      clsx(
+        variant === "primary" && "border-foreground dark:border-red",
+        variant === "secondary" && "border-white",
+        ariaOrientation === "horizontal" &&
+          "h-2 w-full translate-y-0.5 border-t-3",
+        ariaOrientation === "vertical" && "h-[75%] w-0.5 border-0 border-s-2",
+        className
+      ),
+    [className]
   );
+
   return (
     <hr aria-orientation={ariaOrientation} className={classes} {...props} />
   );
