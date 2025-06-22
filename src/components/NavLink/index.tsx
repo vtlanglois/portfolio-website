@@ -21,7 +21,7 @@ const variantStyles: Record<
   button: {
     base: "text-sm lg:text-md inline-flex items-center justify-center gap-2 rounded-md font-sans tracking-tight",
     primary:
-      "transition-color bg-secondary p-3 font-bold text-foreground-secondary shadow-none hover:bg-secondary-50 hover:shadow-sm active:bg-secondary-300 motion-safe:transition-shadow motion-safe:transition-transform motion-safe:duration-200 motion-safe:hover:translate-x-0.5 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-105 dark:bg-red dark:text-foreground dark:hover:bg-cool-blue",
+      "transition-color bg-secondary p-3 font-bold text-foreground-secondary shadow-md dark:shadow-none hover:bg-secondary-50 hover:shadow-lg active:bg-secondary-300 motion-safe:transition-shadow motion-safe:transition-transform motion-safe:duration-200 motion-safe:hover:translate-x-0.5 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-105 dark:bg-red dark:text-foreground dark:hover:bg-cool-blue",
     secondary:
       "p-2 text-foreground duration-200 hover:bg-primary-50 motion-safe:transition-colors dark:hover:bg-black",
   },

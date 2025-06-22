@@ -83,7 +83,7 @@ export default function Tag({
   className = "",
 }: TagProps) {
   const classes = clsx(
-    "flex items-center gap-1 rounded-full px-2 py-1 font-sans text-sm leading-none font-bold tracking-tight lg:px-3 lg:py-1.5",
+    "flex items-center gap-1 rounded-full px-2 py-1 font-sans text-sm leading-none font-bold tracking-tight lg:px-3 lg:py-1.5 shadow-md dark:shadow-none",
     variantStyles[variant],
     className,
   );
