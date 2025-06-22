@@ -180,7 +180,7 @@ export default function Home() {
           </NavLink>
         </Stack>
       </Section>
-            <Section>
+      <Section>
         <SectionHeader>
           <ListStarIcon size="32" weight="fill" />
           Skills

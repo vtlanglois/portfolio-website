@@ -8,10 +8,7 @@ interface ArticleProps
 export default function Article({ className, children }: ArticleProps) {
   const classes = useMemo(
     () =>
-      clsx(
-        "grid grid-cols-1 gap-12 py-3 lg:grid-cols-5 lg:py-12",
-        className,
-      ),
+      clsx("grid grid-cols-1 gap-12 py-3 lg:grid-cols-5 lg:py-12", className),
     [className],
   );
   return <article className={classes}>{children}</article>;

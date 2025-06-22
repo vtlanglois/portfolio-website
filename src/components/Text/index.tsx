@@ -36,7 +36,7 @@ export default function Text({
   const Element = as;
   const classes = useMemo(
     () => clsx(variantStyles[variant], className, "text-foreground"),
-    [variant, className]
+    [variant, className],
   );
   return (
     <Element className={classes} {...rest}>

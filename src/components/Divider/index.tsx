@@ -23,9 +23,9 @@ export default function Divider({
         ariaOrientation === "horizontal" &&
           "h-2 w-full translate-y-0.5 border-t-3",
         ariaOrientation === "vertical" && "h-[75%] w-0.5 border-0 border-s-2",
-        className
+        className,
       ),
-    [className]
+    [className],
   );
 
   return (

@@ -12,7 +12,10 @@ interface SectionHeaderProps
     React.ComponentProps<"div"> {}
 
 export function SectionHeader({ children, className }: SectionHeaderProps) {
-  const classes = useMemo(() => clsx("w-full flex flex-row gap-3", className), [className]);
+  const classes = useMemo(
+    () => clsx("w-full flex flex-row gap-3", className),
+    [className],
+  );
   return (
     <div className="w-full">
       <Text as="h2" variant="heading2" className={classes}>
@@ -24,9 +27,10 @@ export function SectionHeader({ children, className }: SectionHeaderProps) {
 }
 
 export default function Section({ children, className }: SectionProps) {
-  const classes = useMemo(() => clsx(
-    "flex flex-col items-start justify-stretch gap-4 py-12",
-    className,
-  ), [className]);
+  const classes = useMemo(
+    () =>
+      clsx("flex flex-col items-start justify-stretch gap-4 py-12", className),
+    [className],
+  );
   return <section className={classes}>{children}</section>;
 }
