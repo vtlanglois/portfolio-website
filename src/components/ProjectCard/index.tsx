@@ -16,7 +16,7 @@ interface ProjectCardProps {
    */
   tags: TagItem[];
   /** URL for the project's internal details page. Only one per project, not all projects have details pages */
-  internalUrl: string;
+  internalUrl?: string;
   /** External URL for the project, such as GitHub repos, itch.io sources, etc. Only one per card */
   externalUrl: string;
 }
