@@ -1,14 +1,25 @@
+import React from "react";
 import { TagItem } from "./tagTypes";
 
 export interface ProjectItem {
+  /** Unique identifier for the project */
+  id: string;
   /** Name of the project */
   name: string;
-  /** Description of the project */
-  description: string;
+  /** Summary of the project */
+  summary: string;
   /** List of tags associated with the project */
   tags: TagItem[];
-  /** URL for the project's internal details page. Only one per project, not all projects have details pages */
-  internalUrl?: string;
   /** External URL for the project, such as GitHub repos, itch.io sources, etc. Only one per card */
   externalUrl: string;
 }
+
+/** Interface for projects with a details page */
+export interface WithDetailsPage {
+  /** Unique path for the projects details page, if one exists */
+  slug: string;
+  /** Body for the details page */
+  body: React.ReactNode;
+}
+
+export interface DetailedProjectItem extends ProjectItem, WithDetailsPage {}

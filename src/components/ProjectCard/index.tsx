@@ -15,8 +15,8 @@ interface ProjectCardProps {
    * @example The tag `React` is for projects that use React
    */
   tags: TagItem[];
-  /** URL for the project's internal details page. Only one per project, not all projects have details pages */
-  internalUrl?: string;
+  /** slug for the project's internal details page. Only one per project, not all projects have details pages */
+  slug?: string;
   /** External URL for the project, such as GitHub repos, itch.io sources, etc. Only one per card */
   externalUrl: string;
 }
@@ -25,7 +25,7 @@ export default function ProjectCard({
   heading,
   summary,
   tags,
-  internalUrl,
+  slug,
   externalUrl,
 }: ProjectCardProps) {
   // const headingClasses = clsx(internalUrl && "hover:underline");
@@ -42,8 +42,12 @@ export default function ProjectCard({
       </Text>
       <TagList tags={tags} className="p-3" />
       <footer className="dark:bg-red flex flex-row items-stretch justify-between rounded-b-lg p-3">
-        {internalUrl && (
-          <NavLink variant="button" appearance="secondary" href={internalUrl}>
+        {slug && (
+          <NavLink
+            variant="button"
+            appearance="secondary"
+            href={`/projects/${slug}`}
+          >
             Read More <ArrowRightIcon size="20" weight="bold" />
           </NavLink>
         )}
