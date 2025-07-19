@@ -302,6 +302,12 @@ const topicTags: Record<string, TagItem> = {
     icon: "atom",
     group: "topic",
   },
+  educationTech: {
+    text: "Educational Tech",
+    variant: "topic",
+    icon: "book",
+    group: "topic",
+  },
 };
 
 export const hobbyTags: Record<string, TagItem> = {

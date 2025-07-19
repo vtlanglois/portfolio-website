@@ -37,6 +37,7 @@ export default function About() {
               TAGS.gameDevelopment,
               TAGS.accessibility,
               TAGS.react,
+              TAGS.educationTech,
             ]}
           />
           <Text as="h2" variant="heading3">

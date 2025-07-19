@@ -3,8 +3,24 @@ import Text from "@/components/Text";
 import Grid from "@/components/Grid";
 import ProjectCard from "@/components/ProjectCard";
 import { TAGS } from "@/data/tags";
+import { useMemo } from "react";
+import projects from "@/data/projects";
+import { ProjectItem } from "@/types/projectTypes";
 
 export default function Projects() {
+  const projectCards = useMemo(() => {
+    return projects.map((project: ProjectItem) => (
+      <ProjectCard
+        key={project.name}
+        heading={project.name}
+        summary={project.description}
+        tags={project.tags}
+        internalUrl={project.internalUrl}
+        externalUrl={project.externalUrl}
+      />
+    ));
+  }, [projects]);
+
   return (
     <Section>
       <Text as="h1" variant="heading1">
@@ -16,60 +32,7 @@ export default function Projects() {
         and interests in various domains.
       </Text>
       <Grid>
-        <ProjectCard
-          heading="Project 1"
-          summary="This is a test"
-          tags={[TAGS.javascript, TAGS.react, TAGS.nodejs]}
-          internalUrl="/"
-        />
-        <ProjectCard
-          heading="Project 1"
-          summary="Lorem Ipsum aisubfiasufbuiasjfbviasjkdvn hjb andoklnvjk bijkhwa vijkbn foikhcvwiousaghbnvjcpoascisz "
-          tags={[TAGS.javascript, TAGS.react, TAGS.projectManagement]}
-          internalUrl="/"
-        />
-        <ProjectCard
-          heading="Project 1"
-          summary="This is a test"
-          tags={[TAGS.accessibility, TAGS.genai]}
-          internalUrl="/"
-        />
-        <ProjectCard
-          heading="Project 1"
-          summary="This is a test"
-          tags={[TAGS.javascript, TAGS.react, TAGS.nodejs]}
-          internalUrl="/"
-        />
-        <ProjectCard
-          heading="Project 1"
-          summary="Lorem Ipsum aisubfiasufbuiasjfbviasjkdvn hjb andoklnvjk bijkhwa vijkbn foikhcvwiousaghbnvjcpoascisz "
-          tags={[TAGS.javascript, TAGS.react, TAGS.projectManagement]}
-          internalUrl="/"
-        />
-        <ProjectCard
-          heading="Project 1"
-          summary="This is a test"
-          tags={[TAGS.accessibility, TAGS.genai]}
-          internalUrl="/"
-        />
-        <ProjectCard
-          heading="Project 1"
-          summary="This is a test"
-          tags={[TAGS.javascript, TAGS.react, TAGS.nodejs]}
-          internalUrl="/"
-        />
-        <ProjectCard
-          heading="Project 1"
-          summary="Lorem Ipsum aisubfiasufbuiasjfbviasjkdvn hjb andoklnvjk bijkhwa vijkbn foikhcvwiousaghbnvjcpoascisz "
-          tags={[TAGS.javascript, TAGS.react, TAGS.projectManagement]}
-          internalUrl="/"
-        />
-        <ProjectCard
-          heading="Project 1"
-          summary="This is a test"
-          tags={[TAGS.accessibility, TAGS.genai]}
-          internalUrl="/"
-        />
+        {projectCards}
       </Grid>
     </Section>
   );
