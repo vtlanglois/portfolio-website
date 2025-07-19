@@ -5,6 +5,7 @@ import Text from "@/components/Text";
 import TagList from "@/components/TagList";
 import Stack from "@/components/Stack";
 import { useCallback } from "react";
+import { notFound } from "next/navigation";
 
 export default async function Page({
   params,
@@ -16,6 +17,9 @@ export default async function Page({
     (p): p is DetailedProjectItem =>
       "slug" in p && typeof p.slug === "string" && p.slug === slug,
   );
+  if (!project) {
+    notFound();
+  }
 
   return (
     <Article>
