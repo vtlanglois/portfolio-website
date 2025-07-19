@@ -4,6 +4,8 @@ import { TagItem } from "./tagTypes";
 export interface ProjectItem {
   /** Unique identifier for the project */
   id: string;
+  /** Unique path for the projects details page, if one exists */
+  slug?: string;
   /** Name of the project */
   name: string;
   /** Summary of the project */
@@ -12,14 +14,6 @@ export interface ProjectItem {
   tags: TagItem[];
   /** External URL for the project, such as GitHub repos, itch.io sources, etc. Only one per card */
   externalUrl: string;
+  /** Body for the details page, if one exists */
+  body?: React.ReactNode;
 }
-
-/** Interface for projects with a details page */
-export interface WithDetailsPage {
-  /** Unique path for the projects details page, if one exists */
-  slug: string;
-  /** Body for the details page */
-  body: React.ReactNode;
-}
-
-export interface DetailedProjectItem extends ProjectItem, WithDetailsPage {}

@@ -1,7 +1,7 @@
-import { ProjectItem, DetailedProjectItem } from "@/types/projectTypes";
+import { ProjectItem } from "@/types/projectTypes";
 import { TAGS } from "./tags";
 
-export const webDevProjects: Array<DetailedProjectItem> = [
+export const webDevProjects: Array<ProjectItem> = [
   {
     id: "portfolio-website",
     slug: "portfolio-website",
@@ -14,7 +14,7 @@ export const webDevProjects: Array<DetailedProjectItem> = [
   },
 ];
 
-export const gameDevProjects: Array<DetailedProjectItem> = [
+export const gameDevProjects: Array<ProjectItem> = [
   {
     id: "atlas-m1",
     slug: "atlas-m1",
@@ -65,7 +65,13 @@ export const miscProjects: Array<ProjectItem> = [
   },
 ];
 
-const projects: Array<ProjectItem | DetailedProjectItem> = [
+export const showcaseProjects: Array<ProjectItem> = [
+  webDevProjects[0],
+  gameDevProjects[0],
+  arduinoProjects[0],
+];
+
+const projects: Array<ProjectItem> = [
   ...webDevProjects,
   ...miscProjects,
   ...gameDevProjects,

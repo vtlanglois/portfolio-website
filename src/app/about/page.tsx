@@ -26,6 +26,7 @@ export default function About() {
           </Markdown>
         </Stack>
       </div>
+      Z
       <aside className="col-span-2">
         <Stack>
           <Text as="h2" variant="heading3">

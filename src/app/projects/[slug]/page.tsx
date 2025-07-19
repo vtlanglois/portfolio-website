@@ -1,5 +1,4 @@
 import projects from "@/data/projects";
-import { DetailedProjectItem } from "@/types/projectTypes";
 import Article from "@/components/Article";
 import Text from "@/components/Text";
 import TagList from "@/components/TagList";
@@ -14,8 +13,10 @@ export default async function Page({
 }) {
   const { slug } = await params;
   const project = projects.find(
-    (p): p is DetailedProjectItem =>
-      "slug" in p && typeof p.slug === "string" && p.slug === slug,
+    (project) =>
+      "slug" in project &&
+      typeof project.slug === "string" &&
+      project.slug === slug,
   );
   if (!project) {
     notFound();

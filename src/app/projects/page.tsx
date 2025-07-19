@@ -4,11 +4,11 @@ import Grid from "@/components/Grid";
 import ProjectCard from "@/components/ProjectCard";
 import { useMemo } from "react";
 import projects from "@/data/projects";
-import { ProjectItem } from "@/types/projectTypes";
+import { DetailedProjectItem, ProjectItem } from "@/types/projectTypes";
 
 export default function Projects() {
   const projectCards = useMemo(() => {
-    return projects.map((project: ProjectItem) => (
+    return projects.map((project: ProjectItem | DetailedProjectItem) => (
       <ProjectCard
         key={project.id}
         heading={project.name}

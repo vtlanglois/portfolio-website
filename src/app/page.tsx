@@ -27,6 +27,7 @@ import {
 import ProjectCard from "@/components/ProjectCard";
 import ExperienceCard from "@/components/ExperienceCard";
 import { CODEPEN_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
+import { showcaseProjects } from "@/data/projects";
 
 export default function Home() {
   return (
@@ -156,24 +157,16 @@ export default function Home() {
         </SectionHeader>
         <Stack>
           <Grid>
-            <ProjectCard
-              heading="Project 1"
-              summary="This is a test"
-              tags={[TAGS.javascript, TAGS.react, TAGS.nodejs]}
-              internalUrl="/"
-            />
-            <ProjectCard
-              heading="Project 1"
-              summary="Lorem Ipsum aisubfiasufbuiasjfbviasjkdvn hjb andoklnvjk bijkhwa vijkbn foikhcvwiousaghbnvjcpoascisz "
-              tags={[TAGS.javascript, TAGS.react, TAGS.projectManagement]}
-              internalUrl="/"
-            />
-            <ProjectCard
-              heading="Project 1"
-              summary="This is a test"
-              tags={[TAGS.accessibility, TAGS.genai]}
-              internalUrl="/"
-            />
+            {showcaseProjects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                heading={project.name}
+                summary={project.summary}
+                tags={project.tags}
+                slug={project.slug}
+                externalUrl={project.externalUrl}
+              />
+            ))}
           </Grid>
           <NavLink
             variant="button"
