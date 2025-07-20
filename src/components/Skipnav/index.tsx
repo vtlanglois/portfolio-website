@@ -1,4 +1,4 @@
-export default function SkipToMainContentJumpLink() {
+export default function Skipnav() {
   return (
     <a
       href="#main"
