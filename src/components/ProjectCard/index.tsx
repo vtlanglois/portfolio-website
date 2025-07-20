@@ -45,7 +45,8 @@ export default function ProjectCard({
         {slug && (
           <NavLink
             variant="button"
-            appearance="secondary"
+            appearance="primary"
+            className="dark:hover:!bg-cool-blue dark:!bg-black"
             href={`/projects/${slug}`}
           >
             Read More <ArrowRightIcon size="20" weight="bold" />
