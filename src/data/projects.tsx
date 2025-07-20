@@ -58,10 +58,11 @@ export const arduinoProjects: Array<ProjectItem> = [
 export const miscProjects: Array<ProjectItem> = [
   {
     id: "pybot",
+    slug: "pybot",
     name: "PyBot",
     summary:
       "A Python-based chatbot that integrates with various APIs, include OpenAI's GPT models.",
-    tags: [TAGS.python, TAGS.genai, TAGS.educationTech],
+    tags: [TAGS.python, TAGS.genai, TAGS.educationTech, TAGS.apiIntegration],
     externalUrl: "",
   },
 ];
@@ -69,7 +70,7 @@ export const miscProjects: Array<ProjectItem> = [
 export const showcaseProjects: Array<ProjectItem> = [
   webDevProjects[0],
   gameDevProjects[0],
-  arduinoProjects[0],
+  miscProjects[0],
 ];
 
 const projects: Array<ProjectItem> = [
