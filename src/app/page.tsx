@@ -28,8 +28,19 @@ import ProjectCard from "@/components/ProjectCard";
 import ExperienceCard from "@/components/ExperienceCard";
 import { CODEPEN_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
 import { showcaseProjects } from "@/data/projects";
+import { allExperience } from "@/data/experience";
 
 export default function Home() {
+  const experiences = allExperience.map((experience) => (
+    <ExperienceCard
+      key={experience.heading}
+      heading={experience.heading}
+      location={experience.location}
+      duration={experience.duration}
+      summary={experience.summary}
+      tags={experience.tags}
+    />
+  ));
   return (
     <>
       <Section>
@@ -86,58 +97,7 @@ export default function Home() {
           Experience
         </SectionHeader>
         <Stack className="gap-6">
-          <ExperienceCard
-            heading="Senior Software Engineer at Eli Lilly and Company"
-            duration={{
-              text: "July 2023 - Present",
-              ariaLabel: "July 2023 to Present",
-            }}
-            summary="Currently working on building and maintaining software solutions
-              for the pharmaceutical industry, focusing on improving patient
-              outcomes through technology."
-            tags={[
-              TAGS.javascript,
-              TAGS.react,
-              TAGS.projectManagement,
-              TAGS.nodejs,
-              TAGS.accessibility,
-              TAGS.genai,
-            ]}
-          />
-          <ExperienceCard
-            heading="Senior Software Engineer at Eli Lilly and Company"
-            duration={{
-              text: "July 2023 - Present",
-              ariaLabel: "July 2023 to Present",
-            }}
-            summary="Currently working on building and maintaining software solutions
-              for the pharmaceutical industry, focusing on improving patient
-              outcomes through technology."
-            tags={[
-              TAGS.javascript,
-              TAGS.react,
-              TAGS.projectManagement,
-              TAGS.nodejs,
-              TAGS.accessibility,
-              TAGS.genai,
-            ]}
-          />
-          <ExperienceCard
-            heading="Senior Software Engineer at Eli Lilly and Company"
-            duration={{
-              text: "July 2023 - Present",
-              ariaLabel: "July 2023 to Present",
-            }}
-            summary="Currently working "
-            tags={[
-              TAGS.javascript,
-              TAGS.react,
-              TAGS.projectManagement,
-              TAGS.nodejs,
-              TAGS.accessibility,
-              TAGS.genai,
-            ]}
-          />
+          {experiences}
           <NavLink
             variant="button"
             appearance="primary"

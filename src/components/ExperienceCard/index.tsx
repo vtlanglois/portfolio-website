@@ -4,9 +4,11 @@ import Text from "@/components/Text";
 import TagList from "@/components/TagList";
 import React from "react";
 
-interface ExperienceCardProps {
+export interface ExperienceCardProps {
   /** Heading for the experience, serves at the title held during the experience */
   heading: string | React.ReactNode;
+  /** Location for the experience */
+  location?: string | React.ReactNode;
   /** Time duration at experience. Includes accessible text */
   duration: {
     text: string | React.ReactNode;
@@ -22,6 +24,7 @@ interface ExperienceCardProps {
 
 export default function ExperienceCard({
   heading,
+  location,
   duration,
   summary,
   tags,
@@ -29,9 +32,14 @@ export default function ExperienceCard({
   return (
     <Stack className="border-primary-400 bg-primary-400 dark:border-red rounded-xl border-4 shadow-lg transition-transform duration-200 ease-in-out motion-safe:hover:scale-105 dark:bg-transparent dark:shadow-none">
       <div className="dark:bg-red flex flex-col items-start justify-between rounded-t-lg p-3 lg:flex-row">
-        <Text as="h3" variant="heading3">
-          {heading}
-        </Text>
+        <div>
+          <Text as="h3" variant="heading3">
+            {heading}
+          </Text>
+          <Text as="p" variant="caption" className="font-bold">
+            {location}
+          </Text>
+        </div>
         <Text
           as="p"
           variant="caption"
