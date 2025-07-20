@@ -4,6 +4,7 @@ import Text from "@/components/Text";
 import TagList from "@/components/TagList";
 import Stack from "@/components/Stack";
 import { useCallback } from "react";
+import Markdown from "@/components/Markdown";
 import { notFound } from "next/navigation";
 
 export default async function Page({
@@ -25,10 +26,12 @@ export default async function Page({
   return (
     <Article>
       <div className="col-span-3">
-        <Text as="h1" variant="heading1">
-          {project?.name}
-        </Text>
-        <div className="mt-4">{project?.body}</div>
+        <Stack>
+          <Text as="h1" variant="heading1">
+            {project.name}
+          </Text>
+          <Markdown>{project.body}</Markdown>
+        </Stack>
       </div>
       <aside className="col-span-2">
         <Stack>
@@ -44,10 +47,7 @@ export default async function Page({
 
 export async function generateStaticParams() {
   const projectSlugs = projects
-    .filter(
-      (project): project is DetailedProjectItem =>
-        "slug" in project && typeof project.slug === "string",
-    )
+    .filter((project) => "slug" in project && typeof project.slug === "string")
     .map((project) => ({
       slug: project.slug,
     }));

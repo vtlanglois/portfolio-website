@@ -1,5 +1,6 @@
 import { ProjectItem } from "@/types/projectTypes";
 import { TAGS } from "./tags";
+import Test from "@/content/test.mdx";
 
 export const webDevProjects: Array<ProjectItem> = [
   {
@@ -10,7 +11,7 @@ export const webDevProjects: Array<ProjectItem> = [
       "My personal portfolio website built with Next.js and Tailwind CSS.",
     tags: [TAGS.webDevelopment, TAGS.nextjs, TAGS.tailwind],
     externalUrl: "",
-    body: "",
+    body: <Test />,
   },
 ];
 
