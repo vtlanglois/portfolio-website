@@ -1,4 +1,4 @@
-import Section, { SectionHeader } from "@/components/Section";
+import Section from "@/components/Section";
 import Text from "@/components/Text";
 import Grid from "@/components/Grid";
 import ProjectCard from "@/components/ProjectCard";
@@ -6,6 +6,13 @@ import { useMemo } from "react";
 import Stack from "@/components/Stack";
 import projects from "@/data/projects";
 import { DetailedProjectItem, ProjectItem } from "@/types/projectTypes";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "View projects by Vincent Langlois, a software engineer who loves to build things.",
+};
 
 export default function Projects() {
   const projectCards = useMemo(() => {

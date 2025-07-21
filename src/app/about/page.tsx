@@ -12,6 +12,13 @@ import {
   CodepenIconLink,
 } from "@/components/SocialIconLink";
 import { GITHUB_URL, LINKEDIN_URL, CODEPEN_URL } from "@/constants";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn more about Vincent Langlois, a software engineer who loves to build things. See my story, interests, and hobbies.",
+};
 
 export default function About() {
   return (

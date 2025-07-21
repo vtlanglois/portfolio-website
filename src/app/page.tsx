@@ -29,6 +29,12 @@ import ExperienceCard from "@/components/ExperienceCard";
 import { CODEPEN_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
 import { showcaseProjects } from "@/data/projects";
 import { allExperience } from "@/data/experience";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  description:
+    "Introducing Vincent Langlois, a software engineer who loves to build things. Explore my projects, experience, and skills in software development.",
+};
 
 export default function Home() {
   const experiences = allExperience.map((experience) => (

@@ -25,8 +25,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vincent Langlois - Software Engineer",
-  description: "Personal website for Vincent Langlois, software engineer",
+  title: {
+    template: "%s | Vincent Langlois - Software Engineer",
+    default: "Vincent Langlois - Software Engineer",
+  },
 };
 
 export default function RootLayout({
