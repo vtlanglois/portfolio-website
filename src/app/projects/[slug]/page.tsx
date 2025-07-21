@@ -7,7 +7,30 @@ import { useCallback } from "react";
 import Markdown from "@/components/Markdown";
 import { notFound } from "next/navigation";
 
-export default async function Page({
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const project = projects.find(
+    (project) =>
+      "slug" in project &&
+      typeof project.slug === "string" &&
+      project.slug === slug,
+  );
+
+  if (!project) {
+    return {};
+  }
+
+  return {
+    title: project.name,
+    description: project.summary,
+  };
+}
+
+export default async function ProjectDetails({
   params,
 }: {
   params: Promise<{ slug: string }>;
