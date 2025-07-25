@@ -6,6 +6,8 @@ import Article from "@/components/Article";
 interface DetailsTemplateProps {
   /** Heading to show above all content */
   heading: string;
+  /** Summary to show below heading */
+  summary: string;
   /** MDX content to render */
   mainContent: React.ReactNode;
   /** Aside content to render alongside content */
@@ -15,6 +17,7 @@ interface DetailsTemplateProps {
 
 export default function DetailsTemplate({
   heading,
+  summary,
   mainContent,
   asideContent,
 }: DetailsTemplateProps) {
@@ -24,6 +27,9 @@ export default function DetailsTemplate({
         <Stack>
           <Text as="h1" variant="heading1">
             {heading}
+          </Text>
+          <Text as="p" variant="caption" className="italic">
+            {summary}
           </Text>
           <Markdown>{mainContent}</Markdown>
         </Stack>

@@ -6,6 +6,7 @@ import Stack from "@/components/Stack";
 import { useCallback } from "react";
 import Markdown from "@/components/Markdown";
 import { notFound } from "next/navigation";
+import DetailsTemplate from "@/templates/details";
 
 export async function generateMetadata({
   params,
@@ -47,24 +48,19 @@ export default async function ProjectDetails({
   }
 
   return (
-    <Article>
-      <div className="col-span-3">
+    <DetailsTemplate
+      heading={project.name}
+      summary={project.summary}
+      mainContent={project.body}
+      asideContent={
         <Stack>
-          <Text as="h1" variant="heading1">
-            {project.name}
-          </Text>
-          <Markdown>{project.body}</Markdown>
-        </Stack>
-      </div>
-      <aside className="col-span-2">
-        <Stack>
-          <Text as="h2" variant="heading3">
+          <Text as="h2" variant="heading2">
             Technologies & Topics
           </Text>
-          <TagList tags={project?.tags || []} />
+          <TagList tags={project.tags} />
         </Stack>
-      </aside>
-    </Article>
+      }
+    />
   );
 }
 
