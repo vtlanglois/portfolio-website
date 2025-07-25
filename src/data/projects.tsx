@@ -10,7 +10,7 @@ export const webDevProjects: Array<ProjectItem> = [
     summary:
       "My personal portfolio website built with Next.js and Tailwind CSS.",
     tags: [TAGS.webDevelopment, TAGS.nextjs, TAGS.tailwind],
-    externalUrl: "",
+    externalUrl: "https://github.com/vtlanglois/portfolio-website",
     body: <Test />,
   },
 ];
@@ -35,7 +35,7 @@ export const arduinoProjects: Array<ProjectItem> = [
     summary:
       "A YouTube controller for kids. Built with Arduino, designed for Windows & Chrome.",
     tags: [TAGS.arduino],
-    externalUrl: "",
+    externalUrl: "https://github.com/vtlanglois/ArduinoKidController-I341",
   },
   {
     id: "oled-matrix-display-demo",
@@ -43,7 +43,7 @@ export const arduinoProjects: Array<ProjectItem> = [
     summary:
       "A showcase of the capabilities of an OLED Screen for Arduino devices.",
     tags: [TAGS.arduino, TAGS.educationTech],
-    externalUrl: "",
+    externalUrl: "https://github.com/vtlanglois/OLED-Demo",
   },
   {
     id: "rgb-led-demo",
@@ -51,7 +51,7 @@ export const arduinoProjects: Array<ProjectItem> = [
     summary:
       "An interactive educational experience built to demonstrate an Arduino's analog and PWD pins for a young audience. Built for developers and educators alike.",
     tags: [TAGS.arduino, TAGS.educationTech],
-    externalUrl: "",
+    externalUrl: "https://github.com/vtlanglois/RGB_LED_Dials",
   },
 ];
 
@@ -63,7 +63,7 @@ export const miscProjects: Array<ProjectItem> = [
     summary:
       "A Python-based chatbot that integrates with various APIs, include OpenAI's GPT models.",
     tags: [TAGS.python, TAGS.genai, TAGS.educationTech, TAGS.apiIntegration],
-    externalUrl: "",
+    externalUrl: "https://github.com/vtlanglois/PyBot",
   },
 ];
 

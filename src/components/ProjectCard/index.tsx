@@ -2,9 +2,7 @@ import Text from "@/components/Text";
 import TagList from "@/components/TagList";
 import NavLink from "@/components/NavLink";
 import { TagItem } from "@/types/tagTypes";
-import { GitHubIconLink } from "../SocialIconLink";
-import { ArrowRightIcon } from "@phosphor-icons/react/dist/ssr";
-import clsx from "clsx";
+import { ArrowRightIcon, GithubLogoIcon } from "@phosphor-icons/react/dist/ssr";
 
 interface ProjectCardProps {
   /** Heading for the project card. Is also part of the internal link */
@@ -52,7 +50,15 @@ export default function ProjectCard({
             Read More <ArrowRightIcon size="20" weight="bold" />
           </NavLink>
         )}
-        <GitHubIconLink className="dark:hover:!bg-black" />
+        <NavLink
+          variant="icon"
+          appearance="primary"
+          href={externalUrl}
+          className="dark:hover:!bg-cool-blue ml-auto"
+          aria-label="GitHub repository link"
+        >
+          <GithubLogoIcon size="32" weight="bold" className="text-foreground" />
+        </NavLink>
       </footer>
     </div>
   );
