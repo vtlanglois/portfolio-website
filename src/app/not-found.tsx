@@ -11,17 +11,17 @@ export default function NotFound() {
   return (
     <Section>
       <Stack>
-        <SmileyMeltingIcon size="64" weight="duotone" className="hand-icon" />
+        <SmileyMeltingIcon size="64" weight="fill" className="text-secondary" />
         <Text as="h1" variant="heading1">
-          Project Not Found
+          Page Not Found
         </Text>
         <Text as="p" variant="paragraph">
-          The project you are looking for does not exist or has been removed.
+          The page you are looking for does not exist or has been removed.
         </Text>
         <div>
-          <NavLink variant="button" appearance="primary" href="/projects">
+          <NavLink variant="button" appearance="primary" href="/">
             <ArrowLeftIcon size="24" weight="bold" />
-            Back to Projects
+            Back to Home
           </NavLink>
         </div>
       </Stack>
