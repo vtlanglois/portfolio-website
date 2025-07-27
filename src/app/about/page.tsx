@@ -2,7 +2,7 @@ import Article from "@/components/Article";
 import Markdown from "@/components/Markdown";
 import Text from "@/components/Text";
 import Stack from "@/components/Stack";
-import Test from "@/content/test.mdx";
+import About from "@/content/about.mdx";
 import Divider from "@/components/Divider";
 import TagList from "@/components/TagList";
 import { TAGS, hobbyTags, mediaTags } from "@/data/tags";
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Learn more about Vincent Langlois, a software engineer who loves to build things. See my story, interests, and hobbies.",
 };
 
-export default function About() {
+export default function AboutPage() {
   return (
     <Article>
       <div className="col-span-3">
@@ -29,7 +29,7 @@ export default function About() {
             About me
           </Text>
           <Markdown>
-            <Test />
+            <About />
           </Markdown>
         </Stack>
       </div>
