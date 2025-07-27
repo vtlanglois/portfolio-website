@@ -1,0 +1,47 @@
+.animation-bouncing {
+  animation: bounce 1s infinite;
+  transform-origin: bottom center;
+}
+
+.animation-bouncing.delay {
+  animation-delay: 0.3s;
+}
+
+.animation-wave {
+  animation: wave 1s infinite;
+  transform-origin: bottom right;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(-10px);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: rotate(15deg);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animation-bouncing {
+    animation: none;
+  }
+
+  .animation-wave {
+    animation: none;
+  }
+}

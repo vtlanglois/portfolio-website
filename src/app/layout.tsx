@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Inter, Merriweather } from "next/font/google";
 import Script from "next/script";
-import "./globals.css";
+import "@/styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Wrapper from "@/components/Wrapper";

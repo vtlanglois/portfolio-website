@@ -52,13 +52,20 @@ export default function Home() {
       <Section>
         <div className="flex flex-col items-start justify-start gap-3">
           <div className="flex w-full flex-row items-center justify-center gap-1 lg:justify-start">
-            <HandWavingIcon size="64" weight="duotone" className="hand-icon" />
-            <HandPeaceIcon size="64" weight="duotone" className="hand-icon" />
+            <HandWavingIcon
+              size="64"
+              weight="duotone"
+              className="hand-icon animation-wave"
+            />
+            <HandPeaceIcon
+              size="64"
+              weight="duotone"
+              className="hand-icon animation-bouncing"
+            />
             <HandPointingIcon
               size="64"
               weight="duotone"
-              mirrored
-              className="hand-icon"
+              className="hand-icon animation-bouncing delay"
             />
           </div>
           <Text as="h1" variant="heading1" className="">
