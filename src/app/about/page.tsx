@@ -55,7 +55,7 @@ export default function AboutPage() {
             My favorite media
           </Text>
           <TagList tags={Object.values(mediaTags)} />
-          <Divider className="hidden lg:block" />
+          <Divider variant="primary" className="hidden lg:block" />
           <Text as="h2" variant="heading3" className="hidden lg:block">
             Social links
           </Text>

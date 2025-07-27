@@ -21,7 +21,7 @@ export function SectionHeader({ children, className }: SectionHeaderProps) {
       <Text as="h2" variant="heading2" className={classes}>
         {children}
       </Text>
-      <Divider />
+      <Divider variant="primary" />
     </div>
   );
 }

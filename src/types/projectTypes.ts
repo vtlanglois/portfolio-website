@@ -17,3 +17,23 @@ export interface ProjectItem {
   /** Body for the details page, if one exists */
   body?: React.ReactNode;
 }
+
+export interface ExperienceItem {
+  /** Unique identifier for the experience */
+  id: string;
+  /** Heading for the experience, serves at the title held during the experience */
+  heading: string | React.ReactNode;
+  /** Location for the experience */
+  location?: string | React.ReactNode;
+  /** Time duration at experience. Includes accessible text */
+  duration: {
+    text: string | React.ReactNode;
+    ariaLabel: string;
+  };
+  /** Summary of the experience */
+  summary: string | React.ReactNode;
+  /** Tools, concepts, etc that is associated with the experience.
+   * @example The tag `React` is for projects that use React
+   */
+  tags: TagItem[];
+}

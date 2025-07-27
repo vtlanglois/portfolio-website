@@ -1,7 +1,8 @@
-import type { ExperienceCardProps } from "@/components/ExperienceCard";
+import type { ExperienceItem } from "@/types/projectTypes";
 import { TAGS } from "@/data/tags";
 
-export const seniorLillyExperience: ExperienceCardProps = {
+export const seniorLillyExperience: ExperienceItem = {
+  id: "senior-lilly",
   heading: "Senior Software Engineer at Eli Lilly & Company",
   location: "Indianapolis, IN",
   duration: {
@@ -29,7 +30,8 @@ export const seniorLillyExperience: ExperienceCardProps = {
   ],
 };
 
-export const bcForwardExperience: ExperienceCardProps = {
+export const bcForwardExperience: ExperienceItem = {
+  id: "bc-forward",
   heading: "Software Engineer Intern at BCForward",
   location: "Carmel, IN",
   duration: {
@@ -50,7 +52,8 @@ export const bcForwardExperience: ExperienceCardProps = {
   ],
 };
 
-export const luddyExperience: ExperienceCardProps = {
+export const luddyExperience: ExperienceItem = {
+  id: "luddy-internship",
   heading:
     "Community Outreach Intern at IU Luddy School of Informatics, Computing, and Engineering",
   location: "Bloomington, IN",
@@ -72,7 +75,7 @@ export const luddyExperience: ExperienceCardProps = {
   ],
 };
 
-export const allExperience: ExperienceCardProps[] = [
+export const allExperience: ExperienceItem[] = [
   seniorLillyExperience,
   bcForwardExperience,
   luddyExperience,

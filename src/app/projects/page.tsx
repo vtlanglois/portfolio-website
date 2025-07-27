@@ -5,7 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 import { useMemo } from "react";
 import Stack from "@/components/Stack";
 import projects from "@/data/projects";
-import { DetailedProjectItem, ProjectItem } from "@/types/projectTypes";
+import { ProjectItem } from "@/types/projectTypes";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   const projectCards = useMemo(() => {
-    return projects.map((project: ProjectItem | DetailedProjectItem) => (
+    return projects.map((project: ProjectItem) => (
       <ProjectCard
         key={project.id}
         heading={project.name}
@@ -26,7 +26,7 @@ export default function Projects() {
         externalUrl={project.externalUrl}
       />
     ));
-  }, [projects]);
+  }, []);
 
   return (
     <Section>

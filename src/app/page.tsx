@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 export default function Home() {
   const experiences = allExperience.map((experience) => (
     <ExperienceCard
-      key={experience.heading}
+      key={experience.id}
       heading={experience.heading}
       location={experience.location}
       duration={experience.duration}

@@ -1,10 +1,7 @@
 import projects from "@/data/projects";
-import Article from "@/components/Article";
 import Text from "@/components/Text";
 import TagList from "@/components/TagList";
 import Stack from "@/components/Stack";
-import { useCallback } from "react";
-import Markdown from "@/components/Markdown";
 import { notFound } from "next/navigation";
 import DetailsTemplate from "@/templates/details";
 
