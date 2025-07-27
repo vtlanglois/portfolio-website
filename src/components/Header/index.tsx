@@ -129,6 +129,7 @@ export default function Header() {
             variant="text"
             appearance="primary"
             className="!text-foreground text-2xl"
+            onClick={() => setMenuOpen(false)}
           >
             Home
           </NavLink>
@@ -137,6 +138,7 @@ export default function Header() {
             variant="text"
             appearance="primary"
             className="!text-foreground text-2xl"
+            onClick={() => setMenuOpen(false)}
           >
             About
           </NavLink>
@@ -145,6 +147,7 @@ export default function Header() {
             variant="text"
             appearance="primary"
             className="!text-foreground text-2xl"
+            onClick={() => setMenuOpen(false)}
           >
             Projects
           </NavLink>

@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="dark:bg-red bg-primary-400 px-3 py-4 lg:px-16 2xl:mx-auto 2xl:max-w-screen-xl dark:border-transparent">
       <Container className="flex flex-col gap-3">
-        <div className="flex flex-col lg:flex-row items-center justify-between">
+        <div className="flex flex-col items-center justify-between lg:flex-row">
           <Text as="p" variant="caption" className="text-center lg:text-left">
             2025 - Vincent Langlois
             <br />
