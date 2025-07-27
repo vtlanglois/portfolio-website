@@ -16,8 +16,8 @@ export function GitHubIconLink({ className, href }: IconLinkProps) {
     <NavLink
       variant="icon"
       appearance="primary"
-      href={href ?? "#"}
-      aria-label="Github Page"
+      href={href}
+      aria-label="Github Page (opens in a new tab)"
       className={className}
     >
       <GithubLogoIcon size="32" weight="bold" />
@@ -30,8 +30,8 @@ export function LinkedInIconLink({ className, href }: IconLinkProps) {
     <NavLink
       variant="icon"
       appearance="primary"
-      href={href ?? "#"}
-      aria-label="LinkedIn Page"
+      href={href}
+      aria-label="LinkedIn Page (opens in a new tab)"
       className={className}
     >
       <LinkedinLogoIcon size="32" weight="bold" />
@@ -44,8 +44,8 @@ export function CodepenIconLink({ className, href }: IconLinkProps) {
     <NavLink
       variant="icon"
       appearance="primary"
-      href={href ?? "#"}
-      aria-label="CodePen Page"
+      href={href}
+      aria-label="CodePen Page (opens in a new tab)"
       className={className}
     >
       <CodepenLogoIcon size="32" />

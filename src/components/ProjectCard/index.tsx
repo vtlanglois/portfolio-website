@@ -55,7 +55,7 @@ export default function ProjectCard({
           appearance="primary"
           href={externalUrl}
           className="dark:hover:!bg-cool-blue ml-auto"
-          aria-label="GitHub repository link"
+          aria-label="GitHub repository link (opens in a new tab)"
         >
           <GithubLogoIcon size="32" weight="bold" className="text-foreground" />
         </NavLink>
