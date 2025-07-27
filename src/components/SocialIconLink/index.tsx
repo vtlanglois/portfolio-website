@@ -17,7 +17,7 @@ export function GitHubIconLink({ className, href }: IconLinkProps) {
       variant="icon"
       appearance="primary"
       href={href ?? "#"}
-      aria-label="Github"
+      aria-label="Github Page"
       className={className}
     >
       <GithubLogoIcon size="32" weight="bold" />
@@ -31,7 +31,7 @@ export function LinkedInIconLink({ className, href }: IconLinkProps) {
       variant="icon"
       appearance="primary"
       href={href ?? "#"}
-      aria-label="LinkedIn"
+      aria-label="LinkedIn Page"
       className={className}
     >
       <LinkedinLogoIcon size="32" weight="bold" />
@@ -45,7 +45,7 @@ export function CodepenIconLink({ className, href }: IconLinkProps) {
       variant="icon"
       appearance="primary"
       href={href ?? "#"}
-      aria-label="CodePen"
+      aria-label="CodePen Page"
       className={className}
     >
       <CodepenLogoIcon size="32" />
