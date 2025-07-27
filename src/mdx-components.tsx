@@ -1,6 +1,7 @@
 import type { MDXComponents } from "mdx/types";
 import Text from "@/components/Text";
 import { BugIcon } from "@phosphor-icons/react/ssr";
+import List from "./components/List";
 
 const emojiMap = {
   ":bug:": BugIcon,
@@ -33,6 +34,14 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {processContent(children)}
       </Text>
     ),
+    ul: ({ children }) => (
+      <List>
+        <Text as="div" variant="paragraph" className="flex flex-col gap-2">
+          {children}
+        </Text>
+      </List>
+    ),
+
     ...components,
   };
 }
