@@ -33,7 +33,7 @@ export default function AboutPage() {
           </Markdown>
         </Stack>
       </div>
-      <aside className="col-span-2">
+      <aside className="col-span-3 lg:col-span-2">
         <Stack>
           <Text as="h2" variant="heading3">
             My technical interests
@@ -56,6 +56,9 @@ export default function AboutPage() {
           </Text>
           <TagList tags={Object.values(mediaTags)} />
           <Divider className="hidden lg:block" />
+          <Text as="h2" variant="heading3" className="hidden lg:block">
+            Social links
+          </Text>
           <div className="hidden flex-row gap-3 lg:flex">
             <GitHubIconLink href={GITHUB_URL} />
             <LinkedInIconLink href={LINKEDIN_URL} />
