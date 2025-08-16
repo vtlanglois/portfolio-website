@@ -5,7 +5,7 @@ import Test from "@/content/test.mdx";
 export const webDevProjects: Array<ProjectItem> = [
   {
     id: "portfolio-website",
-    slug: "portfolio-website",
+    // slug: "portfolio-website",
     name: "Portfolio Website",
     summary:
       "My personal portfolio website built with Next.js and Tailwind CSS.",
@@ -18,7 +18,7 @@ export const webDevProjects: Array<ProjectItem> = [
 export const gameDevProjects: Array<ProjectItem> = [
   {
     id: "atlas-m1",
-    slug: "atlas-m1",
+    // slug: "atlas-m1",
     name: "Atlas M1",
     summary:
       "A short visual and audio experience about a doomed submarine operator at the bottom of the ocean. Built with Construct 3.",
@@ -58,7 +58,7 @@ export const arduinoProjects: Array<ProjectItem> = [
 export const miscProjects: Array<ProjectItem> = [
   {
     id: "pybot",
-    slug: "pybot",
+    // slug: "pybot",
     name: "PyBot",
     summary:
       "A Python-based chatbot that integrates with various APIs, include OpenAI's GPT models.",
