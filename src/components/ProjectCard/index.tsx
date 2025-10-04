@@ -2,7 +2,11 @@ import Text from "@/components/Text";
 import TagList from "@/components/TagList";
 import NavLink from "@/components/NavLink";
 import { TagItem } from "@/types/tagTypes";
-import { ArrowRightIcon, GithubLogoIcon } from "@phosphor-icons/react/dist/ssr";
+import {
+  ArrowRightIcon,
+  GameControllerIcon,
+  GithubLogoIcon,
+} from "@phosphor-icons/react/dist/ssr";
 
 interface ProjectCardProps {
   /** Heading for the project card. Is also part of the internal link */
@@ -30,16 +34,16 @@ export default function ProjectCard({
 
   return (
     <div className="border-primary-400 bg-primary-400 dark:bg-red dark:border-red row-span-4 mb-3 grid grid-rows-subgrid gap-3 rounded-xl border-4 shadow-lg transition-transform duration-200 ease-in-out motion-safe:hover:scale-105 dark:bg-transparent dark:shadow-none">
-      <header className="dark:bg-red rounded-t-lg p-3">
+      <div className="dark:bg-red rounded-t-lg p-3">
         <Text as="h3" variant="heading3">
           {heading}
         </Text>
-      </header>
+      </div>
       <Text as="p" variant="paragraph" className="p-3">
         {summary}
       </Text>
       <TagList tags={tags} className="p-3" />
-      <footer className="dark:bg-red flex flex-row items-stretch justify-between rounded-b-lg p-3">
+      <div className="dark:bg-red flex flex-row items-stretch justify-between rounded-b-lg p-3">
         {slug && (
           <NavLink
             variant="button"
@@ -50,16 +54,40 @@ export default function ProjectCard({
             Read More <ArrowRightIcon size="20" weight="bold" />
           </NavLink>
         )}
-        <NavLink
-          variant="icon"
-          appearance="primary"
-          href={externalUrl}
-          className="dark:hover:!bg-cool-blue ml-auto"
-          aria-label="GitHub repository link (opens in a new tab)"
-        >
-          <GithubLogoIcon size="32" weight="bold" className="text-foreground" />
-        </NavLink>
-      </footer>
+        <ProjectCardExternalLink href={externalUrl} />
+      </div>
     </div>
   );
+}
+
+function ProjectCardExternalLink({ href }: { href: string }) {
+  if (href.includes("github.com")) {
+    return (
+      <NavLink
+        variant="icon"
+        appearance="primary"
+        href={href}
+        className="dark:hover:!bg-cool-blue ml-auto"
+        aria-label="GitHub repository link (opens in a new tab)"
+      >
+        <GithubLogoIcon size="32" weight="bold" className="text-foreground" />
+      </NavLink>
+    );
+  } else if (href.includes("itch.io")) {
+    return (
+      <NavLink
+        variant="icon"
+        appearance="primary"
+        href={href}
+        className="dark:hover:!bg-cool-blue ml-auto"
+        aria-label="Itch.io project link (opens in a new tab)"
+      >
+        <GameControllerIcon
+          size="32"
+          weight="bold"
+          className="text-foreground"
+        />
+      </NavLink>
+    );
+  }
 }

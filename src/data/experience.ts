@@ -10,7 +10,7 @@ export const seniorLillyExperience: ExperienceItem = {
     ariaLabel: "July 2023 to Present",
   },
   summary:
-    "Currently working on building and maintaining software solutions for the pharmaceutical industry, focusing on improving patient outcomes through technology.",
+    "Currently working on developing scalable web applications and systems to enhance the customer experience for Lilly's online services,. focusing on accessible user interfaces. Leading a full-stack development team to deliver high-quality software solutions.",
   tags: [
     TAGS.typescript,
     TAGS.javascript,
@@ -39,7 +39,7 @@ export const bcForwardExperience: ExperienceItem = {
     ariaLabel: "May 2022 to August 2022",
   },
   summary:
-    "Worked on developing and maintaining the Indiana Prosecutor Case Management System, focusing on enhancing user experience and performance.",
+    "Worked on developing and maintaining the Indiana Prosecutor Case Management System, focused on enhancing user experience and performance.",
   tags: [
     TAGS.javascript,
     TAGS.react,
@@ -62,7 +62,7 @@ export const luddyExperience: ExperienceItem = {
     ariaLabel: "August 2020 to July 2023",
   },
   summary:
-    "Directed and coordinated community outreach programs, focusing on promoting STEM education and engaging with local schools to inspire the next generation of technologists.",
+    "Directed and coordinated community outreach programs, focused on promoting STEM education and engaging with local schools to inspire the next generation of technologists.",
   tags: [
     TAGS.educationTech,
     TAGS.projectManagement,

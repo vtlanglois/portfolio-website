@@ -17,13 +17,13 @@ export const webDevProjects: Array<ProjectItem> = [
 
 export const gameDevProjects: Array<ProjectItem> = [
   {
-    id: "atlas-m1",
+    id: "atlas-m-1",
     // slug: "atlas-m1",
-    name: "Atlas M1",
+    name: "Atlas M-1",
     summary:
       "A short visual and audio experience about a doomed submarine operator at the bottom of the ocean. Built with Construct 3.",
     tags: [TAGS.gameDevelopment, TAGS.gameTesting],
-    externalUrl: "",
+    externalUrl: "https://startcmd.itch.io/atlas-m-1",
     body: "",
   },
 ];
