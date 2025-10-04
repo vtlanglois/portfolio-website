@@ -84,8 +84,11 @@ export default function Header() {
             <NavLink
               variant="button"
               appearance="secondary"
-              href="/"
+              href="/vincent-langlois-resume-website.pdf"
+              target="_blank"
+              type="application/pdf"
               className="mx-0 border-y-0 text-xl font-bold"
+              aria-label="Resume (opens in a new tab)"
             >
               Resume
             </NavLink>

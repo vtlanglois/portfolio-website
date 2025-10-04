@@ -114,8 +114,10 @@ export default function Home() {
           <NavLink
             variant="button"
             appearance="primary"
-            href="#"
-            aria-label="My Resume"
+            href="/vincent-langlois-resume-website.pdf"
+            target="_blank"
+            type="application/pdf"
+            aria-label="View My Resume (opens in a new tab)"
             className="self-end"
           >
             View Resume
