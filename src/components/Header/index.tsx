@@ -86,6 +86,7 @@ export default function Header() {
               appearance="secondary"
               href="/vincent-langlois-resume-website.pdf"
               target="_blank"
+              rel="noopener"
               type="application/pdf"
               className="mx-0 border-y-0 text-xl font-bold"
               aria-label="Resume (opens in a new tab)"

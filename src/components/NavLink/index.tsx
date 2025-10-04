@@ -59,7 +59,7 @@ export default function NavLink({
     [variant, appearance, className],
   );
 
-  if (!href?.startsWith("http")) {
+  if (!href?.startsWith("http") && !href?.endsWith(".pdf")) {
     return (
       <Link className={classes} href={href} {...props}>
         {children}

@@ -117,6 +117,7 @@ export default function Home() {
             href="/vincent-langlois-resume-website.pdf"
             target="_blank"
             type="application/pdf"
+            rel="noopener"
             aria-label="View My Resume (opens in a new tab)"
             className="self-end"
           >
