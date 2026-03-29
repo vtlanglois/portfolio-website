@@ -13,7 +13,7 @@ export default function Footer() {
       <Container className="flex flex-col gap-3">
         <div className="flex flex-col items-center justify-between lg:flex-row">
           <Text as="p" variant="caption" className="text-center lg:text-left">
-            2025 - Vincent Langlois
+            2026 - Vincent Langlois
             <br />
             Made with Next.js, Tailwind, and Typescript.
           </Text>
